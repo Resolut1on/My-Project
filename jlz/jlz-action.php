@@ -11,8 +11,8 @@ class Event extends EventBase
     protected $uin = 0;
     protected $nickname = "";
     //活动变更修改项开始(js文件和礼包发送文件都得修改)
-    private $startDateTime = "2015-06-15 00:00:00";
-    private $endDateTime = "2015-07-15 23:59:59";
+    private $startDateTime = "2015-06-26 00:00:00";
+    private $endDateTime = "2015-07-26 23:59:59";
     //活动充值标识
     private $eventAid = "pc_event_jlz20150623";
     //actionId、action、object活动后台配置
@@ -114,7 +114,7 @@ class Event extends EventBase
 
         //返回值是整型数值，代表vip开通的天数
         $vipTotal = ServiceHelper::Call("event.isOpenVip", $paramsArr);
-//        $vipTotal = 31;
+
         if ($vipTotal < (31 * 1))
         {
             echo json_encode(array('status' => -20, 'uin' => $uin, 'msg' => '您还没开通活动VIP!'));
@@ -123,7 +123,7 @@ class Event extends EventBase
         
         //判断是否已经领取过礼包
         $cdkey = $this->getEventCdkey($uin, $packetType);
-//        $cdkey = "testfor9lz vip";
+
         if (!empty($cdkey))
         {
            $rs = array('status' => 1, 'msg' => '您已经领取过礼包了!', "cdkey" => $cdkey);
@@ -134,7 +134,7 @@ class Event extends EventBase
             //判断是否还有礼包剩余
             $paramsArr = array('event_id' => $this->eventId, 'action' => $action, 'object' => $object);
             $usedTotal = $this->getEventPacketTotal($paramsArr);
-//            $usedTotal = 200000;
+
             if ($usedTotal >= $maxNum)
             {
                echo json_encode(array('status' => -2, 'msg' => '已经领完'));
@@ -143,7 +143,6 @@ class Event extends EventBase
             else
             {
                $cdkeyArr = $this->getCdkeyByMp($uin, $mpId, $clientIp);
-//                $cdkeyArr = array('cdkey' => "testforvippacket" ,"ret" => 2);
 
                 if (!empty($cdkeyArr) && $cdkeyArr["ret"] == 2)
                 {
@@ -181,7 +180,7 @@ class Event extends EventBase
 
              //判断是否已经领取过礼包
             $cdkey = $this->getEventCdkey($uin, $packetType);
-//            $cdkey = "testfor 9lz";
+
             if (!empty($cdkey))
             {
                $rs = array('status' => 1, 'msg' => '您已经领取过礼包了!', "cdkey" => $cdkey);
@@ -192,7 +191,7 @@ class Event extends EventBase
                //判断是否还有礼包剩余
                 $paramsArr = array('event_id' => $this->eventId, 'action' => $action, 'object' => $object);
                 $usedTotal = $this->getEventPacketTotal($paramsArr);
-//                $usedTotal = 500000;
+
                 if ($usedTotal >= $maxNum)
                 {
                    echo json_encode(array('status' => -2, 'msg' => '已经领完'));
@@ -209,8 +208,6 @@ class Event extends EventBase
                     }
                     
                     $cdkeyArr = $this->getCdkeyByMp($uin, $mpId, $clientIp);
-//                    var_dump($cdkeyArr);
-//                    $cdkeyArr = array('cdkey' => "testfor9lzcommon", 'ret' => 2);
 
                     if (!empty($cdkeyArr) && $cdkeyArr["ret"] == 2)
                     {   
@@ -311,7 +308,6 @@ class Event extends EventBase
         $paramsArr = array('event_id' => $eventId,'action' => $action,'object' => $object,'uin' => $ip,'value' => json_encode($value));
         
         return ServiceHelper::Call("event.addActionUserByRedis", $paramsArr);
-//        return ServiceHelper::Call("event.addActionUserByRedis", $paramsArr);
     }
     
     //获取用户的同IP地址看漫画的QQ号
