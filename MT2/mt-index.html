@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="robots" content="all">
+        <meta name="author" content="Tencent-TGideas">
+        <meta name="Copyright" content="Tencent">
+        <!--分享内容显示-->
+        <meta name="description" itemprop="description" content="我叫MT2半周年，动漫VIP礼包大放送！">
+        <meta itemprop="name" content="我叫MT2礼包大放送">
+        <meta itemprop="image" content="http://ac.gtimg.com/h5_hd/mt2201506/images/MTfenxiang.jpg">
+        <!--分享内容显示-->
+        <meta name="Description" content="《我叫MT2》是腾讯与乐动卓越合作运营的精美3D手游，延续了传统《我叫MT》的经典特色。3D来袭，翻开一切；巨型BOSS，战个痛快；外域开荒，大堆宝箱；百变换装，我爱漂亮；钓鱼挖矿，生活好棒！" />
+        <meta name="Keywords" content="mt,mt2,我叫MT,我叫MT2,刀塔,卡牌,卡牌手游,手游,酷炫,策略,腾讯卡牌手游,RPG" />
+        <title>动漫平台--我叫MT2专题活动-腾讯游戏-焕新一代3D手游</title>
+        <link rel="stylesheet" type="text/css" href="http://ac.gtimg.com/h5_hd/mt2201506/css/mt-index.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="http://ac.gtimg.com/h5_hd/mt2201506/css/mt-free-dialog.css" media="screen" />
+        <script type="text/javascript" src="http://ac.gtimg.com/h5_hd/mt2201506/js/mt-jquery-1.11.3.min.js"></script>
+        <!--<script type="text/javascript" src="js/mt-simple-logger.js"></script>-->
+        <script type="text/javascript" src="http://ac.gtimg.com/h5_hd/mt2201506/js/mt-free-dialog.js"></script>
+        <script type="text/javascript" src="http://ac.gtimg.com/h5_hd/mt2201506/js/mt-ping.js"></script>
+        <script>
+            window.H5 = {};
+        </script>
+        <script src="http://3gimg.qq.com/ptlogin/touch/js/ptlogin.js"></script>
+        <script type="text/javascript" src="http://ac.gtimg.com/h5_hd/mt2201506/js/mt-index.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="pages">
+                <section class="page page1">
+                    <div class="inner">
+                        <div class="bg1">
+                            <!--登录前状态 Start-->
+                            <p id="unlogin"><a href="javascript:void(0);" id="dologin" stats="click.exchane">亲，点击登录噢!</a></p>
+                            <!--登录前状态 End-->
+                            <!--登录后状态 Start-->
+                            <p id="logined" style="display:none">hello，<span id='login_qq_span'>海默</span>！<a href="javascript:void(0);" id="dologonout">退出登录</a></p>
+                            <!--登录后状态 End-->
+
+                        </div>
+                        <div class="bg2">
+                            <div class="btn" id="btn1">
+                                <a href="javascript:void(0);" class="btn1" id="getVipPacket" stats="click.vip_packet">立即领取礼包</a>
+                                <a href="javascript:void(0);" class="kt" id="cdk-record">领取记录</a>
+                            </div>
+                        </div>
+                        <div class="bg3"></div>
+                        <div class="bg4">
+                            <p><span>1.&nbsp;</span>活动时间：<span>2015年6月17日至2015年7月17日</span></p>
+                            <p><span>2.&nbsp;</span>仅限此活动页面开通月费的动漫VIP用户才可领取特权礼包。</p>
+                            <p><span>3.&nbsp;</span>特权礼包每人最多可领三次。限量发放，发完即止。</p>
+                            <p><span>4.&nbsp;</span>礼包使用方法：</p>
+                            <p>(1)成功领取CDkey后:<br />
+                            <span class="abc">①手Q平台玩家，请点击<a href="javascript:void(0);" id="dlsqewm">[手Q二维码]</a>截图保存至本地，使用对应手机QQ扫描兑奖界面二维码进入兑奖。</span><br />
+                            <span class="abc">②微信平台玩家，请点击<a href="javascript:void(0);" id="dlwxewm">[微信二维码]</a>截图保存至本地，使用对应微信帐号扫描兑奖界面二维码进入兑奖。</span><br/>
+                            </p>
+                            <p>(2)在兑换页面按照提示填写CDKEY，领取礼包。</p>
+                            <p><span>5.&nbsp;</span>如果您对活动存有疑问，欢迎点击<a href="http://wap.3g.qq.com/g/s?aid=wapask&fid=1130&uin=411675458&sid=nHXNsMgQkVLKOuGpFRky0lTHZJyej+K21889ab420201==">意见反馈。</a></p>
+                            <p><span>6.&nbsp;</span>在法律允许范围内腾讯动漫对本次活动保留最终解释权。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </body>
+
+	<!-- 弹出层test1 Start-->
+<div class="dialog" id="tc1" style="display:none">
+    <div class="dia-con">
+	<p class="tc_k" id="cdk1"></p>
+	<p class="tc_k" id="cdk2"></p>
+	<p class="tc_k" id="cdk3"></p>
+	<a href="javascript:void(0);" class="tc_btn" id="duihuan" stats="click.duihuan">立即兑换</a>
+	</div>
+    <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">×</a>
+</div>
+<!-- 弹出层test1 End-->
+	<script src="http://ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+
+<script>
+var pt_logout={ret:0,appDomain:"",mainDomain:"",httpWhiteDomain:{"qq.com":1,"soso.com":1,"paipai.com":1,"tenpay.com":1,"taotao.com":1,"tencent.com":1,"oa.com":1,"webdev.com":1,"3366.com":1,"imqq.com":1,"pengyou.com":1,"qplus.com":1,"qzone.com":1,"server.com":1,"myapp.com":1,"kuyoo.cn":1,"weiyun.com":1,"wechatapp.com":1,"51buy.com":1,"yixun.com":1,"qcloud.com":1,"wechat.com":1,"weishi.com":1},getCookie:function(b){var a=document.cookie.match(new RegExp("(^| )"+b+"=([^;]*)(;|$)"));return !a?"":decodeURIComponent(a[2])},delCookie:function(a,b,c){document.cookie=a+"=; expires=Mon, 26 Jul 1997 05:00:00 GMT; path="+(c?c:"/")+"; "+(b?("domain="+b+";"):"")},jsonp:function(b){var a=document.createElement("script");a.setAttribute("src",b);document.getElementsByTagName("head")[0].appendChild(a);a.onerror=function(){a.onerror=null;pt_logout.set_ret(0,"")}},nlog:function(h,d,g){if(Math.random()<=(g||1)){var a="http://badjs.qq.com/cgi-bin/js_report?";if(location.protocol=="https:"){a="https://ssl.qq.com//badjs/cgi-bin/js_report?"}var e=location.href;var f=encodeURIComponent(h+"|_|"+e+"|_|"+window.navigator.userAgent);var c=a+"bid=110&level=2&mid="+d+"&msg="+f+"&v="+Math.random();var b=new Image();b.src=c}},init:function(){var a=location.hostname.match(/\w*\.(com|cn)$/);pt_logout.mainDomain=a?a[0]:"";if(!pt_logout.httpWhiteDomain[pt_logout.mainDomain]){pt_logout.nlog("鍏徃澶栭儴鍩熷悕寮曠敤logout","350448")}var b=location.hostname.match(/\w+(\.\w+){2}$/);pt_logout.appDomain=b?b[0]:"";if(pt_logout.mainDomain!="qq.com"){pt_logout.appDomain=pt_logout.mainDomain}pt_logout.nlog("logout pv","365716",0.05)},getLogoutUrl:function(){var f=pt_logout.getCookie("pt4_token");var a=pt_logout.getCookie("skey");var c=pt_logout.time33(a);var b=pt_logout.getCookie("ptcz");var e=pt_logout.hash33(b);var d="";d=((location.protocol=="https:")?"https://ssl.":"http://")+"ptlogin2."+pt_logout.mainDomain+"/logout?";d+=("pt4_token="+f+"&pt4_hkey="+c+"&pt4_ptcz="+e+"&deep_logout=1");return d},time33:function(d){var c=0;for(var a=0,b=d.length;a<b;a++){c=c*33+d.charCodeAt(a)}return c%4294967296},hash33:function(d){var c=0;for(var a=0,b=d.length;a<b;++a){c+=(c<<5)+d.charCodeAt(a)}return c&2147483647},clearCookie:function(a){a=a||pt_logout.appDomain;pt_logout.delCookie("p_uin",a);pt_logout.delCookie("p_skey",a);pt_logout.delCookie("p_luin",a);pt_logout.delCookie("p_lskey",a);pt_logout.delCookie("pt4_token",a);pt_logout.delCookie("pt_mbkey",pt_logout.mainDomain||"qq.com");if(pt_logout.appDomain!=""&&pt_logout.getCookie("skey_m")!=""){pt_logout.delCookie("uin_m",pt_logout.appDomain);pt_logout.delCookie("skey_m",pt_logout.appDomain)}},set_ret:function(d,b){try{var a=pt_logout.getCookie("pt4_token");pt_logout.clearCookie(b);if(d>0){}else{pt_logout.delCookie("uin",pt_logout.mainDomain);pt_logout.delCookie("skey",pt_logout.mainDomain);pt_logout.nlog("logout fail","285851",0.1)}if(typeof pt_logout.callback=="function"){pt_logout.callback(2)}if(b!=""&&b!=pt_logout.appDomain){pt_logout.nlog("domain unsame:n="+d+":pt4_token="+a+":cgi_domain="+b+":js_domain="+pt_logout.appDomain,"285852",0.1)}}catch(c){return}},logout:function(e){pt_logout.init();var d=pt_logout.getCookie("pt4_token");var a=pt_logout.getCookie("skey");var b=pt_logout.getCookie("ptcz");if(typeof e=="function"){pt_logout.callback=e}var c=pt_logout.getLogoutUrl();if(!d&&!a&&!b){if(typeof e=="function"){e(2)}pt_logout.nlog("logout without cookie",365715)}else{pt_logout.jsonp(c)}}};
+    function adaptVP(a) {
+        function c() {
+            var c, d;
+            return b.uWidth = a.uWidth ? a.uWidth : 640, b.dWidth = a.dWidth ? a.dWidth : window.screen.width || window.screen.availWidth, b.ratio = window.devicePixelRatio ? window.devicePixelRatio : 1, b.userAgent = navigator.userAgent, b.bConsole = a.bConsole ? a.bConsole : !1, a.mode ? (b.mode = a.mode, void 0) : (c = b.userAgent.match(/Android/i), c && (b.mode = "android-2.2", d = b.userAgent.match(/Android\s(\d+.\d+)/i), d && (d = parseFloat(d[1])), 2.2 == d || 2.3 == d ? b.mode = "android-2.2" : 4.4 > d ? b.mode = "android-dpi" : d >= 4.4 && (b.mode = b.dWidth > b.uWidth ? "android-dpi" : "android-scale")), void 0)
+        }
+        function d() {
+            var e, f, g, h, c = "", d = !1;
+            switch (b.mode) {
+                case"apple":
+                    f = (window.screen.availWidth * b.ratio / b.uWidth) / b.ratio;
+                    c = "width=" + b.uWidth + ",initial-scale=" + f + ",minimum-scale=" + f + ",maximum-scale=" + f + ",user-scalable=no";
+                    break;
+                case"android-2.2":
+                    a.dWidth || (b.dWidth = 2 == b.ratio ? 720 : 1.5 == b.ratio ? 480 : 1 == b.ratio ? 320 : .75 == b.ratio ? 240 : 480), e = window.screen.width || window.screen.availWidth, 320 == e ? b.dWidth = b.ratio * e : 640 > e && (b.dWidth = e), b.mode = "android-dpi", d = !0;
+                case"android-dpi":
+                    f = 160 * b.uWidth / b.dWidth * b.ratio, c = "target-densitydpi=" + f + ", width=" + b.uWidth + ", user-scalable=no", d && (b.mode = "android-2.2");
+                    break;
+                case"android-scale":
+                    c = "width=" + b.uWidth + ", user-scalable=no"
+            }
+            g = document.querySelector("meta[name='viewport']") || document.createElement("meta"), g.name = "viewport", g.content = c, h = document.getElementsByTagName("head"), h.length > 0 && h[0].appendChild(g)
+        }
+        function e() {
+            var a = "";
+            for (key in b)
+                a += key + ": " + b[key] + "; ";
+            alert(a)
+        }
+        if (a) {
+            var b = {uWidth: 0, dWidth: 0, ratio: 1, mode: "apple", userAgent: null, bConsole: !1};
+            c(), d(), b.bConsole && e()
+        }
+    }
+    ;
+    adaptVP({uWidth: 750});
+</script>
+</html><!--[if !IE]>|xGv00|9f1b1179d7869843bec0ab9897ad7db6<![endif]-->
