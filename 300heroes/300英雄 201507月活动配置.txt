@@ -1,0 +1,6 @@
+﻿序号	行为名称	    行为标记	行为ID	类型	权限	对象列表	 
+1	点击领取礼包	   get_packet	10166	功能	私有	common=普通礼包	
+
+
+eventId = 1043
+eventAid = pc_event_300heros
