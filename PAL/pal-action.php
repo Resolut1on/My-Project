@@ -195,11 +195,6 @@ class Event
                     echo json_encode(array("status" => 1, "cdkey" => $cdkeyArr["cdkey"]));
                     exit;
                 }
-                else if (!empty($cdkeyArr) && $cdkeyArr["ret"] == 3) 
-                {
-                    echo json_encode(array("status" => -100, "msg" => "访问受限！"));
-                    exit;
-                }
                 else
                 {
                     $feedBackMsg = '领取礼包发生错误！';
