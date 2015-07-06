@@ -419,6 +419,14 @@ class Event extends EventBase
         echo json_encode($resArr);
         exit;
     }   
+    
+    //开通vip
+    protected function openVip()
+    {
+        $this->checkEvent();
+        echo json_encode(array("status" => 1, "uin" => $this->uin));
+        exit;
+    }
 
     public function work()
     {
