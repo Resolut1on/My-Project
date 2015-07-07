@@ -1,0 +1,8 @@
+﻿序号	行为名称	行为标记	行为ID	类型	权限	对象列表	 
+1	    老友礼包	take	    	10170	功能	私有	old_packet=老友礼包	
+2	    普通礼包	get	        10171	功能	私有	common_packet=普通礼包	
+3	    开通VIP	open_vip	10172	VIP	私有	pc_event_cf201507=PC端CF活动开通VIP
+4	点击领取vip礼包	take_packet	10173	统计	私有	vip_packet=vip礼包
+
+eventId = 1045
+eventAid = pc_event_cf201507

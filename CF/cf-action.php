@@ -15,7 +15,7 @@ class Event extends EventBase
     private $endDateTime = "2015-07-19 23:25:59";
     private $eventAid = "pc_event_cf201507";
     private $packetArr = array(
-        1 => array("actionId" => 10171, "name"=>"普通礼包", "action"=>"get", "object" => "common_packet"),
+        1 => array("actionId" => 10171, "name"=>"新手礼包", "action"=>"get", "object" => "common_packet"),
         2 => array("actionId" => 10173, "name"=>"vip礼包", "action"=>"take_packet", "object" => "vip_packet"),
         3 => array("actionId" => 10170, "name"=>"老友礼包", "action"=>"take", "object" => "old_packet"),
     );
@@ -216,27 +216,20 @@ class Event extends EventBase
         return $level;
     }
     
-
- 
-    //答题礼包
-    private function getAnswerPacket()
+    //新手礼包
+    private function getCommonPacket()
     {
         $this->checkEvent();
         $uin = $this->uin;
         $types = 1;
-        $replyCookieName = "cf20150714_{$types}";
-        $replyCookieValue = 2;
-        
-        $answerArr = array();
-                
-        //判断答题情况
-        $packetType = $this->getAnswerPacketType($answerArr);
-
+        $commonCookieName = "cf201507_{$types}";
+        $commonCookieValue = 1;
+               
         //1.通过cookie判断是否领取过礼包
-        $isGot = $this->getEventCookie($replyCookieName);
-        if (!empty($isGot) && $isGot == $replyCookieValue)
+        $isGot = $this->getEventCookie($commonCookieName);
+        if (!empty($isGot) && $isGot == $commonCookieValue)
         {
-            $msg = '亲，您已经领取过答题礼包啦！可以去看<a href="http://ac.qq.com/cf" style="color:#fe8d00;width:111px;display:inline;font-family:microsoft yahei;font-size:18px;text-decoration:underline" target="_blank">CF漫画</a>哦^-^';
+            $msg = '亲，您已经领取过新手礼包啦！';
             echo json_encode(array("status" => 0, "msg" => $msg));
             exit;
         }
@@ -248,7 +241,7 @@ class Event extends EventBase
         $gotArr = $this->getValuefromRedis($this->eventId, $action, $object, $uin);
         if (!empty($gotArr))
         {
-            $msg = '亲，您已经领取过答题礼包啦！可以去看<a href="http://ac.qq.com/cf" style="color:#fe8d00;width:111px;display:inline;font-family:microsoft yahei;font-size:18px;text-decoration:underline" target="_blank">CF漫画</a>哦^-^';
+            $msg = '亲，您已经领取过新手礼包啦！';
             echo json_encode(array("status" => 0, "msg" => $msg));
             exit;
         }
@@ -263,7 +256,7 @@ class Event extends EventBase
         
         //3.保存领取礼包数据到redis的列表中，离线发送礼包
         $actionId = $this->packetArr[$types]["actionId"];
-        $actionVol = $packetType;
+        $actionVol = "";
         $actionVal = $areaId;
         $reserve1 = Utils::GetClientIp();
         $reserve2 = "";
@@ -272,14 +265,85 @@ class Event extends EventBase
         if (!empty($retArr) && $retArr["ret"] == 2)
         {
             //写入数据到cookie和redis中
-            $this->setEventCookie($replyCookieName, $replyCookieValue);
+            $this->setEventCookie($commonCookieName, $commonCookieValue);
             $this->setValueToRedis($this->eventId, $action, $object, $uin, date("Y-m-d H:i:s"));
             echo '{"status": 1, "msg":"领取礼包成功，24小时内直接发放到绑定的游戏角色！"}';
         }
         else
         {
             $errMsg = '领取礼包发生错误！请点<a href="http://support.qq.com/write.shtml?fid=744" style="color:#fe8d00;width:111px;display:inline;font-family:microsoft yahei;font-size:18px;" target="_blank">【反馈建议】</a>投诉！';
-            echo json_encode(array("status"=>0, "msg"=>$errMsg));
+            echo json_encode(array("status"=> 0, "msg"=>$errMsg));
+        }
+        exit;
+    }
+    
+    //vip礼包
+    private function getVipPacket()
+    {
+        $this->checkEvent();
+        $uin = $this->uin;
+        $types = 2;
+        $vipCookieName = "cf201507_{$types}";
+        $vipCookieValue = 2;
+        $paramsArr = array('uin'=> $uin,'aid'=> $this->eventAid);
+                
+        //返回值是整型数值，代表vip开通的天数
+        $vipTotal = ServiceHelper::Call("event.isOpenVip", $paramsArr);
+
+        if ($vipTotal < (31 * 1))
+        {
+            echo json_encode(array('status' => -20, 'uin' => $uin, 'msg' => '您还没开通活动VIP!'));
+            exit;
+        }
+        
+        //1.通过cookie判断是否领取过礼包
+        $isGot = $this->getEventCookie($vipCookieName);
+        if (!empty($isGot) && $isGot == $vipCookieValue)
+        {
+            $msg = '亲，您已经领取过新手礼包啦！';
+            echo json_encode(array("status" => 0, "msg" => $msg));
+            exit;
+        }
+        
+        //2.通过redis判断是否领取过礼包
+        $action = $this->packetArr[$types]["action"];
+        $object = $this->packetArr[$types]["object"];
+        
+        $gotArr = $this->getValuefromRedis($this->eventId, $action, $object, $uin);
+        if (!empty($gotArr))
+        {
+            $msg = '亲，您已经领取过新手礼包啦！';
+            echo json_encode(array("status" => 0, "msg" => $msg));
+            exit;
+        }
+        
+        //2.判断是否选过大区
+        $areaId = intval($this->getAreaIdFromSession($uin));
+        if (empty($areaId))
+        {
+            //未选择游戏的大区角色
+            $this->gameArea();
+        }
+        
+        //3.保存领取礼包数据到redis的列表中，离线发送礼包
+        $actionId = $this->packetArr[$types]["actionId"];
+        $actionVol = "";
+        $actionVal = $areaId;
+        $reserve1 = Utils::GetClientIp();
+        $reserve2 = "";
+        $retArr = $this->addPacketToRedisList($actionId, $uin, $object, $actionVol, $actionVal, $reserve1, $reserve2);
+        
+        if (!empty($retArr) && $retArr["ret"] == 2)
+        {
+            //写入数据到cookie和redis中
+            $this->setEventCookie($vipCookieName, $vipCookieValue);
+            $this->setValueToRedis($this->eventId, $action, $object, $uin, date("Y-m-d H:i:s"));
+            echo '{"status": 1, "msg":"领取礼包成功，24小时内直接发放到绑定的游戏角色！"}';
+        }
+        else
+        {
+            $errMsg = '领取礼包发生错误！请点<a href="http://support.qq.com/write.shtml?fid=744" style="color:#fe8d00;width:111px;display:inline;font-family:microsoft yahei;font-size:18px;" target="_blank">【反馈建议】</a>投诉！';
+            echo json_encode(array("status"=> 0, "msg"=>$errMsg));
         }
         exit;
     }
@@ -289,7 +353,6 @@ class Event extends EventBase
     {
         $this->checkEvent();
         $uin = $this->uin;
-        print_r($uin);
         $types = 3;
         $backCookieName = "cf201507_{$types}";
         $backCookieValue = 1;
@@ -349,8 +412,8 @@ class Event extends EventBase
         }
         else
         {
-            $errMsg = '领取礼包发生错误！';
-            echo json_encode(array("status"=>0, "msg"=>$errMsg));
+            $errMsg = '领取礼包发生错误！请点<a href="http://support.qq.com/write.shtml?fid=744" style="color:#fe8d00;width:111px;display:inline;font-family:microsoft yahei;font-size:18px;" target="_blank">【反馈建议】</a>投诉！';
+            echo json_encode(array("status"=> 0, "msg"=>$errMsg));
         }
         exit;
     }
@@ -455,14 +518,18 @@ class Event extends EventBase
             case 'getRoleByAreaId':
                 //通过区域id获取角色
                 $this->getRoleByAreaId();
-                break;
-            case 'reply':
-                //答题礼包
-                $this->getAnswerPacket();
-                break;
+                break;            
             case 'open_vip':
                 //领取VIP礼包
                 $this->openVip();
+                break;
+            case 'getCommonPacket':
+                //新手礼包
+                $this->getCommonPacket();
+                break;
+            case 'getVipPacket':
+                //领取VIP礼包
+                $this->getVipPacket();
                 break;
             case 'getBackPacket':
                 //回流礼包

@@ -64,11 +64,6 @@ var Event = {
             });
         });
 
-
-        $("#openVip").unbind("click").bind("click", function () {
-            Event.openVip();
-        });
-
     },
     eventInfo: function (isLoad) {
         var uin = AC.Page.Core.uin;
@@ -127,13 +122,12 @@ var Event = {
 
     },
     openVip: function() {
-        var uin = AC.Page.Core.uin;
         var tokenkey = AC.Page.Core.token;
          $.ajax({
             type: 'post',
             url: "cf-action.php",
             dataType:"json",
-            data: {'action':'open_vip', 'tokenkey': tokenkey, 'uin': uin},
+            data: {'action':'open_vip', 'tokenkey': tokenkey},
             success: function(data) {
                 if (data.status == 1) {
                     Event.miniPay(Event.eventAid, uin);
