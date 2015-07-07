@@ -58,11 +58,11 @@
                             <li><img src="http://ac.gtimg.com/hd/cf201507/images/c1_pic2.jpg" width="142" height="82" alt="沙漠之鹰-暗炎（7天）"><p>沙漠之鹰-暗炎<br>（7天）</p></li>
                             <li><img src="http://ac.gtimg.com/hd/cf201507/images/c1_pic3.jpg" width="142" height="82" alt="M4A1-轻骑兵（7天）"><p>M4A1-轻骑兵<br>（7天）</p></li>
                         </ul>
-                        <div class="lb_btn">
+                        <div class="lb_btn lb_btn1">
                             <a href="javascript:void(0);" class="lb_lk active" title="立即领取" id="getCommonPacket">立即领取</a>
                             <a href="javascript:void(0);" class="lb_lk lb_lk1" title="已领取">已领取</a>
                         </div>
-                        <p class="lb_p">绑定角色的玩家即可领取惊奇礼包，单礼包单Q限领1次。</p>
+                        <p class="lb_p">注册并绑定了角色的玩家即可领取CF用户专属<br />礼包，本礼包每个QQ限领1次。</p>
                     </div>
                     <div class="tqlb_box">
                         <h2 class="lb_title">特权礼包<span>开通动漫VIP</span></h2>
@@ -73,10 +73,10 @@
                             <li class="tl_li"><span class="lb_jb"><em>随机</em></span><img src="http://ac.gtimg.com/hd/cf201507/images/c1_pic7.jpg" width="107" height="82" alt="黄金RPK"><p>黄金RPK（7天）</p></li>
                         </ul>
                         <div class="lb_btn lb_btn1">
-                            <a href="javascript:void(0);" class="lb_lk" title="立即领取">立即领取</a>
+                            <a href="javascript:void(0);" class="lb_lk" title="立即领取" id="getVipPacket">立即领取</a>
                             <a href="javascript:void(0);" class="lb_lk lb_lk1 active" title="已领取">已领取</a>
                         </div>
-                        <p class="lb_p">在该页面新开通/续费动漫VIP会员1个月(10Q币)的用户，即可<br>直接领取价值XX元的礼包。</p>
+                        <p class="lb_p">在该页面新开通/续费动漫VIP会员1个月(10Q币)的用户，即可<br>获得此礼包。牛仔帽与黄金枪为随机获得物品。</p>
                     </div>
                 </div>
                 <div class="lb_box lb_box2">
@@ -87,7 +87,7 @@
                         <li><img src="http://ac.gtimg.com/hd/cf201507/images/c1_pic10.jpg" width="238" height="85" alt="ScarLight-狼牙（7天）"><p>ScarLight-狼牙（7天）</p></li>
                     </ul>
                     <div class="lb_btn lb_btn2">
-                        <a href="javascript:void(0);" class="lb_lk active" title="立即领取">立即领取</a>
+                        <a href="javascript:void(0);" class="lb_lk active" title="立即领取" id="getBackPacket">立即领取</a>
                         <a href="javascript:void(0);" class="lb_lk lb_lk1" title="已领取">已领取</a>
                     </div>
                     <div class="r"></div>
@@ -104,16 +104,18 @@
                 <div class="c3_box">
                     <div class="c3_l">
                         <div class="c3_pic">
-                            <img src="http://ac.gtimg.com/hd/cf201507/images/c3_pic1.jpg" width="441" height="168" alt="CF漫画站">
-                            <span class="mask"></span>
-                            <p class="c3_p">CF漫画站</p>
-                            <a href="http://ac.qq.com/cf/" target="_blank" class="c3_img_lk" title="CF漫画站">CF漫画站</a>
+                            <a href="http://ac.qq.com/cf/" target="_blank" class="c3_img_lk" title="CF漫画站">
+                                <img src="http://ac.gtimg.com/hd/cf201507/images/c3_pic1.jpg" width="441" height="168" alt="CF漫画站">
+                                <span class="mask"></span>
+                                <p class="c3_p">CF漫画站</p>
+                            </a>
                         </div>
                         <div class="c3_pic c3_pic1">
-                            <img src="http://ac.gtimg.com/hd/cf201507/images/c3_pic2.jpg" width="280" height="148" alt="惊奇先生漫画">
-                            <span class="mask"></span>
-                            <p class="c3_p">惊奇先生漫画</p>
-                            <a href="http://ac.qq.com/Comic/comicInfo/id/511915/" target="_blank" class="c3_img_lk" title="惊奇先生漫画">惊奇先生漫画</a>
+                            <a href="http://ac.qq.com/Comic/comicInfo/id/511915/" target="_blank" class="c3_img_lk" title="惊奇先生漫画">
+                                <img src="http://ac.gtimg.com/hd/cf201507/images/c3_pic2.jpg" width="280" height="148" alt="惊奇先生漫画">
+                                <span class="mask"></span>
+                                <p class="c3_p">惊奇先生漫画</p>
+                            </a>
                         </div>
                         <a href="http://ac.qq.com/Comic/comicInfo/id/511915/" target="_blank" class="c3_btn" title="阅读章节">阅读章节</a>
                         <a href="http://ac.qq.com/Cartoon/detail/id/3107/" target="_blank" class="c3_btn c3_btn1" title="精彩动画">精彩动画</a>
@@ -193,6 +195,5 @@
         
         <script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
         <script src="http://ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
-        <script src="http://ossweb-img.qq.com/images/js/comm/assess.min.js"></script>
     </body>
 </html>

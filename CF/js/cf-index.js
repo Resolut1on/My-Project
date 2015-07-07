@@ -1,6 +1,6 @@
 var Event = {
-    eventId: 1038,
-    eventAid: 'pc_event_jlz20150623',
+    eventId: 1045,
+    eventAid: 'pc_event_cf201507',
     eventName: 'cf201507',
     init: function (isLoad) {
         AC.Page.LoadUserBaseInfo(1);
@@ -32,12 +32,16 @@ var Event = {
             AC.Page.showLogin(location.pathname);
         });
 
+        $("#getCommonPacket").unbind("click").bind("click", function () {
+            Event.getPacketDetail(1);
+        });
+        
         $("#getVipPacket").unbind("click").bind("click", function () {
             Event.getPacketDetail(2);
         });
 
-        $("#getCommonPacket").unbind("click").bind("click", function () {
-            Event.getPacketDetail(1);
+        $("#getBackPacket").unbind("click").bind("click", function () {
+            Event.getPacketDetail(3);
         });
         
         $("#openVip").unbind("click").bind("click",function(){
@@ -71,7 +75,7 @@ var Event = {
         var nickName = AC.Page.Core.nick;
         $.ajax({
             type: 'post',
-            url: 'http://ac.qq.com/event/jlz/jlz-action.php',
+            url: 'cf-action.php',
             dataType: 'json',
             data: {'action': 'event_info', 'uin': uin, 'nickname': nickName},
             success: function (data) {
@@ -90,23 +94,23 @@ var Event = {
             }
         });
     },
-    getPacketDetail: function (packetType) {
+    getPacketDetail: function (packetType) { 
         
         var uin = AC.Page.Core.uin;
         var tokenkey = AC.Page.Core.token;
-        console.log(uin);
-        console.log(tokenkey);
         if (packetType == 1 || packetType == 2) {
             var action = "";
             if (packetType == 1) {
                 action = "getCommonPacket";
             } else if (packetType == 2) {
                 action = "getVipPacket";
+            } else if (packetType == 2) {
+                action = 'getBackPacket';
             }
 
             $.ajax({
                 type: 'post',
-                url: "http://ac.qq.com/event/jlz/jlz-action.php",
+                url: "cf-action.php",
                 dataType: "json",
                 data: {'action': action, 'tokenkey': tokenkey},
                 success: function (data) {
@@ -124,14 +128,15 @@ var Event = {
     },
     openVip: function() {
         var uin = AC.Page.Core.uin;
+        var tokenkey = AC.Page.Core.token;
          $.ajax({
             type: 'post',
             url: "cf-action.php",
             dataType:"json",
-            data: {'action':'open_vip'},
+            data: {'action':'open_vip', 'tokenkey': tokenkey, 'uin': uin},
             success: function(data) {
                 if (data.status == 1) {
-                    Event.miniPay(eventAid, uin);
+                    Event.miniPay(Event.eventAid, uin);
                 } else {
                     EventCommon.popLotteryWin(data.status, data.msg, Event.eventAid, uin);
                 }
@@ -177,10 +182,7 @@ var Event = {
 
 $(function () {
 
-    Event.init(true);
-
-    pluginAssess.init();
-    
+    Event.init(true);  
 //    showDialog.show('dialog_bd');
 
     //头部视频
