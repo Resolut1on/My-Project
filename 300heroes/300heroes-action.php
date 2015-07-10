@@ -291,6 +291,14 @@ class Event extends EventBase
         
         return !empty($retArr) ? json_decode($retArr, true) : array();
     }
+    
+    //开通vip
+    protected function openVip()
+    {
+        $this->checkEvent();
+        echo json_encode(array("status" => 1, "uin" => $this->uin));
+        exit;
+    }
 
     private function is_vip()
     {
@@ -313,6 +321,10 @@ class Event extends EventBase
             case 'getVipPacket':
                 //领取VIP礼包
                 $this->getVipPacket();
+                break;
+            case 'open_vip':
+                //领取VIP礼包
+                $this->openVip();
                 break;
             case 'getCommonPacket':
                 //领取动漫专属福利

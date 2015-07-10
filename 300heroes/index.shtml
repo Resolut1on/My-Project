@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" id="index">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="utf-8" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Keywords" content="漫画,动画,卡通,原创动漫,漫画网,在线漫画" />
+<meta name="Description" content="腾讯动漫发行平台，中国最大最权威的正版动漫网站。" />
+<meta name="renderer" content="webkit|ie-comp|ie-stand" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<title>300英雄活动 - 腾讯动漫</title>
+<link href="http://ac.gtimg.com/media/images/favicon.ico" rel="shortcut icon" type="image/x-icon" /><!-- 站点图标 -->
+<link rel="stylesheet" type="text/css" href="http://ac.gtimg.com/hd/300heroes/css/300heroes-index.css?v=20150313" media="screen" /><!-- 样式文件 -->
+</head>
+<body>
+    <!--头部导航条开始-->
+    <!--#include virtual='/include/nav_event.inc' -->
+<div class="main" id="main">
+    <div class="pageBg">
+        <div class="page1"></div>
+        <div class="page2"></div>
+        <div class="page3"></div>
+        <div class="page4"></div>
+    </div>
+    <div class="pageContent_wp">
+        <div class="pageContent">
+            <div class="mod-logo">
+                <a class="logo1" href="http://300.jumpw.com/"></a>
+                <a class="logo2" href="http://ac.qq.com/"></a>
+            </div>
+
+            <!--头部四个按钮部分-->
+            <div class="mod-btnList">
+                <a href="http://300.jumpw.com/"><img src="http://ac.gtimg.com/hd/300heroes/images/button1.png"></a>
+                <a href="http://300hero.download.jumpwgame.com/client/300_v0.2.387.zip">
+                    <img src="http://ac.gtimg.com/hd/300heroes/images/button2.png"></a>
+                <a href="#gift"><img src="http://ac.gtimg.com/hd/300heroes/images/button3.png"></a>
+                <a href="http://activity.jumpw.com/cdk/pwd.jsp"><img src="http://ac.gtimg.com/hd/300heroes/images/button4.png"></a>
+            </div>
+            <!--登录及说明文字部分-->
+            <div class="mod-login">
+                <p>入宅永无悔，动漫一生推!《300英雄》中的英雄以二次元世界中的各种超人气动漫角色为主，玩家可打破次元界限，穿越于无限的二次元时空中，享受时下最精致刺激、趣味无穷的动漫娱乐狂欢盛宴!</p>
+
+                <div class="login" id="unlogin">
+                    您好，请
+                    <a href="javascript:void(0);" class="btn-login" id="dologin">【登录QQ】</a>
+                </div>
+                <div class="logout" id="logined" style="display: none;">
+                    您好
+                    <span class="userName" id="login_qq_span">最多六个字符</span>
+                    <a href="javascript:void(0);" class="btn-logout" id="dologout">【退出】</a>
+                </div>
+            </div>
+            <!--新手礼包-->
+            <div class="mod-gift" id="gift" name="gift">
+                <div class="lay-box">
+                    <img src="http://ac.gtimg.com/hd/300heroes/images/gift11.png">
+                    <a class="btn-gift1">立即领取</a>
+                </div>
+                <div class="lay-box">
+                    <img src="http://ac.gtimg.com/hd/300heroes/images/gift22.png">
+                    <a class="btn-gift2">立即领取</a>
+                </div>
+            </div>
+            <!--活动规则-->
+            <div class="mod-rule">
+                <img src="http://ac.gtimg.com/hd/300heroes/images/rule3.png"/>
+                <ul>
+                    <li>
+                        <span>1</span>活动时间：2015.7.14——2015.7.20
+                    </li>
+                    <li>
+                        <span>2</span>新兵礼包领取规则：登录QQ后即可领取
+                    </li>
+                    <li>
+                        <span>3</span>特权礼包领取规则：登陆后，QQ账号为腾讯动漫VIP的用户即可领取礼包
+                    </li>
+                    <li>
+                        <span>4</span>游戏道具礼包将以CDK的形式发放，请前往
+                        <a href="http://activity.jumpw.com/cdk/pwd.jsp">兑换界面</a>
+                                      进行兑换
+                    </li>
+                    <li>
+                        <span>5</span>本次活动最终解释权归腾讯动漫所有，如果您遇到问题可以通过官方进行
+                        <a href="http://support.qq.com/write.shtml?fid=744">意见反馈</a>
+                    </li>
+                </ul>
+            </div>
+            <!--新皮肤登场-->
+            <div class="mod-skin">
+                <img class="mod-title" src="http://ac.gtimg.com/hd/300heroes/images/rule4.png"/>
+                <ul>
+                    <li>
+                        <a href="http://300.jumpw.com/">
+                            <img class="skinImg" src="http://ac.gtimg.com/hd/300heroes/images/skin1.png" alt=""/>
+                            <img class="skinOver" src="http://ac.gtimg.com/hd/300heroes/images/over.png" alt=""/>
+
+                            <div class="over">
+                                <span class="over-title">莉莉安娜</span>
+                                <span class="over-content">舰队统帅之莉莉安娜，祝你们好运，小子们。优雅而华丽地掠夺，这便是我的美学啊。因为骚扰大陆近海一带而恶名远播的海盗船长莉莉安娜。</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://300.jumpw.com/">
+                            <img class="skinImg" src="http://ac.gtimg.com/hd/300heroes/images/skin2.png" alt=""/>
+                            <img class="skinOver" src="http://ac.gtimg.com/hd/300heroes/images/over.png" alt=""/>
+
+                            <div class="over">
+                                <span class="over-title">伊卡洛斯</span>
+                                <span class="over-content" style="margin-top: 50px">伊卡洛斯潘多拉，神界的空战女王，定位ADC，呆萌巨乳让她成为实力与人气颇高的角色。</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="li_right">
+                        <a href="http://300.jumpw.com/">
+                            <img class="skinImg" src="http://ac.gtimg.com/hd/300heroes/images/skin3.png" alt=""/>
+                            <img class="skinOver" src="http://ac.gtimg.com/hd/300heroes/images/over.png" alt=""/>
+
+                            <div class="over">
+                                <span class="over-title">朱里</span>
+                                <span class="over-content">诸葛亮恋姬无双朱里，萌化的诸葛老村夫化身天才军师萝莉。作为团战型法师，能扰乱战场的同时拥有不俗的伤害，俗称三国老流氓！</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--动漫VIP特权-->
+            <div class="mod-VIP">
+                <img src="http://ac.gtimg.com/hd/300heroes/images/rule5.png"/>
+
+                <div class="lay-box">
+                    <img src="http://ac.gtimg.com/hd/300heroes/images/vip_privilege.png">
+                    <a class="vipLink1" href="http://ac.qq.com/Comic/ComicInfo/id/522473"></a>
+                    <a class="vipLink2" href="http://ac.qq.com/Comic/ComicInfo/id/512742"></a>
+                </div>
+                <a class="openVIP" id="openVip">
+                    点击开通VIP
+                </a>
+            </div>
+            <!--热门漫画推荐-->
+            <div class="mod-recommend">
+                <img class="mod-title" src="http://ac.gtimg.com/hd/300heroes/images/rule6.png"/>
+
+                <div class="lay-tr">
+                    <a href="http://ac.qq.com/Charge">更多漫画>></a>
+                </div>
+
+                <div class="comicList">
+                    <ul>
+                        <li>
+                            <a href="http://ac.qq.com/Comic/comicInfo/id/518913">
+                                <img class="comicCover" src="http://ugc.qpic.cn/manhua_cover/0/19_15_46_47cb742242b25a3e597fba1b1e40ff3f.jpg/0" alt=""/>
+                            </a>
+                            <span class="comicTitle">九鼎记</span>
+                            <span class="comicType">玄幻</span>
+                            <span class="comicType">武侠</span>
+                            <span class="comicType">动作</span>
+                        </li>
+                        <li>
+                            <a href="http://ac.qq.com/Comic/ComicInfo/id/459728">
+                                <img class="comicCover" src="http://ugc.qpic.cn/manhua_cover/0/17_09_58_c7e4ee015d24ba461cb46562be27a79c.jpg/0" alt=""/>
+                            </a>
+                            <span class="comicTitle">乌龙院大长篇</span>
+                            <span class="comicType">生活</span>
+                            <span class="comicType">武侠</span>
+                            <span class="comicType">搞笑</span>
+                        </li>
+                        <li>
+                            <a href="http://ac.qq.com/Comic/comicInfo/id/512742">
+                                <img class="comicCover" src="http://ugc.qpic.cn/manhua_cover/0/23_15_30_77af7340d9609a3cde27b1c5a1760c25.jpg/0" alt=""/>
+                            </a>
+                            <span class="comicTitle">斗罗大陆</span>
+                            <span class="comicType">玄幻</span>
+                            <span class="comicType">热血</span>
+                            <span class="comicType">冒险</span>
+                        </li>
+                        <li>
+                            <a href="http://ac.qq.com/Comic/comicInfo/id/531040">
+                                <img class="comicCover" src="http://ugc.qpic.cn/manhua_cover/0/26_15_22_3b0efbe670174660e04fd818f6920f17.jpg/0" alt=""/>
+                            </a>
+                            <span class="comicTitle">斗破苍穹</span>
+                            <span class="comicType">魔幻</span>
+                            <span class="comicType">热血</span>
+                            <span class="comicType">动作</span>
+                        </li>
+                        <li>
+                            <a href="http://ac.qq.com/Comic/comicInfo/id/522337">
+                                <img class="comicCover" src="http://ugc.qpic.cn/manhua_cover/0/22_11_12_7b6f89b970f6161ca4e621ec8c0cb77e.jpg/0" alt=""/>
+                            </a>
+                            <span class="comicTitle">今天开始做女神</span>
+                            <span class="comicType">魔幻</span>
+                            <span class="comicType">都市</span>
+                            <span class="comicType">搞笑</span>
+                        </li>
+                        <li>
+                            <a href="http://ac.qq.com/Comic/comicInfo/id/14363">
+                                <img class="comicCover" src="http://ugc.qpic.cn/manhua_cover/0/24_12_01_7e3c14ad3476607ae1cb1b4711fcf475.jpg/0" alt=""/>
+                            </a>
+                            <span class="comicTitle">七公主</span>
+                            <span class="comicType">都市</span>
+                            <span class="comicType">后宫</span>
+                            <span class="comicType">恋爱</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="mod-footer-wr">
+                <div class="mod-footer-main-wr">
+                    <div class="mod-footer-main ui-wm">
+                        <!-- 版权 -->
+                        <p class="mod-footer-info">
+                            <a href="http://ac.qq.com/sitemap.html" target="_blank" title="网站地图">网站地图</a>
+                            <a href="http://ac.qq.com/faq.shtml" target="_blank" title="站内帮助">站内帮助</a>
+                            <a href="http://support.qq.com/write.shtml?fid=744" target="_blank" title="反馈通道">反馈通道</a>
+                            <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1436253657&amp;site=qq&amp;menu=yes" title="官方客服" target="_blank">官方客服</a>
+                            <a href="http://e.t.qq.com/txycdmfxpt?pgv_ref=im.WBlog.guest&ptlang=2052" target="_blank">官方微博</a>
+                            <a href="http://mail.qq.com/cgi-bin/bookcol?colid=109" target="_blank">邮箱推荐</a>
+                            <a href="http://ac.qq.com/service.shtml" target="_blank">服务协议</a>
+                            <a href="http://ac.qq.com/copyright.shtml" target="_blank">侵权反馈指引</a>
+                            <span class="ui-pl10" style="color:#538abf">联系方式：
+                                <a class="mod-footer-mail" href="mailto:ac_copyright@qq.com">ac_copyright@qq.com</a>
+                            </span>
+                        </p>
+                        <p class="mod-footer-info">Copyright<span class="mod-copyright" style="color:#538abf">&copy;</span>1998 - <?php echo date('Y')?> Tencent. All Rights Reserved
+                        </p>
+
+                        <p class="mod-footer-info">腾讯公司 版权所有</p>
+                    </div>
+                </div>
+                <div class="mod-footer-border"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="http://ac.gtimg.com/media/js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="http://ac.gtimg.com/media/js/ac.base.js?v=20141120"></script>
+<script type="text/javascript" src="http://ac.gtimg.com/media/js/tx.func.js?v=1" ></script>
+<script type="text/javascript" charset="utf-8" src="http://imgcache.qq.com/bossweb/ipay/js/api/cashier.js"></script>
+<!--<script type="text/javascript" src="http://ac.gtimg.com/media/js/jquery.milo-min.js "></script>-->
+<script type="text/javascript" src="http://ac.gtimg.com/hd/300heroes/js/300heroes-index.js"></script>
+<script src="http://ac.gtimg.com/hd/300heroes/js/event.common.js" type="text/javascript"></script>
+<script src="http://pingjs.qq.com/tcss.ping.js" type="text/javascript"></script>
+
+</html>

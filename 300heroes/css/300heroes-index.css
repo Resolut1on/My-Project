@@ -1,0 +1,336 @@
+@charset "UTF-8";
+.pageContent .mod-logo .logo1, .pageContent .mod-logo .logo2, .pageContent .mod-btnList a, .pageContent .mod-rule span, .pageContent .mod-skin li, .pageContent .mod-recommend li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/*背景图部分*/
+.pageBg {
+  width: 100%; }
+  .pageBg div {
+    width: 100%;
+    background-position: center top; }
+  .pageBg .page1 {
+    height: 873px;
+    background-image: url("../images/pageBg_02.jpg"); }
+  .pageBg .page2 {
+    height: 803px;
+    background-image: url("../images/pageBg_03.jpg"); }
+  .pageBg .page3 {
+    height: 831px;
+    background-image: url("../images/pageBg_04.jpg"); }
+  .pageBg .page4 {
+    height: 974px;
+    background-image: url("../images/pageBg_05.jpg"); }
+
+.pageContent_wp {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3481px; }
+
+.pageContent {
+  margin: 0 auto;
+  width: 1100px;
+  position: relative;
+  z-index: 1;
+  padding-top: 487px; }
+  .pageContent .mod-logo {
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .pageContent .mod-logo .logo1, .pageContent .mod-logo .logo2 {
+      width: 150px;
+      height: 100px; }
+  .pageContent .mod-btnList a {
+    margin-right: 30px; }
+  .pageContent .mod-login {
+    font-size: 14px;
+    line-height: 24px;
+    color: #92caf8;
+    width: 717px; }
+  .pageContent .mod-gift {
+    overflow: hidden;
+    margin-top: 45px;
+    height: 570px; }
+    .pageContent .mod-gift:after {
+      height: 0px;
+      display: block;
+      clear: both; }
+    .pageContent .mod-gift .lay-box {
+      float: left;
+      margin-right: 10px;
+      position: relative; }
+      .pageContent .mod-gift .lay-box .btn-gift1, .pageContent .mod-gift .lay-box .btn-gift2 {
+        color: #521c00;
+        font-size: 36px;
+        position: absolute;
+        background-image: url("../images/btn1-normal.png");
+        background-position: left top;
+        background-repeat: no-repeat;
+        width: 365px;
+        height: 63px;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 50px;
+        left: 86px;
+        top: 400px; }
+        .pageContent .mod-gift .lay-box .btn-gift1:hover, .pageContent .mod-gift .lay-box .btn-gift2:hover {
+          background-image: url("../images/btn1-hover.png"); }
+  .pageContent .mod-rule {
+    font-size: 18px;
+    color: #d0eaff;
+    margin-left: 360px;
+    height: 430px; }
+    .pageContent .mod-rule span {
+      width: 30px;
+      height: 24px;
+      background-image: url("../images/ruleicon.png");
+      background-position: left top;
+      vertical-align: middle;
+      text-align: left;
+      text-indent: 7px;
+      margin-right: 10px; }
+    .pageContent .mod-rule li {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      line-height: 24px;
+      vertical-align: middle; }
+    .pageContent .mod-rule a {
+      color: #3856f1;
+      text-decoration: underline; }
+  .pageContent .mod-skin {
+    height: 530px; }
+    .pageContent .mod-skin .mod-title {
+      margin: 0 auto;
+      display: block; }
+    .pageContent .mod-skin li {
+      width: 330px;
+      height: 330px;
+      margin-right: 50px;
+      position: relative;
+      overflow: hidden; }
+    .pageContent .mod-skin li.li_right {
+      margin-right: 0; }
+    .pageContent .mod-skin .skinOver {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 3; }
+    .pageContent .mod-skin .over {
+      width: 330px;
+      height: 330px;
+      position: absolute;
+      z-index: 2;
+      background-image: url("../images/cover.png");
+      left: 0;
+      top: 220px; }
+      .pageContent .mod-skin .over .over-title {
+        font-size: 24px;
+        color: white;
+        display: block;
+        text-align: center;
+        margin-top: 50px; }
+      .pageContent .mod-skin .over .over-content {
+        font-size: 14px;
+        line-height: 24px;
+        color: white;
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 30px; }
+  .pageContent .mod-VIP {
+    height: 550px; }
+    .pageContent .mod-VIP .lay-box {
+      position: relative; }
+      .pageContent .mod-VIP .lay-box .vipLink1, .pageContent .mod-VIP .lay-box .vipLink2 {
+        width: 80px;
+        height: 105px;
+        display: block;
+        position: absolute; }
+      .pageContent .mod-VIP .lay-box .vipLink1 {
+        left: 13px;
+        top: 59px; }
+      .pageContent .mod-VIP .lay-box .vipLink2 {
+        left: 103px;
+        top: 59px; }
+    .pageContent .mod-VIP img {
+      display: block;
+      margin: 0 auto; }
+    .pageContent .mod-VIP .openVIP {
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-image: url("../images/btn2-normal.png");
+      text-align: center;
+      display: block;
+      width: 355px;
+      height: 109px;
+      color: #521c00;
+      font-size: 36px;
+      line-height: 109px;
+      margin: 0 auto;
+      margin-top: 30px;
+      text-decoration: none; }
+      .pageContent .mod-VIP .openVIP:hover {
+        background-image: url("../images/btn2-hover.png"); }
+  .pageContent .mod-recommend .mod-title {
+    display: block;
+    margin: 0 auto; }
+  .pageContent .mod-recommend .lay-tr {
+    text-align: right;
+    padding-bottom: 10px; }
+    .pageContent .mod-recommend .lay-tr a {
+      color: #ffaa00;
+      font-size: 18px; }
+  .pageContent .mod-recommend .comicList {
+    width: 1100px;
+    height: 330px;
+    background-color: #141830; }
+  .pageContent .mod-recommend ul {
+    text-align: center; }
+  .pageContent .mod-recommend li {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 36px;
+    text-align: left; }
+    .pageContent .mod-recommend li a:hover .comicCover {
+      border: 2px solid white; }
+  .pageContent .mod-recommend .comicCover {
+    display: block;
+    border: 2px solid #1b7fa8;
+    width: 136px;
+    height: 176px; }
+  .pageContent .mod-recommend .comicTitle {
+    display: block;
+    color: #d0eaff;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .pageContent .mod-recommend .comicType {
+    color: #5a97cf;
+    font-size: 15px;
+    margin-right: 5px; }
+
+  
+  /**footer **/
+/**footer **/
+.mod-footer-wr{
+    position: relative;
+    padding-top: 34px;
+}
+.mod-footer-border{
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 10px;
+
+}
+.mod-footer-main-wr{
+    height: 80px;
+
+}
+.mod-footer-main .mod-footer-info,
+.mod-footer-main .mod-footer-info a{
+    line-height: 22px;
+    text-align: center;
+    color: #538abf;
+    margin: 0 5px;
+}
+.mod-footer-main a:hover{
+    text-decoration: underline;
+}
+.mod-footer-mail{
+    margin-left: 0!important;
+}
+.mod-copyright{
+    font-family: Arial;
+    font-size: 11px;
+    margin: 0 3px;
+}
+
+/*** 标签 ***/
+.mod-tags-wr{
+	position:relative;
+	z-index:2;
+}
+.mod-tags-list{
+    height: 42px;
+    line-height: 42px;
+	overflow:hidden;
+}
+.mod-tags-list li{
+    float: left;
+    margin-right: 18px;
+}
+.mod-tags-list li.last{
+	float:right;
+	margin-right:0;
+}
+.mod-tags-list a{
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #666;
+}
+.mod-tags-list .ft-red a{
+	color:#e15a00;
+}
+.mod-tags-list a:hover{
+    color: #fa8729;
+}
+.mod-tags-all{
+    display: block;
+    width: 88px;
+    height: 32px;
+    margin-top: 6px;
+    line-height: 32px;
+    text-align: left;
+    border-radius: 2px;
+}
+.mod-tags-all:hover{
+    color: #538abf!important;
+}
+.mod-tags-icon{
+    float: left;
+    width: 13px;
+    height: 10px;
+    margin: 12px 5px 0 11px;
+}
+.mod-tags-all:hover .mod-tags-icon{
+    background-position: -154px -373px;
+}
+
+
+body{
+	line-height:1.4;
+	background:white;
+}
+body,input,textarea,select{
+	font-size:12px;
+	color:#656565;
+	font-family:"Microsoft Yahei", "Tahoma", "SimSun";
+}
+body,h1,h3,h4,p,ul,ol{
+	margin:0;
+}
+ul,ol{
+	padding-left:0;
+	list-style-type:none;
+}
+a
+{
+    text-decoration:none;
+    cursor:pointer;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+/*image with no-border*/
+a img{border:0;}
+
+a:visited {
+	color:inherit;
+}
+/*����webkit�ں˵�ѡ����Ч��*/
+input,button,select,textarea{outline:none}
