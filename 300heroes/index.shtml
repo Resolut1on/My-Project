@@ -14,9 +14,10 @@
 <link rel="stylesheet" type="text/css" href="http://ac.gtimg.com/hd/300heroes/css/300heroes-index.css?v=20150313" media="screen" /><!-- 样式文件 -->
 </head>
 <body>
+    
+<div class="main" id="main">
     <!--头部导航条开始-->
     <!--#include virtual='/include/nav_event.inc' -->
-<div class="main" id="main">
     <div class="pageBg">
         <div class="page1"></div>
         <div class="page2"></div>
@@ -56,11 +57,11 @@
             <div class="mod-gift" id="gift" name="gift">
                 <div class="lay-box">
                     <img src="http://ac.gtimg.com/hd/300heroes/images/gift11.png">
-                    <a class="btn-gift1">立即领取</a>
+                    <a class="btn-gift1" id="getCommonPacket" stats="click.common_packet">立即领取</a>
                 </div>
                 <div class="lay-box">
                     <img src="http://ac.gtimg.com/hd/300heroes/images/gift22.png">
-                    <a class="btn-gift2">立即领取</a>
+                    <a class="btn-gift2" id="getVipPacket" stats="click.vip_packet">立即领取</a>
                 </div>
             </div>
             <!--活动规则-->

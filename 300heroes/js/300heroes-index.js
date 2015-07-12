@@ -102,7 +102,7 @@ var Event = {
                 type: 'post',
                 url: "300heroes-action.php",
                 dataType: "json",
-                data: {'action': action, 'tokenkey': tokenkey},
+                data: {'action': action, 'tokenkey': tokenkey , 'uin': uin},
                 success: function (data) {
                     if (data.status == 1) {
                         //礼包领取、兑换
