@@ -151,7 +151,7 @@
                 <a href="javascript:showDialog.hide();" class="dia_btn" title="确定返回">确定返回</a>
             </div>
         </div>
-        <div class="dialog_bd dialog" id="select_area">
+        <div class="dialog_bd dialog" id="dialog_bd">
             <div class="dia_hd"><a href="javascript:showDialog.hide();" class="dia_close"></a></div>
             <div class="dia_c">
                 <h3 class="dia_title">选择绑定角色</h3>

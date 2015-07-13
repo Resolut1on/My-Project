@@ -27,7 +27,7 @@ class Event extends EventBase
     }
    
     //验证是否登录
-    protected function checkLogin() 
+    protected function checkLogin()
     {
         $ptLoginInfo = $this->getLoginInfo();
         if (empty($ptLoginInfo))

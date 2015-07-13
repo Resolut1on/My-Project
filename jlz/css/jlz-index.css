@@ -113,7 +113,7 @@ html{overflow-x:hidden}
 .tc_btn{display:block;width:136px;height:34px;background:url(../images/btn2.png) no-repeat;margin:40px auto;text-align:center;font-size:18px;color:#10323e;line-height:34px;font-weight:bold;}
 #tc2 ul li{float:left;_display:inline;height:193px;margin-top:20px;margin-left:15px;}
 #tc2 ul li.one{width:160px;margin-top: -2px;}
-#tc2 ul li span{display:block;text-align:center;font-size:18px;font-weight:bold;}
+#tc2 ul li span{display:block;text-align:center;font-size:18px;font-weight:bold;margin-top:-8px;}
 #tc2 ul li i{font-style:normal;font-size:17px;display:block;margin-top:50px;}
 .logo1{float:left;width:137px;height:100px;_display:inline;text-indent:-9999px;background-image:url(about:blank);}
 .logo2{margin-left:0;}
