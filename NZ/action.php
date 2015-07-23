@@ -7,18 +7,18 @@ include '../EventBase.class.php';
 class Event extends EventBase
 {
     //活动后台配置，用于统计分析
-    private $eventId = 1038;
+    private $eventId = 1048;
     protected $uin = 0;
     protected $nickname = "";
     //活动变更修改项开始(js文件和礼包发送文件都得修改)
-    private $startDateTime = "2015-07-16 00:00:00";
-    private $endDateTime = "2015-08-16 23:59:59";
+    private $startDateTime = "2015-07-17 00:00:00";
+    private $endDateTime = "2015-07-31 23:59:59";
     //活动充值标识
-    private $eventAid = "pc_event_jlz20150623";
+    private $eventAid = "pc_event_nz201507";
     //actionId、action、object活动后台配置
     private $packetArr = array(
-        1 => array("actionId" => 10161, "name"=>"新手礼包", "mpId"=>"MA20150624175418557", "maxNum" => 400000,"action"=>"get_packet", "object" => "common"),
-        2 => array("actionId" => 10162, "name"=>"豪华特权礼包", "mpId"=>"MA20150624175846338", "maxNum" => 100000,"action"=>"take_packet", "object" => "vip_packet")
+        1 => array("actionId" => 10181, "name"=>"新手礼包", "mpId"=>"", "maxNum" => 400000, "action"=>"get", "object" => "common_packet"),
+        2 => array("actionId" => 10182, "name"=>"特权礼包", "mpId"=>"", "maxNum" => 400000, "action"=>"take_packet", "object" => "vip_packet")
     );
 
     public function __construct()
@@ -27,7 +27,7 @@ class Event extends EventBase
     }
    
     //验证是否登录
-    protected function checkLogin()
+    protected function checkLogin() 
     {
         $ptLoginInfo = $this->getLoginInfo();
         if (empty($ptLoginInfo))
@@ -94,72 +94,6 @@ class Event extends EventBase
         $cdkey = ServiceHelper::Call("event.getActionUserByRedis", $paramsArr);
         
         return !empty($cdkey) ? $cdkey : "";
-    }
-
-    //领取VIP礼包
-    protected function getVipPacket()
-    {
-        $this->checkEvent();
-        
-        $packetType = 2;
-        $uin = $this->uin;
-        $action = $this->packetArr[$packetType]["action"];
-        $object = $this->packetArr[$packetType]["object"];
-        $maxNum = $this->packetArr[$packetType]["maxNum"];
-        $mpId = $this->packetArr[$packetType]["mpId"];
-        $date = date("Y-m-d");
-        $clientIp = Utils::GetClientIp();
-        $clientIp = !empty($clientIp) ? $clientIp : "10.151.1.229";
-        $paramsArr = array('uin'=> $uin,'aid'=> $this->eventAid);
-
-        //返回值是整型数值，代表vip开通的天数
-        $vipTotal = ServiceHelper::Call("event.isOpenVip", $paramsArr);
-
-        if ($vipTotal < (31 * 1))
-        {
-            echo json_encode(array('status' => -20, 'uin' => $uin, 'msg' => '您还没开通活动VIP!'));
-            exit;
-        }
-        
-        //判断是否已经领取过礼包
-        $cdkey = $this->getEventCdkey($uin, $packetType);
-
-        if (!empty($cdkey))
-        {
-           $rs = array('status' => 1, 'msg' => '您已经领取过礼包了!', "cdkey" => $cdkey);
-           echo json_encode($rs);exit;   
-        }
-        else
-        {
-            //判断是否还有礼包剩余
-            $paramsArr = array('event_id' => $this->eventId, 'action' => $action, 'object' => $object);
-            $usedTotal = $this->getEventPacketTotal($paramsArr);
-
-            if ($usedTotal >= $maxNum)
-            {
-               echo json_encode(array('status' => -2, 'msg' => '已经领完'));
-               exit;
-            }
-            else
-            {
-               $cdkeyArr = $this->getCdkeyByMp($uin, $mpId, $clientIp);
-
-                if (!empty($cdkeyArr) && $cdkeyArr["ret"] == 2)
-                {
-                    $this->saveSuccessData($this->eventId, $action, $object, $uin, $date, $clientIp, $cdkeyArr['cdkey']);
-                    $paramsArr = array('event_id' => $this->eventId,'action' => $action,'object' => $object,'uin' => $uin, 'value' => $cdkeyArr["cdkey"]);
-                    ServiceHelper::Call("event.addActionUserByRedis", $paramsArr);
-                    echo json_encode(array("status" => 1, "cdkey" => $cdkeyArr["cdkey"]));
-                    exit;
-                }
-                else
-                {
-                    $feedBackMsg = '领取礼包发生错误！';
-                    echo json_encode(array("status" => -3, "msg"=> $feedBackMsg)) ;
-                    exit;
-                }
-            }
-        }
     }
     
     protected function getCommonPacket()
@@ -233,35 +167,73 @@ class Event extends EventBase
             }
        
     }
-    
-    //保存用户领取CDKEY的数据
-    private function saveSuccessData($eventId, $action, $object, $uin, $date, $clientIp, $action_val)
+
+    //领取VIP礼包
+    protected function getVipPacket()
     {
-        $paramsArr = array(
-            'event_id' => $eventId,
-            'action' => $action,
-            'object' => $object,
-            'uin' => $uin,
-            'reserve1' => $date,
-            'reserve2' => $clientIp,
-            'action_val' => $action_val
-        );
-        $retArr = ServiceHelper::Call("event.addAction", $paramsArr);
-        return $retArr;
+        $this->checkEvent();
+        
+        $packetType = 2;
+        $uin = $this->uin;
+        $action = $this->packetArr[$packetType]["action"];
+        $object = $this->packetArr[$packetType]["object"];
+        $maxNum = $this->packetArr[$packetType]["maxNum"];
+        $mpId = $this->packetArr[$packetType]["mpId"];
+        $date = date("Y-m-d");
+        $clientIp = Utils::GetClientIp();
+        $clientIp = !empty($clientIp) ? $clientIp : "10.151.1.229";
+        $paramsArr = array('uin'=> $uin,'aid'=> $this->eventAid);
+
+        //返回值是整型数值，代表vip开通的天数
+        $vipTotal = ServiceHelper::Call("event.isOpenVip", $paramsArr);
+
+        if ($vipTotal < (31 * 3))
+        {
+            echo json_encode(array('status' => -20, 'uin' => $uin, 'msg' => '您还没开通活动VIP!'));
+            exit;
+        }
+        
+        //判断是否已经领取过礼包
+        $cdkey = $this->getEventCdkey($uin, $packetType);
+
+        if (!empty($cdkey))
+        {
+           $rs = array('status' => 1, 'msg' => '您已经领取过礼包了!', "cdkey" => $cdkey);
+           echo json_encode($rs);exit;   
+        }
+        else
+        {
+            //判断是否还有礼包剩余
+            $paramsArr = array('event_id' => $this->eventId, 'action' => $action, 'object' => $object);
+            $usedTotal = $this->getEventPacketTotal($paramsArr);
+
+            if ($usedTotal >= $maxNum)
+            {
+               echo json_encode(array('status' => -2, 'msg' => '已经领完'));
+               exit;
+            }
+            else
+            {
+               $cdkeyArr = $this->getCdkeyByMp($uin, $mpId, $clientIp);
+
+                if (!empty($cdkeyArr) && $cdkeyArr["ret"] == 2)
+                {
+                    $this->saveSuccessData($this->eventId, $action, $object, $uin, $date, $clientIp, $cdkeyArr['cdkey']);
+                    $paramsArr = array('event_id' => $this->eventId,'action' => $action,'object' => $object,'uin' => $uin, 'value' => $cdkeyArr["cdkey"]);
+                    ServiceHelper::Call("event.addActionUserByRedis", $paramsArr);
+                    echo json_encode(array("status" => 1, "cdkey" => $cdkeyArr["cdkey"]));
+                    exit;
+                }
+                else
+                {
+                    $feedBackMsg = '领取礼包发生错误！';
+                    echo json_encode(array("status" => -3, "msg"=> $feedBackMsg)) ;
+                    exit;
+                }
+            }
+        }
     }
-    
-    /**
-     * mpboss平台获得得cdkey方法
-     * @param type $uin QQ号
-     * @param type $mpId 活动营销号
-     * @param type $clientIp 用户的ip
-     * 返回值：
-     * array(
-     *   "ret"=>2,
-     *   "msg"=>"XXXXXX",
-     *   "cdkey"=>"XXXXXXXXX"
-     * )
-     */
+       
     protected function getCdkeyByMp($uin, $mpId, $clientIp)
     {
         $params = array('uin'=>$uin, 'mpId'=>$mpId, 'clientIp'=>$clientIp);
@@ -299,7 +271,22 @@ class Event extends EventBase
         echo json_encode($resArr);
         exit;
     }
-    
+        
+    //保存用户领取CDKEY的数据
+    private function saveSuccessData($eventId, $action, $object, $uin, $date, $clientIp, $action_val)
+    {
+        $paramsArr = array(
+            'event_id' => $eventId,
+            'action' => $action,
+            'object' => $object,
+            'uin' => $uin,
+            'reserve1' => $date,
+            'reserve2' => $clientIp,
+            'action_val' => $action_val
+        );
+        $retArr = ServiceHelper::Call("event.addAction", $paramsArr);
+        return $retArr;
+    }
     
     //保存用户的同IP地址看漫画的QQ号
     private function saveClientIPToRedis($eventId, $action, $object, $ip, $value)
@@ -328,17 +315,17 @@ class Event extends EventBase
             case 'event_info':
                 //登录
                 $this->getEventInfo();
-                break;          
-            case 'getVipPacket':
-                //领取VIP礼包
-                $this->getVipPacket();
-                break;
+                break;   
             case 'getCommonPacket':
                 //领取动漫专属福利
                 $this->getCommonPacket();
                 break;
+            case 'getVipPacket':
+                //领取VIP礼包
+                $this->getVipPacket();
+                break;  
 	    default:
-	       break;
+                break;
         }
     }
 }

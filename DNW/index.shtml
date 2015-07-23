@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>魔龙与勇士-官方网站-腾讯游戏-极致PK，快意格斗</title>
+        <meta name="mobile-agent" content="format=html5;url=/m/">
+        <meta name="robots" content="all"/>
+        <meta name="author" content="Tencent-TGideas"/>
+        <meta name="Copyright" content="Tencent"/>
+        <meta name="Description" content="极致PK，快意格斗！《魔龙与勇士》是腾讯第一实时PK格斗手游大作。3D炫酷游戏画面，激爽极限连招，为你带来真正的格斗游戏快感！独特自由的技能释放系统，可随心所欲释放各种技能组合搭配，挑战操作极限！更有真人实时PK，好友跨服对战，神秘大陆探险情节、丰富多样系统玩法，为玩家带来超爽游戏体验!">
+        <meta name="Keywords" content="ML,DNW,魔龙,魔龙与勇士,格斗手游,魔龙与勇士手游,魔龙与勇士下载,魔龙与勇士官网,魔龙与勇士攻略">
+        <link href="http://ac.gtimg.com/media/images/favicon.ico" rel="shortcut icon" type="image/x-icon" /><!-- 站点图标 -->
+        <link rel="stylesheet" href="http://dnw.qq.com/web20150129/oss/common.css">
+        <link rel="stylesheet" href="http://ac.gtimg.com/hd/dnw201507/css/DNW-index.css">
+
+        <!-- 页面设计：tobyteng | 页面制作：anguske | 创建：2015-02-01 | 团队博客：http://tgideas.qq.com/ -->
+    </head>
+    <body>
+        <!--头部导航条开始-->
+        <!--#include virtual='/include/nav_event.inc' -->
+        <div class="wrapper">
+            <div class="main">
+                <div class="header">
+                    <div class="content">
+                        <a href="http://dnw.qq.com/" class="logo" title="魔龙与勇士" target="_blank">
+                            <i class="icon_logo"></i>
+                        </a> 
+                        <div class="hd_title">
+                            <h1>魔龙与勇士</h1>
+                            <p>腾讯第一实时PK格斗手游</p>
+                            <span>游戏介绍</span>
+                            <div class="hd_title_hover">
+                                <p>极致PK，快意格斗！《魔龙与勇士》是腾讯第一实时PK格斗手游大作。3D炫酷游戏画面，激爽极限连招，为你带来真正的格斗游戏快感！独特自由的技能释放系统，可随心所欲释放各种技能组合搭配，挑战操作极限！更有真人实时PK，好友跨服对战，神秘大陆探险情节、丰富多样系统玩法，为玩家带来超爽游戏体验!</p>
+                                <i>收起</i>
+                            </div>
+                        </div>
+                        <ul class="main_nav" id="nav">
+                            <li>
+                                <a class="notice" href="http://dnw.qq.com/webplat/info/news_version3/11710/13202/13203/13204/m10034/list_1.shtml" target="_blank">
+                                    <i class="icon_nav_gg"></i>公告
+                                </a>
+                            </li>
+                            <li>
+                                <a class="strategy" href="http://dnw.qq.com/webplat/info/news_version3/11710/13202/13208/m10034/list_1.shtml" target="_blank">
+                                    <i class="icon_nav_tip"></i>攻略
+                                </a>
+                            </li>
+                            <li>
+                                <a class="activity" href="http://dnw.qq.com/webplat/info/news_version3/11710/13202/13203/13207/m10034/list_1.shtml" target="_blank">
+                                    <i class="icon_nav_act"></i>活动
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://bbs.g.qq.com/forum.php?mod=forumdisplay&fid=12899&ADTAG=game.web.qmyz" target="_blank">
+                                    <i class="icon_nav_bbs"></i>论坛
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="f-right wechat">
+                            <div class="clear wechat-ac">
+                                <span class="f-left ficon ficon-wechat wechat-ac-icon"></span>
+                                <div class="f-left wechat-ac-data">
+                                    <h6 class="highline">关注微信公众号</h6>
+                                    <p>海量活动抢先看</p>
+                                </div>
+                                <span class="ficon ficon ficon-enter wechat-arrow"></span>
+                            </div>
+                            <div class="wechat-hover">
+                                <div class="media clear">
+                                    <div class="f-left">
+                                        <img src="http://ossweb-img.qq.com/images/ml/gproject/pc/qrcode-bottom.png" alt="微信公众账号二维码" width="130" height="130" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="pop-title">如何关注 魔龙与勇士 公众帐号</h4>
+                                        <ol class="list">
+                                            <li>A 微信扫描二维码</li>
+                                            <li>B 微信搜索公众号 <span class="highline">魔龙与勇士</span></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_body">
+                    <div class="rp1 pr">
+                        <div class="contain c">
+                            <div class="login">
+                                <!--登录前状态 Start-->
+                                <p id="unlogin">亲爱的用户，请【<a href="javascript:void(0);" id="dologin">登录</a>】</p>
+                                <!--登录前状态 End-->
+                                <!--登录后状态 Start-->
+                                <p id="logined" style="display:none">欢迎您，<span id='login_qq_span'></span>，【<a href="javascript:void(0);" id="dologout">注销</a>】</p>
+                                <!--登录后状态 End-->
+                            </div>
+                        </div>	
+                    </div>
+                    <div class="rp2">
+                        <div class="contain c">
+                            <div class="rp2-left">
+                                <div class="box1">	    		
+                                    <div class="tab-ct">
+                                        <div id="ct1" class="tab-ct-slide">
+                                            <ul class="slide-pic" style="left:0;">
+                                                <li>
+                                                    <img width="724" height="401" src="http://ac.gtimg.com/hd/dnw201507/images/mh-1-1.jpg" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img width="724" height="401" src="http://ac.gtimg.com/hd/dnw201507/images/mh-1-2.jpg" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img width="724" height="401" src="http://ac.gtimg.com/hd/dnw201507/images/mh-1-3.jpg" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img width="724" height="401" src="http://ac.gtimg.com/hd/dnw201507/images/mh-1-4.jpg" alt="" />
+                                                </li>
+                                            </ul>
+                                            <ul class="slide-num">
+                                                <li class="on">1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                            </ul>
+                                            <a href="javascript:void(0);" class="nav-left db pa base" id="but_left"></a>
+                                            <a href="javascript:void(0);" class="nav-right db pa base" id="but_right"></a>
+                                        </div>
+                                        <div id="ct2" class="tab-ct-slide" style="display: none;">
+                                            <ul class="slide-pic" style="left:0;">
+                                                <li>
+                                                    <img width="724" height="401" src="http://ac.gtimg.com/hd/dnw201507/images/mh-2-1.jpg" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img width="724" height="401" src="http://ac.gtimg.com/hd/dnw201507/images/mh-2-2.jpg" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img width="724" height="401" src="http://ac.gtimg.com/hd/dnw201507/images/mh-2-3.jpg" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img width="724" height="401" src="http://ac.gtimg.com/hd/dnw201507/images/mh-2-4.jpg" alt="" />
+                                                </li>
+                                            </ul>
+                                            <ul class="slide-num">
+                                                <li class="on">1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                            </ul>
+                                            <a href="javascript:void(0);" class="nav-left db pa base" id="but_left1"></a>
+                                            <a href="javascript:void(0);" class="nav-right db pa base" id="but_right1"></a>
+                                        </div>
+                                        <div id="ct3" class="tab-ct-slide" style="display: none;">
+                                            <ul class="slide-pic" style="left:0;">
+                                                <li>
+                                                    <img width="724" height="401" src="http://ac.gtimg.com/hd/dnw201507/images/mh-3-1.jpg" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img width="724" height="401" src="http://ac.gtimg.com/hd/dnw201507/images/mh-3-2.jpg" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img width="724" height="401" src="http://ac.gtimg.com/hd/dnw201507/images/mh-3-3.jpg" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img width="724" height="401" src="http://ac.gtimg.com/hd/dnw201507/images/mh-3-4.jpg" alt="" />
+                                                </li>
+                                            </ul>
+                                            <ul class="slide-num">
+                                                <li class="on">1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                            </ul>	
+                                            <a href="javascript:;" class="nav-left db pa base" id="but_left2"></a>
+                                            <a href="javascript:;" class="nav-right db pa base" id="but_right2"></a>
+                                        </div>					
+                                    </div>
+                                    <ul id="tab" class="tab-t c">
+                                        <li class="tab-i1 on">第一话</li>
+                                        <li class="tab-i2">第二话</li>
+                                        <li class="tab-i3">第三话</li>					
+                                    </ul>
+                                </div>
+                            </div>		
+                            <div class="rp2-right">
+                                <ul class="ul1 c">
+                                    <li><a href="http://dnw.qq.com/" title="" class="a-link1 db base" target="_blank"></a></li>
+                                    <li><a href="javascript:Event.setQrCodes();" title="" class="a-link2 db base" target="_blank"></a></li>
+                                    <li><a href="javascript:void(0);" title="" class="a-link3 db base" id="common_packet" target="_blank"></a></li>
+                                    <li><a href="javascript:void(0);" title="" class="a-link4 db base" id="vip_packet" target="_blank"></a></li>
+                                </ul>				
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rp3">
+                        <div class="contain">
+                            <div class="empty01 pa">
+                                <ul class="ul2 c">
+                                    <li><p class="drc base">50钻石</p><img src="http://ac.gtimg.com/hd/dnw201507/images/pic-1.jpg" width="157" height="99" alt="50钻石"/></li>
+                                    <li><p class="drc base">10000金币</p><img src="http://ac.gtimg.com/hd/dnw201507/images/pic-2.jpg" width="157" height="99" alt="10000金币"/></li>
+                                    <li><p class="drc base">100魔能</p><img src="http://ac.gtimg.com/hd/dnw201507/images/pic-3.jpg" width="157" height="99" alt="100魔能"/></li>				
+                                </ul>
+                                <a href="javascript:void(0);" id='getCommonPacket' class="link1 base db" stats="click.common_packet"></a>
+                            </div>
+                            <div class="empty02 pa">
+                                <ul class="ul2 c">
+                                    <li><p class="drc base">30钻石</p><img src="http://ac.gtimg.com/hd/dnw201507/images/pic-4.jpg" width="157" height="99" alt="50钻石"/></li>
+                                    <li><p class="drc base">灵魂石*3</p><img src="http://ac.gtimg.com/hd/dnw201507/images/pic-5.jpg" width="157" height="99" alt="10000金币"/></li>								
+                                </ul>
+                                <a href="javascript:void(0);" id='getVipPacket' class="link1 base db" stats="click.vip_packet"></a>
+                            </div>
+                            <div class="empty03 pa">
+                                <ul class="rule c">
+                                    <li><span class="base">1</span><em>1.领取cdk后前往：点击兑换<a href="//dnw.qq.com/webplat/info/news_version3/11710/14228/15357/m11642/201507/356532.shtml" target="_blank" >兑换礼包</a>。成功兑换后礼包将在24小时内发放至游戏内邮件，领取cdk后请尽快使用。</em></li>
+                                    <li><span class="base">2</span><em>本活动开始后，在页面登录对应QQ帐号之后即可领取。</em></li>
+                                    <li><span class="base">3</span><em>通过活动引导开通1个月以上的动漫VIP业务后即可领取特权礼包。</em></li>
+                                    <li><span class="base">4</span><em>在法律允许范围内腾讯动漫对本次活动保留最终解释权。如果您遇到问题欢迎提交<a href="http://support.qq.com/write.shtml?fid=744" target="_blank">意见反馈</a>。</em></li>
+                                    <li>活动时间：2015年7月21日—2015年8月4日</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 弹窗 -->
+                <!-- 获取CDKEY -->
+                <div class="pop c" id="tc1" style="display: none;">
+                    <h2 class="pop-hd">您获得专属礼包</h2>
+                    <div class="pop-bd">
+                        <p class="pop-ct1"></p>
+                        <div class="c cdkey">
+                            <p class="cdk-p" id="font_cdkey">YUIHBFYUGO6786GG</p>
+                        </div>
+                        <a href="//dnw.qq.com/webplat/info/news_version3/11710/14228/15357/m11642/201507/356532.shtml" title="立即兑换" class="pop-a1">立即兑换</a>	
+                    </div>
+                    <a href="javascript:showDialog.hide()" class="pop-close" title="关闭">关闭</a>
+                </div>
+                <!-- 错误提示框 -->
+                <div class="pop c" id="tc2" style="display: none;">
+                    <h2 class="pop-hd">信息提示</h2>
+                    <div class="pop-bd">
+                        <p class="pop-ct1"></p>
+                        <div class="c cdkey">
+                            <p class="cdk-p_wrong" id="font_msg">一个IP最多两个QQ能获得CDKey哦！</p>
+                        </div>
+                        <a href="javascript:showDialog.hide()" title="确认返回" class="pop-a1">确认返回</a>	
+                    </div>
+                    <a href="javascript:showDialog.hide()" class="pop-close" title="关闭">关闭</a>
+                </div>
+                <!--二维码-->
+                <div class="pop c" id="qr_codes" style="display: none;"> 
+                    <div class="pop-bd">
+                        <img class="pop-img" src="http://ac.gtimg.com/hd/dnw201507/images/ewm.jpg" width="218" height="218"/>	
+                    </div>
+                    <a href="javascript:showDialog.hide()" class="pop-close" title="关闭">关闭</a>
+                    <p class="pop-ct2">扫描下载!</p>
+                </div>
+                <div id="footer_ied"><div class="wrap_ied"><p><a href="http://ieg.tencent.com" target="_blank">腾讯互动娱乐</a> | <a href="http://game.qq.com/contract.shtml" target="_blank">服务条款</a> | <a href="http://adver.qq.com/" target="_blank">广告服务</a> | <a href="http://game.qq.com/hr/" target="_blank">腾讯游戏招聘</a> | <a href="http://service.qq.com/" target="_blank">腾讯游戏客服</a> | <a href="http://game.qq.com/gnav" target="_blank">游戏地图</a> | <a href="http://tgact.qq.com/" target="_blank">游戏活动</a> | <a href="http://game.qq.com/brand/business.htm" target="_blank">商务合作</a> | <a href="http://www.qq.com/map/" target="_blank">网站导航</a></p><p class="e">COPYRIGHT © 1998 – 2015 TENCENT. ALL RIGHTS RESERVED.</p><p><a href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">腾讯公司 版权所有</a></p></div></div>
+
+            </div>
+        </div>
+
+    </body>
+
+
+    <script type="text/javascript" src="http://dnw.qq.com/images/js/comm/tgadshow.min.js"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/ac.base.js?v=20141120"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/tx.func.js?v=1" ></script>
+    <script type="text/javascript" charset="utf-8" src="http://imgcache.qq.com/bossweb/ipay/js/api/cashier.js"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/jquery.milo-min.js "></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/hd/dnw201507/js/DNW-index.js"></script>
+    <script src="http://ac.gtimg.com/hd/dnw201507/js/event.common.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/hd/dnw201507/js/SlideTrans.js"></script>
+
+
+</html><!--[if !IE]>|xGv00|8881b2ab67d34f13df558e1074631c57<![endif]-->

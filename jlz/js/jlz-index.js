@@ -60,6 +60,10 @@ var Event = {
         $("#openVip").unbind("click").bind("click", function () {
             Event.openVip();
         });
+        
+        $("#download_game").unbind("click").bind("click", function () {
+            EventCommon.TGDialogS("tc3");
+        });
 
     },
     eventInfo: function (isLoad) {
@@ -164,7 +168,7 @@ $(function () {
     Event.init(true);
 
     var video = new tvp.VideoInfo();
-    video.setVid("q0011iyvdam");//视频vid
+    video.setVid("a0159p7vz7c");//视频vid
     var player = new tvp.Player(563, 319);//视频高宽
     player.setCurVideo(video);
     player.addParam("autoplay", "1");//是否自动播放，1为自动播放，0为不自动播放

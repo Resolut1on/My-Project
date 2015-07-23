@@ -2,14 +2,11 @@ var Event = {
     eventId: 1045,
     eventAid: 'pc_event_cf201507',
     eventName: 'cf201507',
-    init: function (isLoad) {
-        AC.Page.LoadUserBaseInfo(1);
+    init: function () {
         Event.bindEvent();
-        pgvMain();
-        $("#tokenKey").val(AC.Page.Core.token);
-
     },
     bindEvent: function () {
+        AC.Page.LoadUserBaseInfo(1);
         //统计
         $("[stats]").on("click", function () {
             var stats = $(this).attr('stats');
@@ -17,130 +14,117 @@ var Event = {
             pgvSendClick({hottag: hottag});
         });
 
-        if (AC.Page.Core.hasLogin == 1) {
-            $("#login_qq_span").text(AC.Page.Core.nick);
-            Event.eventInfo(true);
-            $("#logined").show();
-            $("#unlogin").hide();
-        }
-        
+        //查看礼包
+        $(".view_packet").click(function(){
+            Event.viewPacket();
+        });
+
+        //登录
         $("#dologin").unbind("click").bind("click", function () {
-            AC.Page.showLogin(location.pathname);
+            if (AC.Page.Core.hasLogin == undefined) {
+                AC.Page.showLogin(location.pathname);
+            }
         });
 
+        //导航登录
         $(".mod-top-user-msg").live('click', function () {
-            AC.Page.showLogin(location.pathname);
+            if (AC.Page.Core.hasLogin == undefined) {
+                AC.Page.showLogin(location.pathname);
+            }
         });
 
-        $("#getCommonPacket").unbind("click").bind("click", function () {
-            Event.getPacketDetail(1);
-        });
-        
-        $("#getVipPacket").unbind("click").bind("click", function () {
-            Event.getPacketDetail(2);
-        });
-
-        $("#getBackPacket").unbind("click").bind("click", function () {
-            Event.getPacketDetail(3);
-        });
-        
+        //开通vip
         $("#openVip").unbind("click").bind("click",function(){
             Event.openVip();
         });
-        
+
         $("#open_vip").unbind("click").bind("click",function(){
             Event.openVip();
         });
 
-        $("#dologout").unbind("click").bind("click", function () {
-            pt_logout.logout();
-            pt_logout.clearCookie();
-            setTimeout(function () {
-                location.reload();
-            }, 500);
-        });
-
-        $("#common_packet, #vip_packet").bind("click", function () {
-            var scrollHeight = $(".box4 .container").offset().top;
-
-            $("body, html").animate({
-                scrollTop: scrollHeight
-            });
-        });
-
+        if (AC.Page.Core.hasLogin == "1") {
+            $("#unlogin").hide();
+            $("#logined").show();
+            $("#login_qq_span").text(AC.Page.Core.nick);
+        } else {
+            $("#unlogin").show();
+            $("#logined").hide();
+        }
     },
-    eventInfo: function (isLoad) {
-        var uin = AC.Page.Core.uin;
-        var nickName = AC.Page.Core.nick;
-        $.ajax({
-            type: 'post',
-            url: 'cf-action.php',
-            dataType: 'json',
-            data: {'action': 'event_info', 'uin': uin, 'nickname': nickName},
-            success: function (data) {
-//                console.log(data);
-                if (data.status == 1) {
-                    if (data.isEnd == 0) {
-
-                        if (!isLoad) {
-                            AC.Page.showLogin(location.pathname);
-                        }
-                    } else {
-                        //活动结束
-                        Event.setPopHtml("活动已经结束！");
-                    }
-                }
-            }
-        });
-    },
-    getPacketDetail: function (packetType) { 
-        
-        var uin = AC.Page.Core.uin;
-        var tokenkey = AC.Page.Core.token;
-        if (packetType == 1 || packetType == 2) {
-            var action = "";
-            if (packetType == 1) {
-                action = "getCommonPacket";
-            } else if (packetType == 2) {
-                action = "getVipPacket";
-            } else if (packetType == 2) {
-                action = 'getBackPacket';
-            }
-
+    viewPacket: function(){
+        if (AC.Page.Core.hasLogin == "1") {
             $.ajax({
                 type: 'post',
-                url: "cf-action.php",
-                dataType: "json",
-                data: {'action': action, 'tokenkey': tokenkey},
-                success: function (data) {
-                    if (data.status == 1) {                     
-                        //礼包领取、兑换
-                        EventCommon.TGDialogS("dialog_s");
-
-                    } else {
-                        EventCommon.popLotteryWin(data.status, data.msg, Event.eventAid, uin);
+                url: "http://ac.qq.com/event/cf201507/cf-action.php",
+                dataType:"json",
+                data: {'action':'viewPacket'},
+                success: function(data) {
+                    if (data.status == 1) {
+                        var html = '<tr><th>物品名称</th><th>备注</th><th>领取时间</th></tr>';
+                        if (data.list.length > 0) {
+                            for (i = 0; i < data.list.length; i++) {
+                                html += '<tr><td>'+data.list[i]["name"]+'</td><td>'+data.list[i]["remark"]+'</td><td>'+data.list[i]["date"]+'</td></tr>';
+                            }
+                        } else {
+                            html += ' <td colspan="3" class="col99">暂无记录</td></tr>';
+                        }
+                        EventCommon.TGDialogS("event_lottery_win");
+                        $("#event_lottery_win table").html(html);
+                    } else if (data.status ==  -99) {
+                        AC.Page.showLogin(location.pathname);
                     }
                 }
             });
+        } else {
+            AC.Page.showLogin(location.pathname);
         }
+    },
+    getPacket: function (packetType) {
+        if (AC.Page.Core.hasLogin == undefined) {
+            AC.Page.showLogin(location.pathname);
+        } else {
+            if (packetType == 1 || packetType == 2  || packetType == 3 || packetType == 4) {
+                var action = "";
+                if (packetType == 1) {
+                    action = "getCommonPacket";
+                } else if (packetType == 2) {
+                    action = "getVipPacket";
+                } else if (packetType == 3) {
+                    action = 'getBackPacket';
+                } else if (packetType == 4) {
+                    action = 'getNewComerPacket';
+                }
 
+                $.ajax({
+                    type: 'post',
+                    url: "http://ac.qq.com/event/cf201507/cf-action.php",
+                    dataType: "json",
+                    data: {'action': action, 'tokenkey': AC.Page.Core.token},
+                    success: function (data) {
+                        EventCommon.popWin(data.status, data.msg, Event.eventAid, AC.Page.Core.uin);
+                    }
+                });
+            }
+        }
     },
     openVip: function() {
-        var tokenkey = AC.Page.Core.token;
-        var uin = AC.Page.Core.uin;
-         $.ajax({
-            type: 'post',
-            url: "cf-action.php",
-            dataType:"json",
-            data: {'action':'open_vip', 'tokenkey': tokenkey},
-            success: function(data) {
-                if (data.status == 1) {
-                    Event.miniPay(Event.eventAid, uin);
-                } else {
-                    EventCommon.popLotteryWin(data.status, data.msg, Event.eventAid, uin);
-                }
-            }
-        });
+         if (AC.Page.Core.hasLogin == 1) {
+             $.ajax({
+                 type: 'post',
+                 url: "http://ac.qq.com/event/cf201507/cf-action.php",
+                 dataType: "json",
+                 data: {'action': 'open_vip'},
+                 success: function (data) {
+                     if (data.status == 1) {
+                         Event.miniPay(Event.eventAid, data.uin);
+                     } else {
+                         EventCommon.popWin(data.status, data.msg, Event.eventAid, AC.Page.Core.uin);
+                     }
+                 }
+             });
+         } else {
+             AC.Page.showLogin(location.pathname);
+         }
     },
     miniPay: function (eventAid, uin) {
         if (uin > 0 && eventAid.length > 0) {
@@ -157,7 +141,7 @@ var Event = {
                 target: '',
                 context: '',
                 onSuccess: function (opt) {
-                    //Event.getPacketDetail(2);
+
                 },
                 onError: function (opt) {
 
@@ -172,30 +156,9 @@ var Event = {
         } else {
             AC.Page.showLogin(location.pathname);
         }
-    },
-    setPopHtml: function (msg) {
-        $("#dialog_s .dia_p").text(msg);
-        EventCommon.TGDialogS("dialog_s");
     }
 };
 
 $(function () {
-
-    Event.init(true);  
-//    showDialog.show('dialog_bd');
-
-    //头部视频
-    var video = new tvp.VideoInfo();
-    video.setVid("q0011iyvdam");//视频vid
-    var player = new tvp.Player(784, 403);//视频高宽
-    player.setCurVideo(video);
-    player.addParam("autoplay", "0");//是否自动播放，1为自动播放，0为不自动播放
-    player.addParam("wmode", "opaque");
-    player.addParam("pic", "http://ossweb-img.qq.com/images/roco/act/a20120925movie/video_pic.jpg");//默认图片地址
-    player.addParam("flashskin", "http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf");//是否调用精简皮肤，不使用则删掉此行代码
-    player.write("videoCon");
-
+    Event.init();
 });
-
-
-

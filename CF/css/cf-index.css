@@ -6,7 +6,7 @@ em,b{font-style:normal;}
 a{text-decoration:none;}
 a:hover{text-decoration:none;}
 img{border:0; vertical-align: top;}
-button,input,select,textarea{font-size:100%;outline:none;}
+button,input,select,textarea{font-size:100%;outline:none;font-family:'microsoft yahei'}
 table{border-collapse:collapse;border-spacing:0;}
 td,th,ul,ol{padding:0;list-style-type:none;}
 .clearfix:after{content:"\0020"; height:0; display:block; clear:both;}
@@ -23,25 +23,25 @@ td,th,ul,ol{padding:0;list-style-type:none;}
 .logo3{top:6px; left: 306px; width: 110px;}
 .video{width: 784px; height: 403px; position: absolute; left: 95px; top: 375px;}
 .login-box{ height: 14px; line-height: 14px; position: absolute; bottom: 25px; left: 95px;}
-.login-box p,.login-box a{color: #2a7cac;}
+.login-box p,.login-box a{color: #2a7cac;font-family: 'microsoft yahei'}
 .bd{padding-left: 14px;}
-.share_box{width: 119px; height: 32px; padding-left: 93px; background: url(../images/btn_sprite.png) no-repeat; position: absolute; right: 123px; bottom: 13px;}
+.share_box{width: 119px; height: 32px; padding-left: 93px; /*background: url(../images/btn_sprite.png) no-repeat;*/ position: absolute; right: 123px; bottom: 13px;}
 .share_box li{float: left; width: 22px; height: 23px; margin: 4px 6px 0 0; _display: inline;}
 .share_box .share_btn{ display: block; text-indent: -9999px;}
 /* content */
 .con{ height:1573px; background: url(../images/con_bg.jpg) no-repeat;}
 .lb_box{ width: 982px; height: 380px; padding: 32px 0 0 8px;}
 .zslb_box{float: left; width: 501px; height: 100%;}
-.lb_title{width: 100%; height: 38px; line-height: 38px; font-size: 36px; text-indent: 50px; color: #ce3100; background:url(../images/btn_sprite.png) no-repeat -247px -33px;}
-.lb_title span{ font-size: 16px; color: #b2b2b2;}
+.lb_title{font-weight: bold; width: 100%; height: 38px; line-height: 38px; font-size: 36px; text-indent: 50px; color: #ce3100; background:url(../images/btn_sprite.png) no-repeat -247px -33px;}
+.lb_title span{ font-size: 16px; color: #b2b2b2;font-family: 'microsoft yahei'}
 .lb_list{width: 455px; height: 122px; margin: 45px 0 0 23px;}
 .lb_list li{float: left; width: 142px; height: 100%; margin-right: 9px; position: relative; _display: inline;}
-.lb_list p{width: 100%; height: 38px; padding-top: 2px; text-align: center; background: #1d2f4b; color: #77a1e6; font-family: '宋体';}
+.lb_list p{width: 100%; height: 38px; padding-top: 2px; text-align: center; background: #1d2f4b; color: #77a1e6; font-family: 'microsoft yahei';}
 .lb_btn{width: 246px; height: 57px; margin: 26px auto 20px;}
 .lb_lk{display: none; width: 100%; height: 100%; font-size: 24px; line-height: 57px; color: #d7d7d7; text-align: center; background: url(../images/btn_sprite.png) no-repeat 0 -33px;}
 .lb_lk1{background-position: 0 -91px;}
 .active{display: block;}
-.lb_p{width: 100%; text-align: center; font-size: 14px; color: #818181;}
+.lb_p{width: 100%; text-align: center; font-size: 14px; color: #818181;font-family: 'microsoft yahei'}
 .lb_jb{ display: block; width: 46px; height: 38px; background: url(../images/btn_sprite.png) no-repeat -247px -109px; position: absolute; right: 0; top: 0; }
 .lb_jb em{ display: block; text-align: right; color: #ffe4dc; transform:rotate(40deg);-ms-transform:rotate(40deg);-moz-transform:rotate(40deg);-webkit-transform:rotate(40deg); transform-origin: 57% 50%; -ms-transform-origin: 57% 50%; -moz-transform-origin: 57% 50%; -webkit-transform-origin: 57% 50%;}
 .lb_list1{ width: 456px; margin-left: 18px;}
@@ -60,7 +60,7 @@ td,th,ul,ol{padding:0;list-style-type:none;}
 .rule_list{ width:100%; margin-top: 12px;}
 .rule_list li{ width:100%;}
 .rule_list span{ width:18px; height:18px; margin-top:7px; float:left; border-radius:50%; text-align:center; line-height:16px; color:#ababab; background:#b02900;}
-.rule_list p{ width:800px; font-size: 16px; margin-left:33px; line-height:30px; color:#ababab;}
+.rule_list p{ width:800px; font-size: 16px; margin-left:33px; line-height:30px; color:#ababab;font-family: 'microsoft yahei'}
 .c3_box{width: 947px; height: 330px; padding-left: 28px;}
 .c3_l{float: left; width: 512px;}
 .c3_pic{width: 441px; height: 168px; position: relative; float: left;}
@@ -91,7 +91,7 @@ td,th,ul,ol{padding:0;list-style-type:none;}
 .dialog_bd{height: 342px;}
 .dialog_bd .dia_c{height: 296px;}
 .dia_chose{ width: 532px; height: 20px; margin: 20px auto 30px; font-size: 16px; text-align: left;}
-.dia_chose p{float: left;}
+.dia_chose p{float: left;font-family:'microsoft yahei',font-size:16px;}
 .dia_slt{float: left; margin-right: 24px; _display: inline;}
 .dia_btn1{float: left; width: 126px; height: 51px; margin-top: 22px; background: url(../images/btn_sprite.png) no-repeat -134px -322px;}
 .dia_btn2{background-position: -134px -270px; margin: 22px 64px 0 170px; _display: inline;}
@@ -102,3 +102,12 @@ td,th,ul,ol{padding:0;list-style-type:none;}
 #footer_ied a { color:#757575; text-decoration:none;}
 #footer_ied a:hover { text-decoration:underline;}
 .vipstyle {cursor: pointer;}
+
+.dialog_cx{ height: auto;}
+.dialog_cx .dia_c{ height: auto; padding-bottom: 20px; }
+.dialog_cx .dia_title{ height: 60px; line-height: 60px;}
+.dia_tab{ width: 606px; margin: 0 auto;}
+.dia_tab tr{ height: 32px; text-align: center; border:1px solid #9baecd;}
+.dia_tab th{ background: #9baecd;}
+.dialog_cx_k .dia_c{height: 155px; padding-top: 50px;}
+.dia-k{ margin: 0 auto 20px; width: 606px; height: 32px; line-height: 32px; background: #cbd3dc; font-size: 14px; color: #242424; text-align: center;}

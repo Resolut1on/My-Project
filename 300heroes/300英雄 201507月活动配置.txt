@@ -1,6 +1,7 @@
 ﻿序号	行为名称	    行为标记	行为ID	类型	权限	对象列表	 
-1	点击领取礼包	   get_packet	10166	功能	私有	common=普通礼包	
-
+1	    点击领取礼包	get_packet	10166	功能	私有	common=普通礼包	
+2	    点击领取vip礼包	take_packet	10175	功能	私有	vip_packet=vip礼包	
+3	    开通VIP	        open_vip	10176	VIP	私有	pc_event_300heros=PC端300英雄活动开通VIP
 
 eventId = 1043
 eventAid = pc_event_300heros

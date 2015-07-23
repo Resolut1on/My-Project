@@ -11,24 +11,79 @@ var EventCommon = {
         });
     },
     setMsgWin: function(){
-        var html = '<div id="event_msg_win" class="dialog_s dialog" style="display:none">';
-        html += '<div class="dia_hd"><a class="dia_close" href="javascript:EventCommon.closeDialog();"></a></div>';
-        html += '<div class="dia_c">';
-        html += '<h3 class="dia_title">恭喜您获得礼包</h3>';
-        html += '<p class="dia_p">物品将在24小时内发放至游戏账号，请进入游戏检查</p>';
-        html += '<a title="确定返回" class="dia_btn" href="javascript:EventCommon.closeDialog();">确定</a></div></div>';
+        var html = '<div class="pop" id="event_msg_win" style="display:none">';
+        html += '<a href="javascript:EventCommon.closeDialog();" class="popclose ht" title="关闭">×</a>';
+        html += '<div class="popca"><p class="win_msg"></p></div>';
+        html += '<a href="javascript:EventCommon.closeDialog();" class="comm popbtn" title="确定">确定</a></div>';
 
         $(html).appendTo("body");
     },
     setCancelMsgWin: function(){
-        var html = '<div id="event_msg_cancel_win" class="dialog_s dialog" style="display:none">';
-        html += '<div class="dia_hd"><a class="dia_close" href="javascript:EventCommon.closeDialog();"></a></div>';
-        html += '<div class="dia_c">';
-        html += '<h3 class="dia_title">提示</h3>';
-        html += '<p class="dia_p">物品将在24小时内发放至游戏账号，请进入游戏检查</p>';
-        html += '<a title="确定返回" class="dia_btn" href="javascript:EventCommon.closeDialog();">确定</a></div></div>';
+        var html = '<div class="pop" id="event_msg_cancel_win" style="display:none">';
+        html += '<a href="javascript:EventCommon.closeDialog();" class="popclose ht" title="关闭">×</a>';
+        html += '<div class="popcb"><p class="win_msg"></p></div>';
+        html += '<a href="javascript:EventCommon.closeDialog();" class="comm popbtn" title="确定">确定</a></div>';
 
         $(html).appendTo("body");
+    },
+    popLotteryWin: function(index, msg, eventAid, uin){
+        switch (index)
+        {
+            case -20:
+                Event.miniPay(eventAid, uin);
+                break;
+            case -80:
+                $("#bind_game_area").click();
+                break;
+            case -99:
+                AC.Page.showLogin(location.pathname);
+                break;
+            default:
+                Event.setPopHtml(msg);
+                break;
+        }
+    },
+    popLoginWin: function(index, msg, isLoad){
+        switch (index)
+        {
+            case -95:
+            case -96:
+            case -97:
+            case -98:
+                alert(msg);
+                break;
+            case -99:
+                if (!isLoad) {
+                    AC.Page.showLogin(location.pathname);
+                }
+            default:
+                break;
+        }
+    },
+    popPayCompleteWin: function(index, msg){
+        switch (index)
+        {
+            case -81:
+                CF.viewLottery();
+                break;      
+            case 0:
+            case -82:
+            case -95:
+                EventCommon.TGDialogS("event_msg_cancel_win");
+                $("#event_msg_cancel_win p").html(msg);
+                break;
+            case 20:
+                EventCommon.TGDialogS("event_pay_win");
+                $("#event_pay_win span").html(msg);
+                break;
+            case -80:
+                $("#bind_game_area").click();
+                break;
+            case -99:
+                AC.Page.showLogin(location.pathname);
+            default:
+                break;
+        }
     },
     popRoleWin: function(index, msg){
         switch (index)
@@ -40,52 +95,6 @@ var EventCommon = {
             case -4:
                 alert(msg);
                 break;
-            default:
-                break;
-        }
-    },
-    popWin: function(index, msg, eventAid, uin){
-        switch (index)
-        {
-            case 1:
-            case 10:
-            case 11:
-            case 12:
-            case 13:
-            case 14:
-            case 15:
-            case 16:
-            case 21:
-                EventCommon.TGDialogS("event_msg_win");
-                $("#event_msg_win p").eq(0).html(msg);
-                break;
-            case -1:
-            case -2:
-            case -3:
-            case -4:
-            case -50:
-            case -81:
-            case -82:
-            case -83:
-            case -70:
-            case -94:
-            case -95:
-            case -96:
-            case -97:
-            case -98:
-            case 0:
-            case 20:
-                EventCommon.TGDialogS("event_msg_cancel_win");
-                $("#event_msg_cancel_win p").html(msg);
-                break;
-            case -20:
-                Event.miniPay(eventAid, uin);
-                break;
-            case -80:
-                $("#bind_game_area").click();
-                break;
-            case -99:
-                AC.Page.showLogin(location.pathname);
             default:
                 break;
         }
@@ -118,6 +127,34 @@ var EventCommon = {
     closeVideo:function(e){
         EventCommon.closeDialog();
         document.getElementById(e).innerHTML='';
+    },
+    scrollLotteryList: function(){
+        var rollH=$("#lottery_list").height();
+        var listH=$("#lottery_list .carouselContent").height();
+        if(listH>rollH){
+            var martop=0;
+            $("#lottery_list .carouselContent").clone().attr("class","c3_zj_list").appendTo("#lottery_list");
+            function rollText(){
+                martop++;
+            
+                if(martop>listH){
+                    martop=0;
+                    $("#lottery_list .carouselContent").css("margin-top",-martop);
+                }
+                else{
+                    $("#lottery_list .carouselContent").css("margin-top",-martop);
+                }
+            }
+            var intTimes=setInterval(rollText,50);
+            $("#lottery_list").hover(
+                function(){
+                    clearInterval(intTimes);
+                },
+                function(){
+                    intTimes=setInterval(rollText,50);
+                }
+            );
+        }
     }
 };
 

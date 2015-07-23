@@ -40,7 +40,7 @@ var AreaSelect = {
         if (areaId.length > 0) {
             $.ajax({
                 type: 'post',
-                url: "http://ac.qq.com/event/cf20150714/action.php",
+                url: "http://ac.qq.com/event/cf201507/cf-action.php",
                 dataType:"json",
                 data: {'action':'getRoleByAreaId','areaId':areaId},
                 success: function(data) {
@@ -72,7 +72,7 @@ var AreaSelect = {
         if (areaId && areaName && roleName) {
             $.ajax({
                 type: 'post',
-                url: "http://ac.qq.com/event/cf20150714/action.php",
+                url: "http://ac.qq.com/event/cf201507/cf-action.php",
                 dataType:"json",
                 data: {'action':'confirmRole','areaId':areaId,'areaName':areaName,'roleName':roleName,'tokenkey':AC.Page.Core.token},
                 success: function(data) {
@@ -86,16 +86,19 @@ var AreaSelect = {
         }
     },
     setGameAreaHtml: function(){
-        var html = '<div class="pop2" id="select_area" style="display:none;">';
-        html += '<a href="javascript:showDialog.hide()" class="popclose ht" title="关闭"></a>';
-	html += '<div class="popcc">';
-        html += '<strong class="popcct">选择绑定的角色</strong>';
-        html += '<div class="popcca c">';
-        html += '<p class="popccap" style="font-size:20px;font-family:Microsoft YaHei">选择绑定的角色</p>';
-        html += '<select id="gameRegion_select" style="width: 130px;font-size:20px;font-family:Microsoft YaHei"><option value="">选择大区</option></select><select style="width: 145px; margin-left: 25px;font-size:20px;font-family:Microsoft YaHei" id="gameRegion_select_sub" name="zone"><option value="">选择服务器</option></select><select id="roleId" style="width: auto; margin-left: 25px;font-size:20px;font-family:Microsoft YaHei"><option value="">选择角色</option></select></div>';
-        html += '<div class="popccbtn c">';
-        html += '<a href="javascript:void(0);" class="comm l popbtn" id="btn_role_ok" title="确定">确定</a>';
-        html += '<a href="javascript:EventCommon.closeDialog();" class="comm r popbtn" title="取消">取消</a></div></div></div>';
+        var html = '<div class="dialog_bd dialog" id="select_area" style="display:none;">';
+        html += '<div class="dia_hd"><a href="javascript:showDialog.hide();" class="dia_close"></a></div>';
+        html += '<div class="dia_c">';
+        html += '<h3 class="dia_title">选择绑定角色</h3>';
+        html += '<div name="bd" class="dia_chose">';
+        html += '<p>选择绑定的角色:</p><select class="dia_slt" name="bdSever" id="gameRegion_select"><option value="">选择大区</option></select>';
+        html += '<select class="dia_slt" name="bdZone" id="gameRegion_select_sub"><option value="">选择服务器</option></select>';
+        html += '<select class="dia_slt" name="bdRole" id="roleId"><option value="">选择角色</option></select>';
+        html += '</div>';
+        html += '<a href="javascript:void(0);" class="dia_btn dia_btn1 dia_btn2" id="btn_role_ok" title="确定">确定</a>';
+        html += '<a href="javascript:EventCommon.closeDialog();" class="dia_btn dia_btn1" title="取消">取消</a>';
+        html += '</div>';
+        html += '</div>';
 
         $(html).appendTo("body");
     },
