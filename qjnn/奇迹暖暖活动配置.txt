@@ -1,0 +1,7 @@
+﻿序号	行为名称	    行为标记	    行为ID	类型	权限	对象列表	 
+1	普通礼包	     get	    10195	功能	私有	common_packet=普通礼包	
+2    点击领取vip礼包	  take_packet	    10196	功能	私有	vip_packet=vip礼包	
+3	 开通VIP	    open_vip	    10197	VIP	私有	pc_event_qjnn201508=PC端奇迹暖暖活动开通VIP	
+
+eventId = 1051
+eventAid = pc_event_qjnn201508

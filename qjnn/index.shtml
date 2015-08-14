@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Tencent-TGideas" />
+        <meta name="robots" content="all" />
+        <meta name="Copyright" content="Tencent" />
+        <title>动漫平台-游戏&动漫VIP特权合作</title>
+        <meta name="Keywords" content="动漫,腾讯动漫,漫画,动画,原创,正版,火影忍者,海贼王,异人,血誓,腾讯动漫官方网站" />
+        <meta name="Description" content="中国最大最权威的正版动漫网站，连载众多原创国漫，原创动画，正版日漫等海内外最热正版动漫内容，为上千万动漫爱好者提供漫画、动画、资讯、论坛一站式全方位动漫服务，为原创动漫作者提供最优质的创作成长环境，为中国动漫产业打造梦想舞台。热门动画|漫画：尸兄、中国惊奇先生、火影忍者、海贼王、异人、血誓等" />
+        <link rel="stylesheet" href="http://ac.gtimg.com/hd/qjnn201508/css/index.css">
+    </head>
+    <body>
+        <!--头部导航条开始-->
+        <!--#include virtual='/include/nav_event.inc' -->
+        <h1 class="dn">动漫平台-游戏&动漫VIP特权合作-玖作</h1>
+        <div class="box1 yh">
+            <div class="demo-item">
+                <div id="rollbox">
+                
+                       <img src="http://ac.gtimg.com/hd/qjnn201508/images/bg1.jpg" width="1920" height="932"  />
+     
+                </div>
+            </div>
+            <div class="container">
+                <div class="logo">
+                    <a href="http://ac.qq.com/" target="_blank" class="logo1"></a>
+                    <a href="http://qjnn.qq.com/" target="_blank"  class="logo2"></a>
+                </div>
+                <div class="cont">
+                    <img src="http://ac.gtimg.com/hd/qjnn201508/images/title.png" width="715" height="307" />
+                    <p>喵，本次暖暖携手腾讯动漫，《狐妖小红娘》狐妖套装魅惑来袭！</p>
+                    <p>开通腾讯动漫1个月VIP即可获赠动漫专属部件：套装部件（参加本活动为获得部件唯一途径）</p>
+                    <p>活动时间：2015年8月22日-2015年9月22日</p>
+                    <p>限时赠送！机不可失时不再来，快来参加吧！</p>
+
+                    <!--登录前状态 Start-->
+                    <p id="unlogin">亲爱的用户，请 <a href="javascript:void(0);" id="dologin">[登录]</a></p>
+                    <!--登录前状态 End-->
+                    <!--登录后状态 Start-->
+                    <p id="logined" style="display:none">欢迎您，<span id='login_qq_span'></span>，<a href="javascript:void(0);" id="dologout">[注销]</a></p>
+                    <!--登录后状态 End-->
+                   <div class="lipin"><a href="javascript:void(0);">获得全部</a></div>
+                    <ul class="u3 clearfix">
+                        <li><a href="http://qjnn.qq.com/" target="_blank" >暖暖官网</a></li>
+                        <li><a href="http://ac.qq.com/Comic/comicInfo/id/518333" target="_blank" >狐妖故事</a></li>
+                        <li><a href="javascript:EventCommon.TGDialogS('tc2');">礼包兑换</a></li>
+                        <li><a href="javascript:EventCommon.TGDialogS('tc1');" class="top_btn1">下载游戏</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box2 yh" id="box2">
+            <div class="container">
+                <div class="inner">
+                    <div class="box_l">
+                        <h3 style="font-weight: bold;">免费礼包<span>登录领取<span></h3>
+                        <ul class="u1 clearfix">
+                            <li>
+                                <img src="http://ac.gtimg.com/hd/qjnn201508/images/p1.png" width="109" height="86" />
+                                <span>体力X15</span>
+                            </li>
+                            <li>
+                                <img src="http://ac.gtimg.com/hd/qjnn201508/images/p2.png" width="109" height="86" />
+                                <span>金币X3000</span>
+                            </li>
+                            <li>
+                                <img src="http://ac.gtimg.com/hd/qjnn201508/images/p3.png" width="109" height="86" />
+                                <span>钻石X10</span>
+                            </li>
+                           
+                        </ul>
+                        <a href="javascript:void(0);" class="lq_btn clearfix" id="getCommonPacket" stats="click.common_packet">立即领取</a>
+                        <a href="javascript:void(0);" class="lq_btn_1 clearfix" id="viewGotPacket1" style="display:none;" >查看礼包</a>
+                    </div>
+                    <div class="box_l box_r clearfix">
+                        <h3 style="font-weight: bold;">动漫专属礼包<a href="javascript:void(0);" class="tit_btn" id="open_vip">开通动漫VIP</a></h3>
+                        <ul class="u1 clearfix">
+                         <li>
+                                <img src="http://ac.gtimg.com/hd/qjnn201508/images/p1.png" width="109" height="86" />
+                                <span>体力X20</span>
+                            </li>
+                            <li>
+                                <img src="http://ac.gtimg.com/hd/qjnn201508/images/p2.png" width="109" height="86" />
+                                <span>金币X5000</span>
+                            </li>
+                            <li>
+                                <img src="http://ac.gtimg.com/hd/qjnn201508/images/p4.png" width="109" height="86" />
+                                <span>狐妖发型</span>
+                            </li>
+                          
+                        </ul>
+                        <a href="javascript:void(0);" class="lq_btn clearfix" id="getVipPacket" stats="click.vip_packet">立即领取</a>
+                        <a href="javascript:void(0);" class="lq_btn_1 clearfix" id="viewGotPacket2" style="display:none;">查看礼包</a>
+                    </div>
+                    <h4 style="font-weight: bold;">活动规则</h4>
+                    <p>1、《免费礼包》登录即可领取，每个帐号限领一次；</p>
+                    <p>2、《动漫专属礼包》在本活动页面开通1个月以上的VIP用户可领，单号限领一次。</p>
+                    <p>3、游戏道具礼包将以CDK的形式发放，请前往<a href="javascript:EventCommon.TGDialogS('tc2');"  target="_blank">兑换界面</a>进行兑换</p>
+                    <p>4、活动最终解释权归腾讯动漫所有，如果您遇到问题可以通过官方进行<a href="http://support.qq.com/write.shtml?fid=744 " target="_blank">意见反馈</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="box3 yh" id="box3">
+            <div class="container">
+                <div class="inner">
+                    <a href="http://ac.qq.com/Charge" class="more" target="_blank">查看更多特权&gt;&gt;</a>
+                    <ul>
+                        <li><img src="http://ac.gtimg.com/hd/qjnn201508/images/img1.jpg" width="193" height="185"  usemap="#map1"/></li>
+                        <map name="map1">
+                            <area shape="rect" coords="11,50,91,174" href="http://ac.qq.com/Comic/comicInfo/id/534796" target="_blank">
+                            <area shape="rect" coords="104,50,182,176" href="http://ac.qq.com/Comic/comicInfo/id/512742" target="_blank">
+                        </map>
+
+                        <li><img src="http://ac.gtimg.com/hd/qjnn201508/images/img2.jpg" width="193" height="185" /></li>
+                        <li><img src="http://ac.gtimg.com/hd/qjnn201508/images/img3.jpg" width="193" height="185" /></li>
+                        <li><img src="http://ac.gtimg.com/hd/qjnn201508/images/img4.jpg" width="193" height="185" /></li>
+                        <li class="end"><img src="http://ac.gtimg.com/hd/qjnn201508/images/img5.jpg" width="193" height="185" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box4 yh" id="box4">
+            <div class="container">
+                <div class="inner">
+                    <a href="http://ac.qq.com/Charge" class="more" target="_blank">更多漫画&gt;&gt;</a>
+                    <ul>
+                        <a href="http://ac.qq.com/Comic/comicInfo/id/518913" target="_blank">
+                            <li>
+                                <img src="http://ac.gtimg.com/hd/qjnn201508/images/img6.jpg" width="140" height="180" />
+                                <span>九鼎记</span>
+                                <span>玄幻、武侠、动作</span>
+                            </li>
+                        </a>
+                        <a href="http://ac.qq.com/Comic/ComicInfo/id/459728" target="_blank">
+                            <li>
+                                <img src="http://ac.gtimg.com/hd/qjnn201508/images/img7.jpg" width="140" height="180" />
+                                <span>乌龙院大长篇</span>
+                                <span>生活、武侠、搞笑</span>
+                            </li>
+                        </a>
+                        <a href="http://ac.qq.com/Comic/comicInfo/id/512742" target="_blank">
+                            <li>
+                                <img src="http://ac.gtimg.com/hd/qjnn201508/images/img8.jpg" width="140" height="180" />
+                                <span>斗罗大陆</span>
+                                <span>玄幻、热血、冒险</span>
+                            </li>
+                        </a>
+                        <a href="http://ac.qq.com/Comic/comicInfo/id/531040" target="_blank">
+                            <li>
+                                <img src="http://ac.gtimg.com/hd/qjnn201508/images/img9.jpg" width="140" height="180" />
+                                <span>斗破苍穹</span>
+                                <span>魔幻、热血、动作</span>
+                            </li>
+                        </a>
+                        <a href="http://ac.qq.com/Comic/comicInfo/id/522337" target="_blank">
+                            <li>
+                                <img src="http://ac.gtimg.com/hd/qjnn201508/images/img10.jpg" width="140" height="180" />
+                                <span>今天开始做女神</span>
+                                <span>魔幻、都市、搞笑</span>
+                            </li>
+                        </a>
+                        <a href="http://ac.qq.com/Comic/comicInfo/id/14363" target="_blank">
+                            <li class="end">
+                                <img src="http://ac.gtimg.com/hd/qjnn201508/images/img11.jpg" width="140" height="180" />
+                                <span>七公主</span>
+                                <span>都市、后宫、恋爱</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!--下载游戏 活动信息-->
+        <!-- 弹出层tc1 Start-->
+        <div class="dialog" id="tc1" style="display:none">
+            <div class="dia-con"></div>
+            <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">×</a>
+        </div>
+        <!-- 弹出层tc1 End-->
+        
+        <!--立即兑换-->
+        <!-- 弹出层tc2 Start -->
+        <div class="dialog" id="tc2" style="display:none">
+            <div class="dia-con"></div>
+            <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">×</a>
+        </div>
+        <!-- 弹出层tc2 End-->
+        
+        <!-- 礼包兑换-->
+        <!-- 弹出层tc3 Start-->
+        <div class="dialog" id="tc3" style="display:none">
+            <div class="dia-con">
+                <h3>恭喜您获得礼包</h3>
+                <p id="font_cdkey">CDKCDKCDKCDKCDK</p>
+                <a href="javascript:EventCommon.TGDialogS('tc2');" class="btn7">立即兑换</a>
+            </div>
+            <a class="dia-close2" href="javascript:showDialog.hide()" title="关闭">×</a>
+        </div>
+        <!-- 弹出层tc3 End-->
+        
+        
+        <!-- 弹出层tc4 Start-->
+        <div class="dialog" id="tc4" style="display:none">
+            <div class="dia-con">
+                <h3>礼包信息</h3>
+                <table cellspacing="0" cellpadding="0" >
+                    <tbody>
+                        <tr class="tm">
+                            <td width="145">物品名称</td>
+                            <td width="258">CDK编号</td>
+                            <td width="145">领取时间</td>
+                        </tr>
+                        <tr>
+                            <td>免费礼包</td>
+                            <td id="gotCommonPacket"></td>
+                            <td id="gotCommonTime"><br/></td>
+                        </tr>
+                        <tr>
+                            <td>动漫特权礼包</td>
+                            <td id="gotVipPacket"></td>
+                            <td id="gotVipTime"><br/></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div class="lbbtn_box">
+                    <a href="javascript:EventCommon.TGDialogS('tc2');" class="lb_a1"></a>
+                    <a href="javascript:showDialog.hide()" class="lb_a2"></a>
+                </div>
+            </div>
+            <a class="dia-close2" href="javascript:showDialog.hide()" title="关闭">×</a>
+        </div>
+        <!-- 弹出层tc4 End-->
+        
+        <!-- 弹出层tc5 Start-->
+        <div class="dialog" id="tc5" style="display:none">
+            <div class="dia-con">
+                <h3>提示信息</h3>
+                <p id="font_msg"></p>
+                <a href="javascript:showDialog.hide()" class="btn7 btn10">立即兑换</a>
+            </div>
+            <a class="dia-close2" href="javascript:showDialog.hide()" title="关闭">×</a>
+        </div>
+        <!-- 弹出层tc5 End-->
+
+        <div id="footer_ied"><div class="wrap_ied"><p><a href="http://ieg.tencent.com" target="_blank">腾讯互动娱乐</a> | <a href="http://game.qq.com/contract.shtml" target="_blank">服务条款</a> | <a href="http://adver.qq.com/" target="_blank">广告服务</a> | <a href="http://game.qq.com/hr/" target="_blank">腾讯游戏招聘</a> | <a href="http://service.qq.com/" target="_blank">腾讯游戏客服</a> | <a href="http://game.qq.com/gnav" target="_blank">游戏地图</a> | <a href="http://tgact.qq.com/" target="_blank">游戏活动</a> | <a href="http://game.qq.com/brand/business.htm" target="_blank">商务合作</a> | <a href="http://www.qq.com/map/" target="_blank">网站导航</a></p><p class="e">COPYRIGHT © 1998 – 2015 TENCENT. ALL RIGHTS RESERVED.</p><p><a href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">腾讯公司 版权所有</a></p></div></div>
+        
+    </body>
+    
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/ac.base.js?v=20141120"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/tx.func.js?v=1" ></script>
+    <script type="text/javascript" charset="utf-8" src="http://imgcache.qq.com/bossweb/ipay/js/api/cashier.js"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/jquery.milo-min.js "></script>
+    <script src="http://ac.gtimg.com/hd/qjnn201508/js/event.common.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/hd/qjnn201508/js/index.js"></script>
+</html>
