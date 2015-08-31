@@ -1,0 +1,213 @@
+/* Global Style start */
+body,div,h1,h2,h3,h4,h5,form,img,ul,ol,li,dl,dd,p{margin:0; padding:0;}
+ul{list-style:none;}
+a img{border:0;}
+.c{zoom:1;}
+.c:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.l{float:left;}
+.r{float:right;}
+.dn{display:none !important;}
+.tal{text-align:left !important;}
+.tac{text-align:center !important;}
+.tar{text-align:right !important;}
+.fwb{font-weight:bold;}
+a{color:#fff; text-decoration:none; hide-focus:expression(this.hideFocus=true); outline:none;}
+a:hover{text-decoration:none;}
+a.a_a{color:#fff; text-decoration:underline;}
+a.a_a:hover{text-decoration:none;}
+.hide{width:0px; height:0px; display:block; text-indent:-9999px; overflow:hidden;}
+/* Global Style End */
+
+/* Frame Style Start */
+body{background:#1477de; color:#fff; font:12px/1.5 tahoma, '\5b8b\4f53', sans-serif; min-width:1000px;}
+
+.head-wrap{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_head_wrap.jpg) no-repeat 50% 0;}
+.box01-wrap{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_box01_wrap.jpg) no-repeat 50% 0;}
+.box02-wrap{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_box02_wrap.jpg) no-repeat 50% 0;}
+.box03-wrap{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_box03_wrap.jpg) no-repeat 50% 0;}
+.box04-wrap{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_box04_wrap.jpg) no-repeat 50% 0;}
+.box05-tt{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_comment_middle.jpg) repeat-y 50% 1078px; }
+.box05-bb{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_comment_top.jpg) no-repeat 50% 0;}
+.box05{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_comment_bottom.jpg) no-repeat 50% bottom;}
+
+.head, .box01, .box02, .box03, .box04{width:1060px; margin:0 auto; position:relative;}
+
+.head{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_head.jpg) no-repeat; height:582px;}
+.box01{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_box01.jpg) no-repeat; height:331px;}
+.box02{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_box02.jpg) no-repeat; height:532px;}
+.box03{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_box03.jpg) no-repeat; height:1183px;}
+.box04{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_box04.jpg) no-repeat; height:483px;}
+
+.work-tag-con,
+.btn-read,
+.btn-collect,
+.chapter-link,
+.btn-getgift,
+.work-tag-con .btn-month:hover,
+.work-tag-con .btn-award:hover,
+.dialog-close,
+.btn-jiang-sure,
+.btn-jiang-remove,
+.btn-exchange{background:url(http://ac.gtimg.com/hd/jfzr201508/images/global.png) no-repeat;}
+
+/* Head Style */
+.logo-wind, .logo{display:block; overflow:hidden; text-indent:-9999px;}
+.logo-wind{width:158px; height:73px; position:absolute; top:19px; left:-61px;}
+.logo{width:158px; height:60px; position:absolute; top:21px; left:140px;}
+
+/* Box Style */
+.work-left{float:left; background:#181818; width:158px; padding-top:5px;}
+.work-left .work-left-img{width:143px; height:190px; display:block; overflow:hidden; border:2px solid #0f060b; margin:0 auto;}
+.work-tag-con{width:158px; height:63px; margin:1px auto 0; overflow:hidden; position:relative;}
+.work-tag-con .btn-month{float:left; width:82px; height:63px; display:block; overflow:hidden; text-indent:-9999px;}
+.work-tag-con .btn-month:hover{background-position:-180px 0;}
+.work-tag-con .btn-award{float:left; width:73px; height:63px; display:block; overflow:hidden; text-indent:-9999px;}
+.work-tag-con .btn-award:hover{background-position:-262px 0;}
+
+.work-info{float:left; width:630px; padding:18px 0 0 64px;}
+.work-top li{float:left; color:#bdbcbc; font-family:"Microsoft YaHei"; font-size:14px; line-height:22px;}
+.work-top .no1{width:190px;}
+.work-top .no2{width:202px;}
+.work-top .no4{float:right; padding-right:8px;}
+.work-present{padding-top:6px;}
+.work-present p{color:#ffe09c; font-family:"Microsoft YaHei"; font-size:18px; line-height:30px;}
+.work-handle{padding-top:28px;}
+
+.work-role{color:#fff; padding:32px 0 0 50px;}
+.logo-a, .btn-logou, .blue-a{color:#409deb; }
+.blue-a{text-decoration:underline; margin-left:30px;}
+
+.work-groom{float:right; width:143px; padding-top:13px; padding-left:30px;}
+.groom-img-wrap{width:143px; position:relative; padding-left:30px; margin-left:-30px;}
+.work-groom-img{width:139px; height:136px; border:2px solid #150000; display:block;  }
+.work-groom-info{padding-top:13px; text-align:center;}
+.work-groom-info p{color:#fffe9e; font-family:"Microsoft YaHei"; padding-top:8px;}
+.work-groom-info .groom-a{color:#fff; font-family:"Microsoft YaHei"; font-size:16px; line-height:26px;}
+
+.groop-pop{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_groom_pop.png) no-repeat; width:633px; height:125px; position:absolute; left:-720px; top:-22px; padding:55px 0 0 100px; z-index:3; display:none;}
+.groop-pop-text{width:504px;}
+.groop-pop p{color:#242424; font-family:"Microsoft YaHei"; font-size:14px; line-height:24px;}
+.groom-img-wrap:hover .groop-pop{display:block;}
+
+.chapter-handle{padding:113px 0 0 0;}
+.chapter-txt{float:left; width:666px; text-align:right; padding:2px 0 0;}
+.chapter-txt p{color:#c1c1c1; font-size:18px; font-family:"Microsoft YaHei"; line-height:28px;}
+.chapter-txt .chapter-blue-a{color:#408dff; text-decoration:underline;}
+.chapter-txt .chapter-new-data{margin-left:18px;}
+.chapter-handle-btn{float:right; line-height:18px; position:relative;}
+.chapter-btn{background:#3e0005; width:114px; height:49px; line-height:49px; border:3px solid #290003; display:block; text-align:center; font-family:"Microsoft YaHei"; font-size:18px; cursor:pointer;}
+.chapter-btn:hover{background:#56060d; border-color:#290003;}
+.chapter-chi{float:left;}
+.chapter-chi.mouse{margin:0 6px;}
+.chapter-list{width:1100px; height:280px; padding:42px 0 0 0; margin-left:-8px; overflow:hidden;}
+.chapter-list li{}
+.chapter-link{float:left; background-position:0 -267px; font-family:"Microsoft YaHei"; font-size:18px; line-height:22px; width:200px; height:86px; display:block; padding-top:34px; text-align:center; margin:10px 7px 10px 8px;}
+.chapter-link:hover{background-position:-215px -267px;}
+.chapter-link span{font-family:"Microsoft YaHei"; font-size:24px; line-height:30px; display:block; text-align:center;}
+.mouse:hover .chapter-more-list{display:block;}
+.chapter-more-list{background:#fff; width:350px; position:absolute; top:55px; left:0; padding:10px; border:1px solid #290003; display:none;}
+.chapter-more-list .chapter-item{background:#f1f1f1; color:#666; cursor:pointer; float:left; width:86px; height:30px; line-height:30px; text-align:center; display:block; margin:1px 0 0 1px;}
+.chapter-more-list .chapter-item:hover{background:#3e0005; color:#fff;}
+.chapter-link,
+.chapter-link span{
+       -webkit-text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+    -moz-text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+    text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+    *filter: Glow(Color=#000, Strength=1);
+
+}
+
+.gift{padding:238px 0 0;}
+.gift-mod{float:left; width:488px; overflow:hidden;}
+.gift-special{float:right;}
+.gift-mod .tit{font-size:36px; color:#e20004; font-family:"Microsoft YaHei"; font-weight:bold; line-height:46px;}
+.gift-mod .gift-tit-p{font-size:18px; color:#e20004; font-family:"Microsoft YaHei"; line-height:24px;}
+.gift-list{width:600px; padding:20px 0 0;}
+.gift-list li{float:left; background:#b82427; width:110px; height:150px; margin-right:16px;}
+.gift-list li .gift-img{background:#363636; width:100px; height:100px; margin:4px auto 0; display:block; overflow:hidden;}
+.gift-list .gift-name{font-family:"Microsoft YaHei"; font-size:18px; line-height:24px; margin-top:12px; display:block; text-align:center; }
+.gift-mod .gift-date-p{padding:14px 0 0; color:#e20004; font-family:"Microsoft YaHei"; font-size:18px; display:block; text-align:center; }
+
+.rule{padding-top:140px;}
+.rule .tit{color:#ffe5e7; font-family:"Microsoft YaHei"; font-size:36px; line-height:46px; font-weight:bold;}
+.rule-list{padding-top:10px;}
+.rule-list li{color:#ffe5e7; font-family:"Microsoft YaHei"; font-size:18px; line-height:36px;}
+
+.game-link-point{width:244px; height:326px; position:absolute; top:70px; left:-6px; display:block;}
+.game-link-job{width:254px; height:309px; position:absolute; top:55px; left:185px; display:block;}
+.game-link-world{width:269px; height:308px; position:absolute; top:75px; left:418px; display:block;}
+.game-link-new{width:278px; height:320px; position:absolute; top:51px; left:616px; display:block;}
+.game-link-video{width:242px; height:314px; position:absolute; top:77px; left:828px; display:block;}
+
+.game-link-point:hover,
+.game-link-job:hover,
+.game-link-world:hover,
+.game-link-new:hover,
+.game-link-video:hover{background:url(http://ac.gtimg.com/hd/jfzr201508/images/global.png) no-repeat;}
+.game-link-point:hover{background-position:0 -625px;}
+.game-link-job:hover{background-position:0 -983px;}
+.game-link-world:hover{background-position:-266px -632px;}
+.game-link-new:hover{background-position:-268px -984px;}
+.game-link-video:hover{background-position:-567px -633px;}
+
+.debate-wrap{padding-top:223px; padding-bottom:188px; width:1054px; margin:0 auto;}
+.works-comment-wr{width:1054px !important;}
+
+/* Dialog Style */
+.dialog{background:#780e0e; border:2px solid #150707; width:660px; position:fixed; top:0; left:0;}
+.dialog-tit{background:#150707; color:#f53636; font-size:24px; font-family:"Microsoft YaHei"; height:52px; line-height:52px; padding-left:20px;}
+.dialog-close{background-position:-367px 0; width:23px; height:23px; display:block; overflow:hidden; text-indent:-9999px; position:absolute; top:16px; right:18px;}
+.dialog-jiang{width:607px; padding-top:34px; margin:0 auto;}
+.dialog-cdkey{padding:52px 0 35px; text-align:center;}
+.sendaward-top{background:#301212; height:39px; line-height:39px;}
+.sendaward-top span{float:left; color:#ac2222; height:39px; line-height:39px; display:block; text-align:center;}
+.sendaward-top .no1{width:158px;}
+.sendaward-top .no2{width:336px;}
+.sendaward-top .no3{width:113px;}
+.sendaward-table{width:100%; background:#301212;}
+.sendaward-table td{background:#6e2525; color:#ffdada; font-family:"Microsoft YaHei"; font-size:14px; height:35px; line-height:35px; text-align:center;}
+.sendaward-table .odd td{background:#5c2727;}
+.dialog-jiang-btn{width:414px; padding:26px 0 34px; margin:0 auto;}
+.dialog-cdk-btn{width:414px; padding-top:84px; margin:0 auto;}
+.dialog-cdkey-p{color:#f53636; font-family:"Microsoft YaHei"; font-size:24px; line-height:32px;}
+.dialog-cdkey .btn-exchange{margin:44px auto 0;}
+
+.dialog-role{padding:53px 0 34px 24px;}
+.dialog-role-p span{color:#f53636; font-size:16px; line-height:28px; font-family:"Microsoft YaHei"; margin-right:14px;}
+.select-check{height:28px; margin-right:20px;}
+
+/* Menu Style */
+.nav-link-main:hover,
+.nav-link-sub:hover,
+.nav-link-top:hover{background:url(http://ac.gtimg.com/hd/jfzr201508/images/menu.png) no-repeat;}
+.nav{background:url(http://ac.gtimg.com/hd/jfzr201508/images/menu.png) no-repeat; width:197px; height:451px; position:fixed; top:50%; right:20px; margin-top:-296px; padding-top:42px; display:none;}
+.nav-link-main{height:99px; display:block; overflow:hidden; text-indent:-9999px;}
+.nav-link-sub{width:145px; height:91px; margin-left:25px; display:block; overflow:hidden; text-indent:-9999px; margin-top:-22px;}
+.nav-link-top{width:145px; height:95px; margin-left:25px; display:block; overflow:hidden; text-indent:-9999px; margin-top:-22px;}
+
+.nav-link-main2{margin-top:-30px;}
+.nav-link-sub1{margin-top:-26px;}
+.nav-link-main1:hover{background-position:-204px -42px;}
+.nav-link-main2:hover{background-position:-204px -149px;}
+.nav-link-sub1:hover{background-position:-229px -253px;}
+.nav-link-sub2:hover{background-position:-229px -350px;}
+.nav-link-sub3:hover{background-position:-229px -449px;}
+.nav-link-top:hover{background-position:-229px -560px;}
+
+/* Button Style */
+.btn-read{float:left; background-position:0 -64px; width:307px; height:100px; display:block;}
+.btn-read:hover{background-position:-316px -64px;}
+.btn-collect{float:right; background-position:0 -166px; width:310px; height:100px; display:block;}
+.btn-collect:hover{background-position:-316px -166px;}
+.btn-getgift{background-position:0 -388px; width:372px; height:100px; display:block; overflow:hidden; text-indent:-9999px; margin:25px auto 0; cursor:pointer;}
+.btn-getgift:hover{background-position:0 -489px;}
+.btn-jiang-sure, .btn-jiang-remove{width:168px; height:65px; display:block; overflow:hidden; text-indent:-9999px;}
+.btn-jiang-sure{background-position:-636px 0;}
+.btn-jiang-remove{background-position:-805px 0;}
+.btn-exchange{background-position:-636px -66px; width:196px; height:65px; display:block; overflow:hidden; text-indent:-9999px;}
+
+/* Foot Style */
+.foot-wrap{background:url(http://ac.gtimg.com/hd/jfzr201508/images/bg_foot.jpg) no-repeat 50% 0;}
+.foot{color:#f2717c; font-size:14px; line-height:24px; height:140px; padding-top:97px; text-align:center;}
+.foot a{color:#f2717c; font-size:14px; line-height:24px; padding:0 7px;}
+.foot a:hover{text-decoration:underline;}

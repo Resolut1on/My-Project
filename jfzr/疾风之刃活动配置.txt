@@ -1,0 +1,8 @@
+序号	行为名称	    行为标记	    行为ID	类型	权限	对象列表	 
+1	普通礼包	      get	    10219	功能	私有	common_packet=普通礼包	
+2    	 vip礼包	    vip_get	    10220	功能	私有	vip_packet=vip礼包	
+3	 开通VIP	    open_vip	    10221	VIP	私有	pc_event_jfzr201509=PC端疾风之刃活动开通VIP	
+
+
+eventId = 1059
+eventAid = pc_event_jfzr201509

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" id="index">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="utf-8" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Keywords" content="枪神纪,枪神纪漫画,热血漫画,枪神纪在线漫画,战争,动作,腾讯漫画,腾讯动漫官方网站" />
+<meta name="Description" content="热血漫画《枪神纪》，简介：腾讯游戏【枪神纪】官方漫画。《枪神纪》的标签：热血,战争,动作" />
+<meta name="renderer" content="webkit|ie-comp|ie-stand" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<title>枪神纪-在线漫画-腾讯动漫官方网站</title>
+<link href="http://ac.gtimg.com/media/images/favicon.ico" rel="shortcut icon" type="image/x-icon" /><!-- 浏览器访问图标 -->
+<link href="http://ac.gtimg.com/media/css/ac.global.css" rel="stylesheet" type="text/css"/>
+<link href="http://ac.gtimg.com/hd/tps/css/ac.tps.css?v=20150316" rel="stylesheet" />
+</head>
+ <body>
+    <a id="bind_game_area" href="javascript:void(0);" style="display: none;"></a>
+    <!--导航条开始-->
+        <?php @include("/data/website/ac/Page/Include/nav_event.inc");?>
+    <!--导航条-->
+   <!--左侧导航-->
+    <div class="l_nav">
+      <a href="#a_top" class="nav_btn1 btn_nav_top b" title="返回顶部">返回顶部</a>
+      <a href="http://tps.qq.com/main.shtml" target="_blank" class="nav_btn1 btn_nav_main b" stats="click.website" title="进入官网">进入官网</a>
+      <a href="http://tps.qq.com/web201406/download.shtml" target="_blank" class="nav_btn1 btn_nav_down b" stats="click.download" title="下载游戏">下载游戏</a>
+	  <a href="http://chuangshi.qq.com/bk/kh/674274.html?ADTAG=cop.innercop.TPS_DM" class="nav_btn1 btn_nav_text b" title="官方小说" target="_blank">官方小说</a>
+      <a href="#sec1" title="阅读漫画" class="nav_btn2 btn_nav_read b" stats="click.leftnav_read">阅读漫画</a>
+      <a href="#sec2" title="特权专区" class="nav_btn2 btn_nav_priv b" stats="click.leftnav_right">特权专区</a>
+      <a href="#sec3" title="评论区" class="nav_btn2 btn_nav_comment b" stats="click.leftnav_comment">评论区</a>
+    </div>
+   <!--左侧导航-->
+    <div class="section" id="a_top">
+      <div class="header-wrap-1">
+        <div class="header1 c layout">
+            <div class="header-top">
+                <span class="ico-hot">人气：</span>
+                <span style="color:#fff;"><?php echo !empty($this->comicInfoArr[0]["pgv_count"]) ? $this->comicInfoArr[0]["pgv_count"] : "--";  ?></span>
+                <span class="ico-collet">收藏数：</span>
+                <span style="color:#fff;"><?php echo !empty($this->comicInfoArr[0]["coll_count"]) ? $this->comicInfoArr[0]["coll_count"] : "--";  ?></span>
+                <span class="ico-mon">月票：</span>
+                <span style="color:#fff;"><?php echo !empty($this->monthTotal) ? $this->monthTotal : "--";  ?></span>
+            </div>
+        </div>
+      </div>
+      <div class="header-wrap-2">
+        <div class="header2 layout">
+          <h1 class="hide">枪神记漫画站</h1>
+          <p class="hide">能源危机让世界千疮百孔，少年尤里身怀不为人知的秘密，在血与火的洗礼中，他将与同伴固执而骄傲地成就
+              所有特工梦寐以求的荣耀——枪神！ 每周三、周六，《枪神纪》官方漫画，九大职业上演巅峰之战。</p>
+        </div>
+      </div>
+      <div class="header-wrap-3">
+        <div class="header3 layout">
+          <div class="main-btn c">
+                <a href='<?php echo !empty($this->tpsLastArr["url"]) ? $this->tpsLastArr["url"] : "javascript:void(0);"; ?>' stats="click.read" target="_blank" title="最新章节阅读" class="main-btn-chapter">最新章节阅读</a>
+                <a href="javascript:void(0)" title="收藏漫画" class="main-btn-sc" stats="click.collect" act="add" id="btn_collect">收藏漫画</a>
+                <a href="javascript:void(0)" title="投月票" stats="click.monthticket" class="main-btn-month">投月票</a>
+                <a href="javascript:void(0)" title="打赏漫画" stats="click.reward" class="main-btn-award">打赏漫画</a>
+                <span class="main-btn-cov"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="sec1">
+        <div class="wrap_second ">
+            <div class="second layout">
+				<span class="ico-people"></span>
+              <div class="works-chap-text c">
+                <div class="works-text">
+                    <p>
+                        <strong class="ft-wb txt-white">上次看到：</strong><a id="comic_history" style="font-family: 'Microsoft YaHei'" href="javascript:void(0);">--</a>
+                        <span class="ft-yellow"><strong class="ft-wb">最新话：</strong><a href='<?php echo !empty($this->tpsLastArr["url"]) ? $this->tpsLastArr["url"] : ""; ?>' target="_blank"><?php echo !empty($this->tpsLastArr["ftitle"]) ? $this->tpsLastArr["ftitle"] : ''; ?></a></span>
+                        <span class="txt-white"><?php echo !empty($this->tpsLastArr["date"]) ? $this->tpsLastArr["date"] : ''; ?></span>
+                    </p>
+                </div>
+                <div class="works-set" id="works-set-sub">
+                    <a href="javascript:void(0)" title="" class="set-no1 set-btn">1-20</a>
+                    <div class="set-wrap">
+                        <a href="javascript:void(0)" title="" class="set-no2 set-btn">...</a>
+                        <div class="set-content set2">
+                            <?php for($i = 0; $i < $this->pageSize; $i++): ?>
+                                <?php if ($i == 0): ?>
+                                    <a href="javascript:void(0);" class="no2"><?php echo $this->tpsChapterListArr[20*$i]["seq_no"]; ?>-<?php echo $this->total > 20 ? $this->tpsChapterListArr[20*$i+19]["seq_no"] : $this->tpsChapterListArr[$this->total - 1]["seq_no"]; ?></a>
+                                <?php elseif ($i == ($this->pageSize - 1)): ?>
+                                    <a href="javascript:void(0);" class="no2"><?php echo $this->tpsChapterListArr[20*$i]["seq_no"]; ?>-<?php echo $this->tpsChapterListArr[$this->total - 1]["seq_no"]; ?></a>
+                                <?php else: ?>
+                                    <a href="javascript:void(0);" class="no2"><?php echo $this->tpsChapterListArr[20*$i]["seq_no"]; ?>-<?php echo $this->tpsChapterListArr[20*$i+19]["seq_no"]; ?></a>
+                                <?php endif; ?>
+                            <?php endfor; ?>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" title="最新话" class="set-no3 set-btn">最新<?php echo $this->total >= 20 ? 20 : $this->total; ?>话</a>
+                </div>
+              </div>
+              <div class="works-number-wrap">
+                    <?php if (!empty($this->tpsChapterListArr)): ?>
+                        <?php foreach($this->tpsChapterListArr as $key => $value): ?>
+                            <?php if ($key % 20 == 0): ?>
+                                <ul class="works-number-list c" style="display: none;">
+                            <?php endif; ?>
+                                <li><a target="_blank" href="<?php echo $value['url']; ?>"><em>第<?php echo $value['seq_no']; ?>话</em><?php echo $value['ftitle']; ?></a></li>
+                            <?php if ($key % 20 == 19 || $key == $this->total - 1): ?>
+                                </ul>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                    <ul class="works-number-list c">
+                        <?php if (!empty($this->tps20ChaptersArr)): ?>
+                            <?php foreach($this->tps20ChaptersArr as $key => $value): ?>
+                                <li><a target="_blank" href="<?php echo $value['url']; ?>"><em>第<?php echo $value['seq_no']; ?>话</em><?php echo $value['ftitle']; ?></a></li>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </ul>
+              </div>
+              <h2 class="tit_1 tit_11 b" id="sec2">特权专区<br /><span>Game Privileges Area</span></h2>
+              <?php if ($this->eventType == 1): ?>
+              <div class="con_border">
+                <a href="javascript:void(0)" title="我的礼包记录" stats="click.viewQuestionPacket" class="my_bag view_packet">我的礼包记录</a>
+                <div class="priv_con priv_1_1">
+                  <span class="num_t num_tit1 b">01</span>
+                  <div class="c">
+                    <div class="ui-left priv_left">
+                      <h3>看漫画 拿礼包</h3>
+                        <?php if (!empty($this->tpsChooseEventConfArr[0]["date"])): ?>
+                            <p class="pri_time"><?php echo $this->tpsChooseEventConfArr[0]["date"]; ?></p>
+                        <?php endif; ?>
+                      <p><strong class="fz16">【本周猜一猜】
+                              <?php if ($this->tpsEventQuestionArr): ?>
+                            <?php foreach ($this->tpsEventQuestionArr as $key => $value): ?>
+                                <?php if ($key == 0): ?>
+                                    <?php echo $value["title"]; ?>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                            快来补习漫画，猜中可获得枪神纪礼包哦！</strong></p>
+                      <div class="c">
+                        <?php if ($this->tpsEventQuestionArr): ?>
+                            <?php foreach ($this->tpsEventQuestionArr as $key => $value): ?>
+                                <?php if ($key > 0): ?>
+                                    <label><input type="radio" name="answer" id='<?php echo "answer_".$key; ?>' value='<?php echo $value["title"]; ?>' /><?php echo $value["title"]; ?></label>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                      </div>
+                      <a href="javascript:void(0);" title="提交" id="reply" stats="click.reply" class="btn">提 交</a>
+                    </div>
+                    <div class="ui-left priv_left priv_cen">
+                      <img src='<?php echo !empty($this->tpsChooseEventConfArr[0]["pic"]) ? $this->tpsChooseEventConfArr[0]["pic"] : "" ?>' width="170" height="95" alt="礼包" />
+                      <p class="txtc">礼包详情：<br /><?php echo !empty($this->tpsChooseEventConfArr[0]["packetName"]) ? $this->tpsChooseEventConfArr[0]["packetName"] : "--" ?></p>
+                      <a href="javascript:void(0);" title="立即领取" id="take_packet" style="cursor:default;" class="btn_get b btn_get_dished">立即领取</a>
+                    </div>
+                    <div class="ui-right pt32 priv_rule">
+                      <h6>活动规则</h6>
+                      <ul>
+                        <?php if (!empty($this->tpsEventRuleArr)): ?>
+                            <?php foreach ($this->tpsEventRuleArr as $value): ?>
+                                <li><em></em><?php echo $value["title"]; ?></li>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <?php endif; ?>
+              <?php if ($this->eventType == 2): ?>
+                <div class="con_border">
+                  <a href="javascript:void(0);" title="我的礼包记录" stats="click.viewNewPacket" class="my_bag view_packet">我的礼包记录</a>
+                  <div class="priv_con priv_1_2">
+                    <span class="num_t num_tit1 b">01</span>
+                    <div class="c">
+                      <div class="ui-left priv_left">
+                        <div class="c"><h3 class="ui-left">新手福利礼包</h3>
+                            <?php if (!empty($this->tpsNewEventConfArr[0]["date"])): ?>
+                                <p class="pri_time ui-left"><?php echo $this->tpsNewEventConfArr[0]["date"]; ?></p>
+                            <?php endif; ?>
+                        </div>
+                        <ul class="priv_bag1_2 c">
+                            <?php if (!empty($this->tpsNewEventAdsPicArr)): ?>
+                                <?php foreach ($this->tpsNewEventAdsPicArr as $value): ?>
+                                    <li><img src='<?php echo $value["pic"]; ?>' width="155" height="76" alt='<?php echo $value["url"]; ?>' /><p><?php echo $value["url"]; ?></p></li>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </ul>
+                        <a href="javascript:void(0);" title="立即领取" id="get_packet" stats="click.getPacket" class="btn_get b">立即领取</a>
+                      </div>
+                      <div class="ui-right pt32 priv_rule">
+                        <h6>活动规则</h6>
+                        <ul>
+                            <?php if (!empty($this->tpsNewEventRuleArr)): ?>
+                                <?php foreach ($this->tpsNewEventRuleArr as $value): ?>
+                                    <li><em></em><?php echo $value["title"]; ?></li>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <?php endif; ?>
+              <!--特权专区--2-->
+              <div class="con_border">
+                <div class="priv_con">
+                  <span class="num_t num_tit2 b">02</span>
+                  <h3>热门活动</h3>
+                    <div class="c">
+                        <?php if (!empty($this->tpsEventAdsArr)): ?>
+                            <?php foreach ($this->tpsEventAdsArr as $key => $value): ?>
+                                <?php if ($key == 0): ?>
+                                    <a href='<?php echo $value["url"]; ?>' stats="click.leftads" class="ui-left mar60" target="_blank"><img src='<?php echo $value["pic"]; ?>' width="414" height="172" alt="" /></a>
+                                <?php else: ?>
+                                    <a href='<?php echo $value["url"]; ?>' stats="click.rightads" class="ui-right" target="_blank"><img src='<?php echo $value["pic"]; ?>' width="414" height="172" alt="" /></a>
+                                <?php endif; ?>
+
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!--枪神纪评论区 -->
+    <div class="section" id="sec3">
+      <div class="box03_wrap">
+        <div class="box-comment-wrap">
+            <h2 class="tit_1 b"> 枪神纪评论区<br /><span>Gunslayer Legend Comments Area</span></h2>
+            <div id="works-comment-wr" class="works-comment-wr" style="width:100%"></div>
+        </div>
+      </div>
+    </div>
+
+   <div class="bg_wrap_footer"></div>
+   <!-- footer开始 -->
+    <div id="footer_ied">
+        <div class="wrap_ied">
+            <p>
+                <a href="http://game.qq.com/brand" target="_blank">关于腾讯游戏</a> |
+                <a href="http://game.qq.com/contract.shtml" target="_blank">服务条款</a> |
+                <a href="http://adver.qq.com" target="_blank">广告服务</a> |
+                <a href="http://game.qq.com/hr" target="_blank">腾讯游戏招聘</a> |
+                <a href="http://service.qq.com" target="_blank">腾讯游戏客服</a> |
+                <a href="http://game.qq.com/brand/business.htm" target="_blank">商务合作</a> |
+                <a href="http://www.qq.com/map" target="_blank">网站导航</a>
+            </p>
+            <p class="e">COPYRIGHT &copy; 1998 – 2014 TENCENT. ALL RIGHTS RESERVED.</p>
+            <p>
+                <a href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">腾讯公司 版权所有</a>
+            </p>
+        </div>
+    </div>
+    <!-- footer结束 -->
+
+    <div class="bg-dialog dn"></div>
+
+    <!-- 投月票弹层 -->
+    <div class="dialog dn" id="month_dialog">
+        <div class="dialog-bb">
+            <a href="javascript:EventCommon.closeDialog();" class="dialog-close" title="点击关闭">点击关闭</a>
+            <div class="dialog-month">
+              <div class="works-month-msgbox works-month-msgbox-1">
+                <h2 class="dialog-month-tit">我来投月票啦！</h2>
+               <dl class="works-signmonth-item clearfix">
+                <dt class="works-mc-detail-userhead ui-left">
+                 <a href="/Home" title="" target="_blank"> <!--img src="images/pic_user.jpg" class="userhead-b" /--> </a>
+                 <p class="dialog-p-name">
+                    <span>剩余月票</span>
+                    <em class="ft-month-red">0</em> 张
+                 </p>
+                </dt>
+                <dd class="works-signmonth-textmsg ui-left">
+                 <textarea class="works-sign-textare" id="sendMonTicMsg" placeholder="不得不说，枪神纪漫画真带劲！"></textarea>
+                 <div class="c">
+                    <p id="sendMonTicMsg_tip" class="month-p-tip">30字以内</p>
+                 </div>
+                 <div class="works-signmonth-chk clearfix">
+                <span class="works-report-radio">
+                    <input id="monTic_1" type="radio" checked="checked" name="monTicCount" value="1" class="pureNum" />
+                    <label for="monTic_1">1张月票</label>
+                </span>
+                <span class="works-report-radio">
+                    <input id="monTic_2" type="radio" name="monTicCount" value="2" class="pureNum" />
+                    <label for="monTic_2">2张月票</label>
+                </span>
+                <span class="works-report-radio">
+                    <input id="monTic_3" type="radio" name="monTicCount" value="3" class="pureNum" />
+                    <label for="monTic_3">3张月票</label>
+                </span>
+                <span class="works-report-radio last">
+                    <input id="monTic_4" type="radio" name="monTicCount" value="n" />
+                    <input class="works-signmonth-txt" id="monTicCounts" type="text" value="" />
+                    <label for="monTic_4" class="ml-4">张月票</label>
+                </span>
+               </div>
+                </dd>
+               </dl>
+               <a id="send-btn" href="javascript:void(0);" class="dialog-btn-month btn-yellow">投月票</a>
+                <div class="dialog-notie">
+                </div>
+              </div>
+           </div>
+        </div>
+    </div>
+
+    <!-- 投票成功弹层 -->
+    <div class="dialog dn" id="dialog-month-result">
+        <div class="dialog-bb">
+            <a href="javascript:EventCommon.closeDialog();" class="dialog-close" title="点击关闭">点击关闭</a>
+            <div class="dialog-month-true dialog-con">
+                <h2 class="dialog-month-tit">投票成功！</h2>
+                <div class="dialog-true">
+                    <h3 class="tit">投月票，赢Q币！</h3>
+                    <p>累计投放月票即可获得！</p>
+                    <div class="dialog-tag">
+                        <p>月票勋章</p>
+                        <p>动漫VIP</p>
+                        <p>成长值狂增</p>
+                        <span class="tag-ft">Q币返利</span>
+                    </div>
+                    <div class="dialog-month-number c">
+                        <span class="l" id="history-span">月票已累计投放：张</span>
+                        <span class="r" id="left-span">本月月票剩余：张</span>
+                    </div>
+                    <a href="javascript:EventCommon.closeDialog();" class="btn-sure" title="确定">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 打赏弹层 -->
+    <div class="dialog dn" id="award_dialog">
+        <div class="dialog-bb">
+        <a href="javascript:EventCommon.closeDialog();" class="dialog-close" title="点击关闭">点击关闭</a>
+        <div class="dialog-xaward dialog-con">
+            <h2 class="dialog-month-tit">打赏支持</h2>
+            <ul class="xaward-list c" id="xaward-list-rule">
+                <li class="active" value='88'>
+                    <span class="ico-award-text">x5</span>
+                    <a href="javascript:void(0)" title="南瓜蝴蝶结"><img src="http://ac.gtimg.com/media/images/pic_award_1.jpg"  alt=" " /></a>
+                    <div class="xaward-text"><p>88点券</p><p>南瓜蝴蝶结</p></div>
+                </li>
+                <li value='1000'>
+                    <span class="ico-award-text">x5</span>
+                    <a href="javascript:void(0)" title="自由之翼"><img src="http://ac.gtimg.com/media/images/pic_award_2.jpg"  alt=" " /></a>
+                    <div class="xaward-text"><p>1,000点券</p><p>自由之翼</p></div>
+                </li>
+                <li value="10000">
+                    <span class="ico-award-text">x5</span>
+                    <a href="javascript:void(0)" title="火红之翼"><img src="http://ac.gtimg.com/media/images/pic_award_3.jpg"  alt=" " /></a>
+                    <div class="xaward-text"><p>10,000点券</p><p>火红之翼（赠5月票）</p></div>
+                </li>
+                 <li value="100000">
+                    <span class="ico-award-text">x5</span>
+                    <a href="javascript:void(0)" title="萌妹刀锋"><img src="http://ac.gtimg.com/media/images/pic_award_4.jpg"  alt=" " /></a>
+                    <div class="xaward-text"><p>100,000点券</p><p>萌妹刀锋（赠60月票）</p></div>
+                 </li>
+            </ul>
+            <ul class="xaward-number-ul c" id="xaward-number-radio">
+                <li class="first">数量加倍</li>
+                <li><input type="radio" id="x5" name="award-radio" checked="true" /><label for="x5">x5</label></li>
+                <li><input type="radio" id="x4" name="award-radio" /><label for="x4">x4</label></li>
+                <li><input type="radio" id="x3" name="award-radio" /><label for="x3">x3</label></li>
+                <li><input type="radio" id="x2" name="award-radio" /><label for="x2">x2</label></li>
+                <li class="last"><input type="radio" id="x1" name="award-radio" /><label for="x1">x1</label></li>
+            </ul>
+            <div class="xaward-xone">
+                <a href="javascript:void(0)" class="btn-yellow" id="pay-award-btn" title="打赏">打赏</a>
+                <span class="xaward-ft-works">支持作者，有我一份！</span>
+            </div>
+        </div>
+    </div></div>
+
+    <!-- 打赏余额不足 -->
+    <div class="dialog dn" id="award_dialog2">
+        <div class="dialog-bb">
+        <a href="javascript:EventCommon.closeDialog();" class="dialog-close" title="点击关闭">点击关闭</a>
+        <div class="dialog-xaward dialog-con">
+            <h2 class="dialog-month-tit">打赏支持</h2>
+            <ul class="xaward-list c xaward-list-false" id="xaward-list-noenough">
+                <li>
+                    <span class="ico-award-text" style="display:block">x5</span>
+                    <a href="javascript:void(0)" title="南瓜蝴蝶结">
+                        <img src="http://ac.gtimg.com/media/images/pic_award_y_1.jpg"  alt=" " />
+                    </a>
+                    <div class="xaward-text">
+                        <p>88点券</p>
+                        <p>南瓜蝴蝶结</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="ico-award-text">x5</span>
+                    <a href="javascript:void(0)" title="自由之翼">
+                        <img src="http://ac.gtimg.com/media/images/pic_award_y_2.jpg"  alt=" " />
+                    </a>
+                    <div class="xaward-text">
+                        <p>1,000点券</p>
+                        <p>自由之翼</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="ico-award-text">x5</span>
+                    <a href="javascript:void(0)" title="火红之翼">
+                        <img src="http://ac.gtimg.com/media/images/pic_award_y_3.jpg"  alt=" " />
+                    </a>
+                    <div class="xaward-text">
+                        <p>10,000点券</p>
+                        <p>火红之翼（赠5月票）</p>
+                    </div>
+                </li>
+                 <li>
+                    <span class="ico-award-text">x5</span>
+                    <a href="javascript:void(0)" title="萌妹刀锋">
+                        <img src="http://ac.gtimg.com/media/images/pic_award_y_4.jpg"  alt=" " />
+                    </a>
+                    <div class="xaward-text">
+                        <p>100,000点券</p>
+                        <p>萌妹刀锋（赠60月票）</p>
+                    </div>
+                 </li>
+            </ul>
+            <div class="xaward-p-mnone c">
+                <span class="l" id="left_ticket">您剩余点券数：0</span>
+                <span style="padding-left:30px" id="need_ticket" class="l">需支付点券：0</span>
+                <span class="r ft-red">灰常抱歉，您的点券余额不足…</span>
+            </div>
+            <div class="money-btn c">
+                <a href="http://ac.qq.com/VIP/pay" target="_blank" class="btn-yellow btn-pay l" title="充值点券" id="btn-vip-pay">充值点券</a>
+                <a href="javascript:void(0)" class="btn-yellow btn-qb r" id="pay-qb-btn" title="用Q币Q点支付">用Q币Q点支付</a>
+            </div>
+        </div>
+    </div></div>
+
+    <!-- 充值完成 -->
+    <div class="dialog dn" id="award_dialog3">
+        <div class="dialog-bb">
+        <a href="javascript:EventCommon.closeDialog();" class="dialog-close" title="点击关闭">点击关闭</a>
+        <div class="dialog-xaward dialog-con">
+            <h2 class="dialog-month-tit">打赏支持</h2>
+            <ul class="xaward-list c">
+                <li>
+                    <a href="javascript:void(0)" title="南瓜蝴蝶结">
+                        <img src="http://ac.gtimg.com/media/images/pic_award_1.jpg"  alt=" " />
+                    </a>
+                    <div class="xaward-text">
+                        <p>88点券</p>
+                        <p>南瓜蝴蝶结</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" title="自由之翼">
+                        <img src="http://ac.gtimg.com/media/images/pic_award_2.jpg"  alt=" " />
+                    </a>
+                    <div class="xaward-text">
+                        <p>1,000点券</p>
+                        <p>自由之翼</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" title="火红之翼">
+                        <img src="http://ac.gtimg.com/media/images/pic_award_3.jpg"  alt=" " />
+                    </a>
+                    <div class="xaward-text">
+                        <p>10,000点券</p>
+                        <p>火红之翼（赠5月票）</p>
+                    </div>
+                </li>
+                 <li>
+                    <a href="javascript:void(0)" title="萌妹刀锋">
+                        <img src="http://ac.gtimg.com/media/images/pic_award_4.jpg"  alt=" " />
+                    </a>
+                    <div class="xaward-text">
+                        <p>100,000点券</p>
+                        <p>萌妹刀锋（赠60月票）</p>
+                    </div>
+                 </li>
+            </ul>
+            <div class="xaward-p-mpay c">
+                <span class="l">需支付：298</span>
+                <span class="r">请在新开页面完成充值…</span>
+            </div>
+            <div class="money-btn c">
+                <a href="javascript:void(0)" class="btn-yellow btn-payed" id="btn-open-award" title="充值完成 立即打赏">充值完成 立即打赏</a>
+                <a href="http://ac.qq.com/VIP/pay" target="_blank" class="position-btn-link"  title="页面没打开？">页面没打开？</a>
+            </div>
+
+        </div>
+    </div></div>
+
+    <!-- 打赏成功 -->
+    <div class="dialog dn" id="award_dialog4">
+        <div class="dialog-bb">
+            <a href="javascript:EventCommon.closeDialog();" class="dialog-close" title="点击关闭">点击关闭</a>
+            <div class="dialog-notie dialog-con">
+                <h2 class="dialog-month-tit">多谢打赏支持</h2>
+                <div class="dialog-awardsure-btn c">
+                    <a href="javascript:EventCommon.closeDialog();" class="btn-sure ui-left" title="确定">确定</a>
+                    <a href="javascript:void(0)" class="btn-yellow btn-more-award ui-right" id="more-btn" title="更多打赏">更多打赏</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--礼包记录-->
+    <div id="event_lottery_win" class="dialog dialog_tb dn" style="margin-left: -333px; margin-top: -103px;">
+        <div class="dialog-bb">
+          <a title="点击关闭" class="dialog-close" href="javascript:EventCommon.closeDialog();">点击关闭</a>
+          <div class="dialog-notie dialog-con">
+            <h2 class="dialog-month-tit">礼包信息</h2>
+            <table class="pop_tb txtc"></table>
+            <div class="dialog-awardsure-btn">
+              <a title="确定" class="btn-sure" href="javascript:EventCommon.closeDialog();">确定</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/tx.func.js?v=2" charset="UTF-8"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/ac.base.js" charset="UTF-8"></script>
+    <script type="text/javascript" charset="utf-8" src="http://fusion.qq.com/fusion_loader?appid=1450000105&platform=qzone"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/ac.mod.pagination.js"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/ac.mod.comment.js?v=20150316"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/media/js/jquery.milo-min.js"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/hd/tps/js/index.js"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/hd/tps/js/event.common.js"></script>
+    <script type="text/javascript" src="http://ac.gtimg.com/hd/tps/js/tpsAreaSelect.js?v=1"></script>
+
+    <script type="text/javascript">
+        AC.Mod.Comment.authTips = false;
+        AC.Mod.Comment.show(529460, AC.Page.Core.token, 'works-comment-wr', 0, 0, 1);
+    </script>
+    <style type="text/css">
+        .comment-second-publish{margin-left:0px;}
+        .works-comment-wr .comment-list-wr, .comment-mod, .div_comment_list{
+            background-color:#ffd801;
+        }
+        .works-comment-wr .comment-sub-title{
+            overflow:hidden;
+        }
+    </style>
+ </body>
+</html>

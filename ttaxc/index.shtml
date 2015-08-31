@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Tencent-TGideas">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--分享内容显示-->
+<meta name="description" itemprop="description" content="办卡得礼包！浦发银行天天爱消除认同信用卡呆萌上市啦~快来申领吧">
+<meta itemprop="name" content="天天爱消除大礼包派送">
+<meta itemprop="image" content="http://ac.gtimg.com/h5_hd/ttaxc201508/images/fenxiang.jpg">
+<!--分享内容显示-->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>腾讯动漫</title>
+<link href="http://ac.gtimg.com/images/favicon.ico" rel="shortcut icon" type="image/x-icon" /><!-- 浏览器访问图标 -->
+<link href="http://ac.gtimg.com/h5_hd/ttaxc201508/css/index.css" rel="stylesheet" type="text/css"/>
+<body>
+<div class="wrap">
+	<div class="in_head">
+		<img src="http://ac.gtimg.com/h5_hd/ttaxc201508/images/bg_head.jpg" alt="" />
+		<h1 class="hide">浦发腾讯动漫信用卡 天天爱消除特别版</h1>
+		<a href="http://peng.qq.com/m/" class="logo_tt db_indent" target="_blank">天天爱消除</a>
+		<a href="http://m.ac.qq.com/" class="logo db_indent" target="_blank">腾讯动漫官方网站</a>
+		<a href="#" class="logo-ffyh db_indent" target="_blank">浦发银行</a>
+	</div>
+	<div class="in_box"><img src="http://ac.gtimg.com/h5_hd/ttaxc201508/images/bg_box01.jpg" alt="" /></div>
+	<div class="in_parest">
+		<img src="http://ac.gtimg.com/h5_hd/ttaxc201508/images/bg_box02.jpg" class="in_parest_img" />
+		<h3 class="preast-tit preast-main-mt">提交资料即可获得</h3>
+		<h3 class="preast-tit preast-sub-mt">首次刷卡即可获得</h3>
+	</div>
+	<div class="in_notie">
+		<img src="http://ac.gtimg.com/h5_hd/ttaxc201508/images/bg_box04.jpg" class="in_notie_img" alt="" />
+		<div class="in_notie_content">
+			<h2 class="tit">活动规则</h2>
+			<ul class="notie-list">
+				<li>1、活动时间：2015年9月4日——9月14日</li>
+				<li>2、参与活动客户须为浦发银行信用卡一卡用户，客户在核卡后60天内任意消费一笔方可获得高级礼包。数量有限，先到先得。详见CDK获取流程。<a href="#" class="blue-a">详见CDK获取流程</a></li>
+				<li>3、礼包领取按步骤进行操作即可，CDK将直接以短信形式发放至申请信用卡时填写的手机号里，请确认填写无误。获得CDK后请前往<a href="http://peng.qq.com/act/agile/11499/index.html" class="blue-a" >兑换界面</a>进行兑换。</li>
+				<li>4、本次活动仅包含以下卡种：浦发银行天天爱消除认同信用卡。</li>
+				<li>5、在法律允许范围内腾讯动漫对本次活动保留最终解释权。如果您遇到问题可以通过官方进行<a href="http://wap.3g.qq.com/g/s?sid=AaH9lBBX0rcaYZNnfFo2QiIt&aid=wapask&fid=1130" class="blue-a" target="_blank">意见反馈</a>。</li>
+			</ul>
+			<a href="https://mbank.spdbccc.com.cn/creditcard/indexActivity.htm?data=000861" class="btn-write">立即填表办卡</a>
+			<div class="card">
+				<h2 class="tit">卡片权益介绍</h2>
+				<ul class="card-list">
+					<li>1、电子现金—随时零钱包</li>
+					<li>2、闪付功能，全面的反欺诈保障，快捷支付安全方便</li>
+					<li>3、精选商户优惠，超凡积分礼遇</li>
+					<li>4、多种分期选择，尽享大财大用</li>
+					<li>5、最长50天免息还款期，24小时客服热线</li>
+				</ul>
+			</div>
+		</div>
+		<div class="read">
+			<p class="read-p">人家是在这里出生的哟~</p>
+			<a href="http://m.ac.qq.com/Comic/comicInfo/id/17114" class="btn-read"></a>
+		</div>
+	</div>
+</div>
+ </body>
+</html>

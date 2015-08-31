@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" id="index">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="utf-8" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta name="Copyright" content="Tencent" />
+        <meta name="Keywords" content="漫画,动画,卡通,原创动漫,漫画网,在线漫画" />
+        <meta name="Description" content="腾讯动漫发行平台，中国最大最权威的正版动漫网站。" />
+        <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+        <meta http-equiv="X-UA-Compatible" content="IE=8" />
+        <title>腾讯动漫</title>
+        <link href="http://ac.gtimg.com/images/favicon.ico" rel="shortcut icon" type="image/x-icon" /><!-- 浏览器访问图标 -->
+        <link href="http://ac.gtimg.com/hd/jfzr201508/css/index.css" rel="stylesheet" type="text/css"/>
+    <body>
+        <!--导航条开始-->
+        <?php @include("/data/website/ac/Page/Include/nav_event.inc");?>
+        <!--导航条-->
+        <div class="head-wrap">
+            <div class="head">
+                <h1 class="hide">疾风之刃 同名漫画站</h1>
+                <a href="http://jf.qq.com/main.shtml" class="logo-wind" title="疾风之刃">疾风之刃</a>
+                <a href="http://ac.qq.com" class="logo" title="腾讯动漫官方网站">腾讯动漫官方网站</a>
+            </div>
+        </div>
+
+        <div class="box01-wrap">
+            <div class="box01">
+                <div class="work c">
+
+                    <div class="work-left">
+                        <a href="#" class="work-left-img" title="大猿神">
+                            <img src="http://ac.gtimg.com/hd/jfzr201508/images/pic_1.jpg"alt="" />
+                        </a>
+                        <div class="work-tag-con">
+                            <a href="javascript:;" class="btn-month" id="btn_month" title="投月票">投月票</a>
+                            <a href="javascript:;" class="btn-award" id="btn_award" title="打赏">打赏</a>
+                        </div>
+                    </div>
+
+                    <div class="work-info">
+                        <ul class="work-top c">
+                            <li class="no1">作者：疾风之刃</li>
+                            <li class="no2">人气：3,999,999</li>
+                            <li class="no3">收藏数：999</li>
+                            <li class="no4">吐槽：888</li>
+                        </ul>
+                        <div class="work-present">
+                            <p>剧情介绍：由韩国ALLM开发，腾讯代理的《疾风之刃》是一款极具动漫风格的3D超动作网游，是首款腾讯游戏平台和腾讯动漫双平台联合发布的产品。《疾风之刃》官方漫画连载中。</p>
+                        </div>
+                        <div class="work-handle c">
+                            <a href="javascript:void(0);" class="btn-read" title="立即阅读"></a>
+                            <a href="javascript:void(0);" class="btn-collect" title="精品收藏"></a>
+                        </div>
+                        <div class="work-role">
+                            <span class="login-p">
+                                <span id="unlogin">亲爱的QQ用户，请<a href="javascript:void(0);" class="logo-a" title="登录" id="dologin">登录</a></span>
+                                <span id="logined" style="display:none;">欢迎你，<span class="qq_name" id="login_qq_span"></span><a href="javascript:void(0);" class="btn-logou" title="注销" id="dologout">[注销]</a></span>
+                            </span>
+                            <a href="javascript:void(0);" class="blue-a" id="bind_game_area" title="绑定角色">绑定角色</a>
+                            <a href="javascript:void(0);" class="blue-a" title="查看我的礼包">查看我的礼包</a>
+                        </div>
+                    </div>
+
+                    <div class="work-groom">
+                        <div class="groom-img-wrap">
+                            <a href="javascript:void(0);" class="work-groom-img">
+                                <img src="http://ac.gtimg.com/hd/jfzr201508/images/pic_2.jpg"  alt="" />
+                            </a>
+                            <div class="groop-pop">
+                                <div class="groop-pop-text">
+                                    <p>权迎升，当代跨界艺术家，截至2014年，先后获国内外40多项艺术大奖。其作品《中国惊奇先生》刷新中国漫画在线最快突破1亿的点击记录（用时3个多月），被读者誉为“国漫神作”；2014年更创造了网络最快突破10亿点击量的记录！</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-groom-info">
+                            <p>名家推荐</p>
+                            <a href="#" class="groom-a fwb" title="权迎升">权迎升</a>
+                            <p>代表作</p>
+                            <a href="#" class="groom-a" title="中国惊奇先生">《中国惊奇先生》</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box02-wrap">
+            <div class="box02">
+                <div class="chapter">
+
+                    <div class="chapter-handle c">
+                        <div class="chapter-txt">
+                            <p>阅读记录：<a href="#" class="chapter-blue-a" title="第10话">第10话</a></p>
+                            <p>最新话：<a href="#" class="chapter-blue-a" title="第5话">第5话：标题</a> <span class="chapter-new-data">2015.8.15</span></p>
+                        </div>
+                        <div class="chapter-handle-btn">
+                            <div class="chapter-chi">
+                                <a class="chapter-btn" title="1-19">1—10</a>
+                            </div>
+                            <div class="chapter-chi mouse">
+                                <a href="#" class="chapter-btn">……</a>
+                                <div class="chapter-more-list">
+                                    <a href="#" class="chapter-item" title="1-10">1-10</a>
+                                    <a href="#" class="chapter-item" title="11-20">11-20</a>
+                                    <a href="#" class="chapter-item" title="21-30">21-30</a>
+                                    <a href="#" class="chapter-item" title="31-40">31-40</a>
+                                    <a href="#" class="chapter-item" title="41-50">41-50</a>
+                                </div>
+                            </div>
+                            <div class="chapter-chi">
+                                <a  class="chapter-btn" title="最新10话">最新10话</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="chapter-list c">
+                        <li>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第1话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第2话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第3话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第4话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第5话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第6话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第7话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第8话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第9话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第10话</span>
+                                前方高能
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第11话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第2话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第3话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第4话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第5话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第6话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第7话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第8话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第9话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第10话</span>
+                                前方高能
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第21话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第2话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第3话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第4话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第5话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第6话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第7话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第8话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第9话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第10话</span>
+                                前方高能
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第31话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第2话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第3话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第4话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第5话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第6话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第7话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第8话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第9话</span>
+                                前方高能
+                            </a>
+                            <a href="#" class="chapter-link" title="第1话">
+                                <span>第10话</span>
+                                前方高能
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="box03-wrap">
+            <div class="box03">
+                <div class="gift c">
+                    <div class="gift-mod gift-free">
+                        <h2 class="tit">本周免费礼包</h2>
+                        <p class="gift-tit-p">登录免费</p>
+                        <ul class="gift-list c">
+                            <li>
+                                <span class="gift-img">
+                                    <img src="" width="" height="" alt="" />
+                                </span>
+                                <p class="gift-name">道具1</p>
+                            </li>
+                            <li>
+                                <span class="gift-img">
+                                    <img src="" width="" height="" alt="" />
+                                </span>
+                                <p class="gift-name">道具1</p>
+                            </li>
+                            <li>
+                                <span class="gift-img">
+                                    <img src="" width="" height="" alt="" />
+                                </span>
+                                <p class="gift-name">道具1</p>
+                            </li>
+                            <li>
+                                <span class="gift-img">
+                                    <img src="" width="" height="" alt="" />
+                                </span>
+                                <p class="gift-name">道具1</p>
+                            </li>
+                        </ul>
+                        <p class="gift-date-p">7月27日——8月2日期间登陆即可领取</p>
+                        <a class="btn-getgift" id="btn_get_mainGift" title="立即领取">立即领取</a>
+                    </div>
+
+                    <div class="gift-mod gift-special">
+                        <h2 class="tit">本周免费礼包</h2>
+                        <p class="gift-tit-p">登录免费</p>
+                        <ul class="gift-list c">
+                            <li>
+                                <span class="gift-img">
+                                    <img src="" width="" height="" alt="" />
+                                </span>
+                                <p class="gift-name">道具1</p>
+                            </li>
+                            <li>
+                                <span class="gift-img">
+                                    <img src="" width="" height="" alt="" />
+                                </span>
+                                <p class="gift-name">道具1</p>
+                            </li>
+                            <li>
+                                <span class="gift-img">
+                                    <img src="" width="" height="" alt="" />
+                                </span>
+                                <p class="gift-name">道具1</p>
+                            </li>
+                            <li>
+                                <span class="gift-img">
+                                    <img src="" width="" height="" alt="" />
+                                </span>
+                                <p class="gift-name">道具1</p>
+                            </li>
+                        </ul>
+                        <p class="gift-date-p">7月27日——8月2日期间登陆即可领取</p>
+                        <a class="btn-getgift" id="btn_get_mainGift" title="立即领取">立即领取</a>
+                    </div>
+                </div>
+
+                <div class="rule">
+                    <h2 class="tit">活动规则</h2>
+                    <ul class="rule-list">
+                        <li>1、“本周免费礼包”每周更新，登陆即可领取，每个账号每周限领一次；</li>
+                        <li>2、“本周特权礼包”每周更新，每轮活动期间符合活动条件的账号可领，每轮礼包单号限领一次；</li>
+                        <li>3、游戏道具礼包将以CDK的形式发放，请前往<a href="http://jf.qq.com/cdkey.shtml" target="_blank" style="font-size: 16px; font-family: '微软雅黑'">兑换界面</a>进行兑换；</li>
+                        <li>4、在法律允许范围内腾讯动漫对本次活动保留最终解释权，如果您遇到问题可以通过官方进行<a href="http://support.qq.com/write.shtml?fid=744" target="_blank" style="font-size: 16px; font-family: '微软雅黑'">意见反馈</a>。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box04-wrap">
+            <div class="box04">
+                <div class="game-handle">
+                    <a href="http://jf.qq.com/cp/a20141015tszt/index.htm" class="game-link-point" title="游戏特色" target="_blank"></a>
+                    <a href="http://jf.qq.com/act/a20130828job/" class="game-link-job" title="职业介绍" target="_blank"></a>
+                    <a href="http://jf.qq.com/act/a20130929world/" class="game-link-world" title="疾风世界观" target="_blank"></a>
+                    <a href="http://jf.qq.com/act/a20150817alkee/" class="game-link-new" title="新版本内容" target="_blank"></a>
+                    <a href="http://v.qq.com/page/b/0/i/b0162f5zdji.html" class="game-link-video" title="视频欣赏" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box05-tt"><div class="box05-bb"><div class="box05">
+                    <div class="debate-wrap">
+                        <div id="works-comment-wr" class="works-comment-wr"></div>
+                    </div>
+                </div></div></div>
+
+        <div class="foot-wrap">
+            <div class="foot">
+                <p class="mod-footer-info">
+                    <a href="http://ac.qq.com/sitemap.html" target="_blank" title="网站地图">网站地图</a>
+                    <a href="http://ac.qq.com/faq.shtml" target="_blank" title="站内帮助">站内帮助</a>
+                    <a href="http://support.qq.com/write.shtml?fid=744" target="_blank" title="反馈通道">反馈通道</a>
+                    <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1436253657&amp;site=qq&amp;menu=yes" title="官方客服" target="_blank">官方客服</a>
+                    <a href="http://e.t.qq.com/txycdmfxpt?pgv_ref=im.WBlog.guest&amp;ptlang=2052" target="_blank">官方微博</a>
+                    <a href="http://mail.qq.com/cgi-bin/bookcol?colid=109" target="_blank">邮箱推荐</a>
+                    <a href="http://ac.qq.com/service.shtml" target="_blank">服务协议</a>
+                    <a href="http://ac.qq.com/copyright.shtml" target="_blank">侵权反馈指引</a>
+                    <span class="ui-pl10">联系方式：<a class="mod-footer-mail" href="mailto:ac_copyright@qq.com">ac_copyright@qq.com</a></span>
+                </p>
+                <p class="mod-footer-info">Copyright<span class="mod-copyright">&copy;</span>1998 - 2014 Tencent. All Rights Reserved</p>
+                <p class="mod-footer-info">腾讯公司 版权所有</p>
+            </div>
+        </div>
+
+        <!-- 导航 -->
+        <div class="nav" id="nav">
+            <a href="http://jf.qq.com/main.shtml" class="nav-link-main nav-link-main1" title="进入官网" target="_blank">进入官网</a>
+            <a href="http://jf.qq.com/down.shtml" class="nav-link-main nav-link-main2" title="下载游戏" target="_blank">下载游戏</a>
+            <a href="box02-wrap" class="nav-link-sub nav-link-sub1" title="长篇漫画">长篇漫画</a>
+            <a href="box03-wrap" class="nav-link-sub nav-link-sub2" title="每周礼包">每周礼包</a>
+            <a href="box05-tt" class="nav-link-sub nav-link-sub3" title="热门评论">热门评论</a>
+            <a href="box05" class="nav-link-top nav-link-sub" title="返回顶部">top</a>
+        </div>
+
+        <!-- 获奖记录弹出层 -->
+        <div class="dialog" id="dialog_award" style="display:none;">
+            <h2 class="dialog-tit">获奖记录</h2>
+            <a href="javascript:;" class="dialog-close pop-close" title="点击关闭">点击关闭</a>
+            <div class="dialog-content dialog-jiang">
+                <div class="sendaward">
+                    <div class="sendaward-top c">
+                        <span class="no1">获奖物品</span>
+                        <span class="no2">CDK编号</span>
+                        <span class="no3">领取时间</span>
+                    </div>
+                    <div class="dialog-sendaward-list">
+                        <table border="0" cellspacing="1" cellpadding="0" class="sendaward-table">
+                            <tbody>
+                                <tr class="odd">
+                                    <td>本周免费礼包 </td>
+                                    <td>1234567890987654321</td>
+                                    <td>2015-08-11</td>
+                                </tr>
+                                <tr>
+                                    <td>本周免费礼包 </td>
+                                    <td>1234567890987654321</td>
+                                    <td>2015-08-11</td>
+                                </tr>
+                                <tr class="odd">
+                                    <td>本周免费礼包 </td>
+                                    <td>1234567890987654321</td>
+                                    <td>2015-08-11</td>
+                                </tr>
+                                <tr>
+                                    <td>本周免费礼包 </td>
+                                    <td>1234567890987654321</td>
+                                    <td>2015-08-11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="dialog-jiang-btn c">
+                    <a href="#" class="btn-jiang-sure l" title="确定"></a>
+                    <a href="#" class="btn-jiang-remove r pop-close" title="取消"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- cdKey 弹出层 -->
+        <div class="dialog" id="dialog_cdk" style="display:none;">
+            <h2 class="dialog-tit">恭喜您获得礼包</h2>
+            <a href="javascript:;" class="dialog-close pop-close" title="点击关闭">点击关闭</a>
+            <div class="dialog-content dialog-cdkey">
+                <p class="dialog-cdkey-p" id="cdkey_txt">1234567890987654321</p>
+                <a href="#" class="btn-exchange" title="立即兑换">立即兑换</a>
+            </div>
+        </div>
+
+        <!-- 绑定大区弹层 -->
+        <div class="dialog" id="select_area" style="display:none;">
+            <h2 class="dialog-tit">恭喜您获得礼包</h2>
+            <a href="javascript:;" class="dialog-close pop-close" title="点击关闭">点击关闭</a>
+            <div class="dialog-content dialog-role">
+                <div class="dialog-role-p">
+                    <span>选择绑定的角色</span>
+                    <select name="" class="select-check">
+                        <option value="" SELECTED>请选择绑定大区</option>
+                        <option value="">xxxx区</option>
+                        <option value="">xxxx区</option>
+                        <option value="">xxxx区</option>
+                    </select>
+                    <select name="" class="select-check">
+                        <option value="" SELECTED>请选择服务器</option>
+                        <option value="" >xxxx区</option>
+                        <option value="">xxxx区</option>
+                        <option value="">xxxx区</option>
+                    </select>
+                    <select name="" class="select-check">
+                        <option value="" SELECTED>请选择角色</option>
+                        <option value="">xxxx区</option>
+                        <option value="">xxxx区</option>
+                        <option value="">xxxx区</option>
+                    </select>
+                </div>
+                <div class="dialog-cdk-btn c">
+                    <a href="#" class="btn-jiang-sure l" title="确定"></a>
+                    <a href="javascript:void(0);" class="btn-jiang-remove r pop-close" title="取消"></a>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="http://ac.gtimg.com/media/js/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="http://ac.gtimg.com/media/js/tx.func.js?v=2" charset="UTF-8"></script>
+        <script type="text/javascript" src="http://ac.gtimg.com/media/js/ac.base.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="http://ac.gtimg.com/media/js/ac.mod.comment.js"></script><!-- comment js -->
+        <script type="text/javascript" src="http://ac.gtimg.com/media/js/ac.mod.pagination.js"></script><!-- comment js -->
+        <script type="text/javascript" src="http://ac.gtimg.com/media/js/ac.mod.comment.js?v=20150316"></script>
+        <script type="text/javascript" src="http://ac.gtimg.com/media/js/jquery.milo-min.js "></script>
+        <script type="text/javascript" src="http://ac.gtimg.com/hd/jfzr201508/js/index.js"></script>    
+        <script type="text/javascript" src="http://ac.gtimg.com/hd/jfzr201508/js/JFAreaSelect.js"></script>
+        <script type="text/javascript" src="http://ac.gtimg.com/hd/jfzr201508/js/event.common.js"></script>
+        <script type="text/javascript">
+            AC.Mod.Comment.authTips = false;
+            AC.Mod.Comment.show(529460, AC.Page.Core.token, 'works-comment-wr', 0, 0, 1);
+        </script>
+    </body>
+</html>

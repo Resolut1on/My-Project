@@ -1,0 +1,47 @@
+body,div,p,ul,li,input,h1,h2,h3,h4,table,th,tr,td{margin:0;padding:0}
+body{font:12px/1.5 tahoma,'\5b8b\4f53',sans-serif;padding-top:42px;background:#dcfff7;min-width:1000px;}
+ul{ list-style:none;}
+em,b{font-style:normal}
+a{text-decoration:none;blr:expression(this.onFocus=this.blur());outline: none;}
+a:hover{ text-decoration:underline;}
+.clearfix:after{content:" "; clear:both; height:0; visibility:hidden; display:block;}
+.clearfix{*zoom:1;}
+.hide{height:0; line-height:0; font-size:0; visibility:hidden; display:none;}
+img{ display:block; border:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+table{ border-collapse:collapse;}
+.main{min-width:1000px;font-family:'\5FAE\8F6F\96C5\9ED1'; background:url(http://ac.gtimg.com/hd/ttaxc201508/images/bg.jpg) top center no-repeat;}
+.cent1,.cent2,.cent3{width:1000px;margin:0 auto;}
+.cent1{background:url(http://ac.gtimg.com/hd/ttaxc201508/images/cent1.jpg) top center no-repeat; height:401px;}
+.cent2{background:url(http://ac.gtimg.com/hd/ttaxc201508/images/cent2.jpg) top center no-repeat; height:561px;}
+.cent3{background:url(http://ac.gtimg.com/hd/ttaxc201508/images/cent3.jpg) top center no-repeat; height:1177px;}
+.logo_peng,.logo_tencent,.logo_pufa,.gift_junior,.gift_senior,.box_gz,.box_pri,.box_code img,.box_code p{ float:left;}
+.logo_peng,.logo_tencent,.logo_pufa{display:block; text-indent:-9999px; height:65px;}
+.logo_peng{ width:110px;}
+.logo_tencent{ width:155px; margin-left:27px;}
+.logo_pufa{ width:220px;margin-left:37px; }
+.cent2 img{ padding:8px 0 0 150px;}
+.box_gift{ margin-left:8px; height:306px;}
+.gift_junior,.gift_senior{width:482px; height:306px;}
+.gift_junior{ background:url(http://ac.gtimg.com/hd/ttaxc201508/images/box1.jpg) no-repeat;}
+.gift_senior{ margin-left:21px;background:url(http://ac.gtimg.com/hd/ttaxc201508/images/box2.jpg) no-repeat;}
+.gift_junior p,.gift_senior p{ font-size:16px; line-height:18px; text-align:center; color:#02568c; padding-top:77px;}
+.box_txt{ margin:86px 0 0 48px; font-size:14px; color:#088620; line-height:18px; height:482px;}
+.box_txt h2{ font-size:24px; line-height:28px; font-weight:normal;}
+.box_gz{ width:351px; height:482px;}
+.mt15{ margin-top:15px;}
+.box_gz a{ color:#0248c8; text-decoration:underline;}
+.box_code{ margin-top:13px;}
+.box_code img{ padding:19px; background-color:#fff;}
+.box_code p{ width:83px; text-align:center; padding:63px 0 0 8px;}
+.box_pri{ margin-left:126px; width:435px; height:482px;}
+.mt16{ margin-top:16px;}
+.box_pri p span{ display:block; float:left; width:24px;}
+.box_pri img{ margin:16px 0 0 1px;}
+.btn_mh{display:block; text-indent:-9999px; width:266px; height:86px; background:url(http://ac.gtimg.com/hd/ttaxc201508/images/btn.png) no-repeat; background-position:0 0; margin:179px 0 0 312px;}
+.btn_mh:hover{ background-position:-272px 0;}
+/*** footer  **/
+#footer_ied{min-width:1000px; text-align:center; font-size:12px; line-height:19px; color:#474747; background-color:#000;}
+#footer_ied a{color:#474747;}
+.wrap_ied{ margin:0 auto; padding:30px 0; width:1000px;}
+#footer_ied p.e{ margin-top:-4px; font-size:10px;}

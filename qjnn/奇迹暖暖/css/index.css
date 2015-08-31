@@ -1,0 +1,92 @@
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0}body,button,input,select,textarea{font: normal 14px/1.6 "Microsoft Yahei","simsun" !important; color: #61606c;}h1,h2,h3,h4,h5,h6{font-size:100%}em,b{font-style:normal}a,a:hover{text-decoration:none}img{border:0}
+button,input,select,textarea{outline:0;font-size:100%}table{border-collapse:collapse;border-spacing:0}td,th,ul,ol{padding:0;list-style-type:none}.clearfix:after{clear:both;display:block;visibility:hidden;height:0;content:" ";font-size:0}.clearfix{*zoom:1}.dn{display:none}.db{display:block}.fl{float:left}.fr{float:right}.f-pr{position:relative}.st{font-family:"\5b8b\4f53"}.yh{font-family:"\5fae\8f6f\96c5\9ed1",arial,"\5b8b\4f53"}.font12{font-size:12px}.font14{font-size:14px}.font18{font-size:18px}.fwn{font-weight:normal}.fwb{font-weight:bold}.tal{text-align:left}.tac{text-align:center}.tar{text-align:right}.ti{overflow:hidden;text-indent:-30000px}.cYellow{color:#a96526}.tid{text-indent:34px;}a{outline:0;}
+html{overflow-x:hidden}
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0}body,button,input,select,textarea{font-family: "Microsoft Yahei";}
+*{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体" !important;}
+map,map area{border:0;outline:0;}
+#footer_ied{position:relative;z-index:1;padding-top:30px;height:80px;text-align:center;font:normal 12px/19px Tahoma;background-color: #000;}
+#footer_ied .e{font:normal 10px/19px Tahoma}
+#footer_ied,#footer_ied a{color:#93743d;text-decoration:none}
+
+.container{position:relative;margin:0 auto;width:1000px}
+.inner{width:1000px;margin:0 auto;position:relative;}
+.box1{background:url("http://ac.gtimg.com/hd/qjnn201508/images/bg1.jpg") no-repeat scroll center top;position:relative;}
+.box1 .container{height:932px;width:1000px;margin:0 auto;position:relative;}
+
+.box2{background:url("http://ac.gtimg.com/hd/qjnn201508/images/bg2.jpg") no-repeat scroll center top}
+.box2 .container{height:706px;background:url("http://ac.gtimg.com/hd/qjnn201508/images/bg5.jpg") no-repeat scroll center top}
+.box2 .inner{padding-top:160px;}
+.box3{background:url("http://ac.gtimg.com/hd/qjnn201508/images/bg3.jpg") no-repeat scroll center top}
+.box3 .container{height:333px;background:url("http://ac.gtimg.com/hd/qjnn201508/images/bg6.jpg") no-repeat scroll center top}
+.box3 .inner{padding-top:40px;}
+.box4{background:url("http://ac.gtimg.com/hd/qjnn201508/images/bg4.jpg") no-repeat scroll center top}
+.box4 .inner{padding-top:40px;}
+.box4 .container{height:529px;background:url("http://ac.gtimg.com/hd/qjnn201508/images/bg7.jpg") no-repeat scroll center top}
+
+.box_l{width:469px;height:280px;background:url(http://ac.gtimg.com/hd/qjnn201508/images/box1.png) no-repeat;margin-right:60px;float:left;margin-bottom:30px;_display:inline;}
+.box_l h3{font-size:28px;color:#9d7574;padding-top:15px;padding-left:15px;}
+.tit_btn{font-size:16px;color:#9d7574;text-decoration: underline;margin-left:10px;}
+.u1{margin-left:30px;}
+.u1 li{float:left;_display:inline;width:109px;margin-left:20px;margin-top:15px;}
+.u1 li img{display:block;margin:0 auto;}
+.u1 li span{display:block;width:109px;height:23px;line-height:23px;font-size:17px;text-align:center;color:#fff;background:url(http://ac.gtimg.com/hd/qjnn201508/images/p5.png) no-repeat;}
+
+.lq_btn{display:block;width:190px;height:48px;background:url(http://ac.gtimg.com/hd/qjnn201508/images/btn4.png) no-repeat;text-indent:-9999px;margin:25px auto 0 auto;}
+.lq_btn_1{display:block;width:190px;height:48px;background:url(http://ac.gtimg.com/hd/qjnn201508/images/btn5.png) no-repeat;text-indent:-9999px;margin:25px auto 0 auto;}
+.box_r{margin-right:0;}
+.box2 h4{font-size:30px;color:#494141;height:45px;line-height:45px;clear:both;}
+.box2 p{font-size:18px;color:#494141;line-height:180%;}
+.box2 p a{color:#d95097;font-size:18px;text-decoration: underline;}
+.more{display:block;width:140px;text-align:right;margin-right:24px;margin-left:auto;color:#d95098;font-size:18px;}
+.box3 ul li{float:left;width:193px;height:185px;_display:inline;margin-right:5px;margin-top:25px;}
+.box3 ul li.end,.box4 ul li.end{margin-right:0;}
+
+.box4 ul li{float:left;_display:inline;width:140px;height:180px;margin-right:29px;margin-top:25px;}
+.box4 ul li img{display:block;margin:0 auto;}
+.box4 ul li span{display:block;margin-top:10px;font-size:15px;color:#45464a;line-height:100%;}
+/***头部代码***/
+.logo{position:absolute;top:15px;left:-35px;z-index:5;}
+.logo1{float:left;width:197px;height:58px;background:url(http://ac.gtimg.com/hd/qjnn201508/images/logo1.png) no-repeat;}
+.logo2{float:left;width:128px;height:58px;background:url(http://ac.gtimg.com/hd/qjnn201508/images/logo2.png) no-repeat;margin-left:15px;}
+.cont{width:715px;position:absolute;right:-10px;top:15px;}
+.cont p{font-size:13px;color:#664c56;margin-left:120px;line-height:200%;}
+.cont .lipin{width:404px;height:201px;background:url(http://ac.gtimg.com/hd/qjnn201508/images/lipin.png) no-repeat;padding-top:120px;margin:10px 0 20px 174px;}
+.cont .lipin a{display:block;width:159px;height:80px;margin:0 auto;text-indent:-9999px;}
+.cont .u3{margin-left:30px;margin-top:20px;}
+.cont .u3 li{float:left;width:141px;height:58px;_display:inline;margin-left:27px;}
+.cont .u3 li a{display:block;width:141px;height:58px;text-align:center;line-height:58px;font-size:21px;color:#735e64;background:url(http://ac.gtimg.com/hd/qjnn201508/images/btn9.png) no-repeat;}
+.cont .u3 li a.top_btn1{background:url(http://ac.gtimg.com/hd/qjnn201508/images/btn3.png) no-repeat;color:#fefefe;}
+/****轮播****/
+.demo-item {width:1920px;position: absolute;top:0;left:50%;margin-left:-960px;}
+/***弹窗样式***/
+.dialog{position:relative;}
+#tc1 .dia-con{width:457px;height:226px;background:url(http://ac.gtimg.com/hd/qjnn201508/images/wx1.png) no-repeat;}
+.dia-close{position:absolute;top:-24px;right:-39px;font-size:45px;display:block;color:#e66d6a;}
+#tc2 .dia-con{width:457px;height:226px;background:url(http://ac.gtimg.com/hd/qjnn201508/images/wx2.png) no-repeat;}
+#tc3 .dia-con{width:469px;height:280px;background:url(http://ac.gtimg.com/hd/qjnn201508/images/box2.png) no-repeat;}
+.dia-close2{font-size:40px;color:#9d7574;position:absolute;top:0;right:10px;display:block;height:50px;line-height:50px;}
+#tc3 .dia-con h3{height:51px;line-height:51px;font-size:28px;color:#fff;margin-left:10px;}
+#tc3 .dia-con p{width:469px;text-align:center;margin-top:60px;font-size:30px;font-weight:bold;color:#e45b6a;}
+.btn7{display:block;width:190px;height:50px;background:url(http://ac.gtimg.com/hd/qjnn201508/images/btn7.png) no-repeat;margin:30px auto 0 auto;text-indent:-9999px;}
+#tc4 .dia-con{width:615px;padding-bottom:30px;background-color:#f1dbdb;border-radius:8px;border:3px solid #f4a4a4;}
+#tc4 .dia-con h3{height:51px;line-height:51px;font-size:28px;color:#fff;padding-left:15px;background-color:#e6b7b7;}
+#tc4 .dia-con table{text-align:center;width:570px;margin:20px auto;border:0;}
+#tc4 .dia-con table tr td{height:50px;font-size:18px;color:#866f6f;background-color:#e8cfcf;border:1px solid #d9b6b6;line-height:120%;}
+#tc4 .dia-con table tr.tm td{background-color:#b79595;color:#fff;font-size:20px;}
+.lb_a1{float:left;_display:inline;width:190px;height:50px;background:url(http://ac.gtimg.com/hd/qjnn201508/images/btn7.png) no-repeat;margin-left:100px;}
+.lb_a2{float:left;_display:inline;width:190px;height:50px;background:url(http://ac.gtimg.com/hd/qjnn201508/images/btn8.png) no-repeat;margin-left:30px;}
+.lbbtn_box{height:50px;}
+.box_l h3 span{font-size:16px;color:#9d7574;margin-left:10px;}
+
+/***登录样式***/
+#unlogin,#logined{color:#ff2e9b;}
+#unlogin a,#logined a{color:#c3386c;font-weight:bold;}
+
+
+#tc5 .dia-con{width:469px;padding-bottom:30px;background-color:#f1dbdb;border-radius:8px;border:3px solid #f4a4a4;}
+.dia-close2{font-size:40px;color:#9d7574;position:absolute;top:0;right:10px;display:block;height:50px;line-height:50px;}
+#tc5 .dia-con h3{height:51px;line-height:51px;font-size:28px;color:#fff;padding-left:15px;background-color:#e6b7b7;}
+#tc5 .dia-con p{width:440px;margin:40px auto 0 auto;text-align:center;font-size:20px;font-weight:bold;color:#e45b6a;}
+#tc5 .dia-con .btn10{background:url(http://ac.gtimg.com/hd/qjnn201508/images/btn10.png) no-repeat;margin-top:40px;}
+
+.u1 li span{font-size: 14px !important;}
